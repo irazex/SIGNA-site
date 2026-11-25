@@ -4,6 +4,7 @@
 
 Код — в текущей ветке. Рабочие файлы — в тематической папке владельца над основным `GitHub` (`git worktree list --porcelain`). При сомнении открой «Контекст.md», затем карту базы. После переноса обнови ссылки. Без доступа к базе укажи путь для передачи.
 
+> Для выпуска действуют глобальные правила из `~/.codex/AGENTS.md`. Для статического сайта сохраняй прежнюю версию и проверяй новую до переключения.
 
 > Версия: **v2** (deployed 2026-05-24). Обновлено с full marketing/content/SEO pass на базе v1.
 > Этот файл — инструкция для любого AI-агента (Claude, GPT, Cursor, Copilot и др.), работающего с проектом.
@@ -32,7 +33,7 @@
 
 ```bash
 # Локальный сервер для разработки (повторяет mod_rewrite, Stories тоже работают)
-cd "/Volumes/Crucial X9/_AI live here_/Projects/Active/Signa Cafe Website"
+cd "/Users/razex/Documents/_AI Live here/Заведения/SIGNA/Сайт/GitHub"
 npm install                      # один раз: Babel, esbuild, React для сборки
 npm run build                    # после ЛЮБОЙ правки src/*.jsx
 php -S 127.0.0.1:8099 -t . tools/dev-router.php
