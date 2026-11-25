@@ -1322,6 +1322,38 @@
         "reasoning": 319
       },
       "usd": 0.0824
+    },
+    {
+      "at": "2026-11-12T01:00:59.939Z",
+      "slug": "signa-mini-pancakes",
+      "postDate": "2026-11-19",
+      "model": "gpt-5.5",
+      "stage": "write:en",
+      "seconds": 44,
+      "responseId": "resp_0ade5542c8114b57006af50fa2828487d28243b1a6ac57a788",
+      "tokens": {
+        "input": 2890,
+        "cachedInput": 0,
+        "output": 2274,
+        "reasoning": 114
+      },
+      "usd": 0.0827
+    },
+    {
+      "at": "2026-11-12T01:01:23.759Z",
+      "slug": "signa-mini-pancakes",
+      "postDate": "2026-11-19",
+      "model": "gpt-5.5",
+      "stage": "write:en",
+      "seconds": 24,
+      "responseId": "resp_0070ffa0dda495cc006af50fcc1d1c87d281d692fcc959aaa8",
+      "tokens": {
+        "input": 5004,
+        "cachedInput": 2688,
+        "output": 2118,
+        "reasoning": 35
+      },
+      "usd": 0.0765
     }
   ]
 }
