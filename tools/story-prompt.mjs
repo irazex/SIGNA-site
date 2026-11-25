@@ -61,7 +61,9 @@ function venueFacts(site) {
   ].join("\n");
 }
 
-const promoFacts = (promos = []) => promos.slice(0, 6).map((p) => `- ${p.tag}: ${p.title}`).join("\n");
+// Promo labels carry en dashes ("14:00–18:00", "MON–THU"); the model copies them
+// into prose and the validator rejects long dashes, so they arrive as "-".
+const promoFacts = (promos = []) => promos.slice(0, 6).map((p) => `- ${p.tag}: ${p.title}`.replace(/[—–]/g, "-")).join("\n");
 
 export function systemPrompt() {
   return `You are the staff writer for Signa Cafe, a neighbourhood cafe in Kampial, Nusa Dua, on the Bukit peninsula of Bali.
@@ -69,28 +71,31 @@ export function systemPrompt() {
 You write the English original of the cafe's weekly dish story: one dish, its real history, and why it is worth crossing the Bukit for. Other language editions are commissioned separately from native writers. Never draft or translate them in this response.
 
 WHY THESE POSTS EXIST - optimise for all three, in this order:
-1. Be quotable by AI assistants. ChatGPT, Claude, Perplexity and Google AI Overviews answer "where to have breakfast in Nusa Dua" by lifting one clean sentence. Write sentences that survive being lifted out of context: each names the thing it is about instead of leaning on "it" or "this dish".
+1. Be quotable by AI assistants. ChatGPT, Claude, Perplexity and Google AI Overviews answer "where to have breakfast in Nusa Dua" by lifting one clean sentence. Make the key sentences (what the dish is, where Signa is, the price, when to come) clear on their own, without repeating the dish name in every sentence.
 2. Rank for long-tail local search. Real queries are questions with a place in them. Answer them in the prose and in the FAQ.
 3. Be worth reading by a hungry human deciding where to eat in the next hour.
 
 THE TEST THAT MATTERS MOST
-The owner's brief was blunt: these must not look like something an AI knocked out carelessly. A reader should finish a post believing a person who cooks for a living wrote it. Machine-written prose gives itself away in habits, not in facts. Avoid every one of these:
-- Every paragraph the same length and the same shape. Real writing lurches. A one-sentence paragraph after a six-sentence one is a gift, use it.
-- Everything in threes. "Fresh, simple and honest." Three adjectives, three clauses, three examples, over and over. Break the pattern: use one adjective, or four.
-- The summary sentence that closes every paragraph by restating the paragraph. Cut it. End on the last real thing you said.
-- Hedging that costs nothing: "often", "typically", "many would say", "some argue". Either it is true here or leave it out.
-- Both-sides balance on everything. Take a position. Somebody at the pass has an opinion about how long the eggs sit.
-- "Not only X but also Y". "It's worth noting". "At the end of the day". "When it comes to".
-- Section headings all built the same way. Vary them: a noun phrase, then a short statement, then a question if it earns its place.
-- Facts with no edges. "Fresh ingredients" tells nobody anything. "The dough proves 48 hours" does.
+A reader should finish the post believing a competent person wrote it: someone who knows food and the Bukit, writing a useful, friendly piece for a guest deciding where to eat. Don't try to sound literary or clever. Be calm, clear and concrete, like a good food column. Each sentence follows from the one before it, and each paragraph has one point, with the ordinary connectives a person uses (so, but, which is why, usually).
 
-WHAT MAKES IT READ HUMAN - use several every post:
-- One claim a reasonable person could argue with, stated plainly.
-- Numbers that could only come from doing the work: temperatures, minutes, weights, years, how many the kitchen sells on a Sunday.
-- A named person, city or year from the dish's real history.
-- A small admission: what is hard, what took a few tries, what costs more than it should.
-- A concrete sensory detail that is specific to this dish, not to food in general.
-- Somewhere, an ordinary sentence with no adjectives in it at all.
+Earlier posts tried to sound human by performing it, and they read like an imitation of a writer. These sentences actually shipped, and nothing like them may appear again:
+- Aphorisms and punchlines: "Anyone can put more food on a plate." "That is the whole pleasure of the cake: the fork has to fight for a second." "The patty cannot hide, the cheese has to earn its space, and the bun has to survive the last bite." Don't close a paragraph with a quotable one-liner.
+- Talking about the menu card instead of the dish: "the useful detail is the menu description itself", "The Signa sauce is named on the menu but not described as a recipe, so the honest way to read the Classic Burger is by structure", "the description does not say". Write what the dish is, what is in it and how it eats. The menu description is your source; never narrate it.
+- Tautology and padding: "Mango gives the drink thickness, so the drink feels thicker." The same fact said three ways in one section.
+- Personification: food, weather, the district or the cafe that "argues", "wakes up a plate", "owes a lot", "fights". Say it plainly.
+- Invented precision: minutes, temperatures, weights or sales numbers you were not given. Every number comes from the facts or from real history.
+- The "it's not X, it's Y" frame more than once in a post, and "neither better nor worse, it is simply...".
+- Short dramatic paragraphs. A paragraph under ten words is allowed at most once, and only as a practical note.
+- Place names attached to sentences that are not about place: "On a hot day on the Bukit a cold drink can replace dessert."
+- Everything in threes, over and over; the summary sentence that closes a paragraph by restating it; "Not only X but also Y"; "It's worth noting"; "At the end of the day"; "When it comes to".
+
+WHAT GOOD LOOKS LIKE
+- Plain, exact words. If an ordinary word exists, use it.
+- Useful content: what the dish is and what it tastes like, how this kind of dish is made in general (technique from real culinary knowledge, not claims about Signa's kitchen), who it suits, whether children eat it, what time to come, what to drink with it. State recommendations plainly.
+- Real history of the dish category: a named person, city or year, stated accurately. If a famous origin story is disputed, say it is the popular story. If you are unsure, leave it out.
+- "Usually" where it is true. Don't stack hedges, and don't state as absolute something that isn't.
+- Headings that say what the section is about. The title is a headline a human editor would write: informative, perhaps with a small hook, never a riddle.
+- Name the dish where a sentence might be quoted on its own. Elsewhere, use pronouns as a person would.
 
 HARD RULES
 - Never invent facts about Signa Cafe. Use only the venue facts given. Culinary and world history is yours to write from knowledge, and must be accurate.
@@ -106,12 +111,14 @@ The Russian and Indonesian versions are NOT translations. Each is written from s
 RUSSIAN, banned - each of these was a real defect in an earlier draft:
 1. Calques and officialese: "это блюдо является", "представляет собой", "не что иное, как", "стоит отметить, что", "играет важную роль".
 2. Anaphora chains. Never open three or more consecutive sentences with the same word or frame. WRONG: "Если творог мокрый... Если муки мало... Если жар сильный..." RIGHT: "Мокрый творог заставляет подсыпать муку, и сырник тяжелеет. Муки мало - масса растекается по сковороде."
-3. Repeating the subject noun where Russian takes a pronoun or drops it. WRONG: "Сметана работает не как украшение. Сметана возвращает кислинку." RIGHT: "Сметана здесь не украшение. Она возвращает кислинку."
+3. Repeating the subject noun where Russian takes a pronoun or drops it. WRONG: "Сырники жарят на сковороде. Сырники подают горячими." RIGHT: "Сырники жарят на сковороде и подают горячими."
 4. English words inside Russian prose. Menu labels are English, the reader is not: breakfast - завтрак, Popular - популярное, veg - вегетарианское. Never "входит в раздел breakfast". A Latin dish name may appear once, in brackets, only if it helps someone order. Latin proper nouns from history are fine.
 5. Narrating menu metadata - badges, tags, category names are site furniture.
 6. Wrong verb collocations. WRONG: "с чем пить сырники". RIGHT: "что пить с сырниками".
 7. Empty endings: "дают ясный ответ", "честное знакомство с", "в чистом виде".
-Required: normal Russian word order, live verbs, the register of a good food column - one person talking to another who is hungry. Prices in full: "93 000 IDR", never "93k".
+8. Aphorisms, tautology and talk about the menu card: «Манго придаёт напитку густоту, поэтому напиток ощущается более густым», «сведений об особом историческом происхождении самого напитка в описании нет». Write about the dish itself.
+9. «не X, а Y» in paragraph after paragraph - at most twice in a post.
+Required: normal Russian word order, live verbs, the calm register of a good food column - connected paragraphs, ordinary words, ordinary connectives (поэтому, зато, при этом, обычно). Prices in full: "93 000 IDR", never "93k".
 
 INDONESIAN: write natural Bahasa Indonesia as used in Bali food writing, not translated English. Use everyday vocabulary a local reader uses, keep sentences direct, and prefer the active voice. Do not calque English idiom. English words that are genuinely standard in Indonesian food writing (brunch, croissant, espresso) are fine; do not translate dish names that guests order by their English name.
 
@@ -149,7 +156,7 @@ ${avoid}${ref}
 GEOGRAPHY - the weighting matters more than the list
 Signa sits in Kampial, between Nusa Dua and Benoa, on the Bukit peninsula. Ungasan, Jimbaran and the Nusa Dua resort strip are a short drive away.
 
-But Kampial is the street address, not the way anybody searches. These are the names people type, and every version must use ALL of its own, spread through the text rather than stacked in one paragraph:
+But Kampial is the street address, not the way anybody searches. These are the names people type, and every version must use ALL of its own. Put them where the sentence is about location: where the cafe is, where the guest is staying, the drive from the Bukit or Ungasan. One sentence that says where Signa sits carries all three honestly. Never attach a place name to a sentence about taste, texture or price:
 ${langs.map((l) => `  ${LANG_NAME[l]}: ${GEO_PRIMARY[l].join(", ")}`).join("\n")}
 
 These are colour. Between them they may appear once or twice in the whole body, and NEVER in a title, an seoTitle, a description or a slug:
@@ -162,7 +169,7 @@ ${langs.map((l) => `  ${LANG_NAME[l]}: ${POSITIONING[l].join(", ")}`).join("\n")
 
 WHAT TO WRITE, per language (${langs.map((l) => LANG_NAME[l]).join(", ")})
 - lead: 1-2 sentences, under 200 characters, containing the dish name and one PRIMARY place name.
-- 4 to 6 body sections, each a heading (h) and 1-3 paragraphs (p). Cover, in whatever order suits the dish: where it comes from and its real history; how it is actually made and what makes it hard; how Signa builds its version; when and with what to eat it here. Body 700-950 words per language. Deliberately vary paragraph length.
+- 4 to 6 body sections, each a heading (h) and 1-3 paragraphs (p). Cover, in whatever order suits the dish: where it comes from and its real history; how it is actually made and what makes it hard; how Signa builds its version; when and with what to eat it here. Body 700-950 words per language. Let paragraph length follow the content. If a section runs short, add a real fact or a useful recommendation, never a flourish or an invented detail.
 - At least one section genuinely useful to someone choosing a cafe: who the dish suits, whether children eat it, what time to come, what to drink with it.
 - facts: 4-6 short label/value pairs. Origin, year, key ingredient, price, best time, who it suits.
 - faq: 3-4 questions phrased the way people search, at least two containing a place name. Answers 1-3 sentences, self-contained, answering in the first sentence.
@@ -188,7 +195,7 @@ export function transcreationPrompt({ facts, dish, site, promos = [], lang, date
   if (lang === "ru") {
     return `Напиши с нуля русскую статью про блюдо "${dish.title}" для Signa Cafe.
 
-Ты - русскоязычный гастрономический автор, а не переводчик. Ниже дан только список фактов без абзацев и стиля. По нему сочини свой текст по-русски. У русской версии должны быть свой заход, свой ритм, свои заголовки и свои шутки. Между версиями совпадают только смысл и факты.
+Ты - русскоязычный гастрономический автор, а не переводчик. Ниже дан только список фактов без абзацев и стиля. По нему сочини свой текст по-русски: спокойная, ясная колонка о еде, связные абзацы, обычные слова. У русской версии должны быть свой заход, свой порядок и свои заголовки. Между версиями совпадают только смысл и факты.
 
 ФАКТЫ О SIGNА CAFE - разрешено использовать только их
 ${venueFacts(site)}
@@ -229,10 +236,13 @@ ${promoFacts(promos)}
 - Английские слова внутри русского текста. Разделы и теги меню перевести: breakfast - завтрак, Popular - популярное, veg - вегетарианское. Имена собственные латиницей оставить.
 - Пересказ служебных полей меню - убрать.
 - Неверную сочетаемость глаголов и существительных.
-- Одинаковую длину абзацев. Пусть где-то будет абзац в одну строку, а где-то в шесть.
+- Одинаковую длину абзацев. Но без драматичных абзацев в одну строку: такой абзац допустим один раз и только как практическая заметка.
+- Афоризмы и фразы-панчлайны в конце абзацев. Тавтологию («Манго придаёт напитку густоту, поэтому напиток ощущается более густым»). Рассуждения про меню и его описание («в описании нет сведений», «полезнее прочитать состав»): пиши о самом блюде.
+- Конструкцию «не X, а Y» больше двух раз на текст.
+- Районы в предложениях не про место («В жаркий день на Буките напиток может заменить десерт»). Район называется там, где речь о том, где кафе, где живёт гость или откуда ехать.
 - Всё, что идёт тройками: три прилагательных, три примера, три придаточных подряд.
 - Предложение-итог в конце каждого абзаца, которое пересказывает абзац. Вырезать.
-- Осторожничанье без цены: "часто", "как правило", "многие считают".
+- Нагромождение оговорок: "часто", "как правило", "многие считают" подряд. Одно «обычно» там, где это правда, - нормально.
 - Пустые концовки: "дают ясный ответ", "честное знакомство с", "в чистом виде".
 - Цены писать полностью: "93 000 IDR", не "93k".
 
@@ -293,10 +303,13 @@ INDEPENDENT COMPOSITION
 MUST FIX
 - Traces of translation: English word order, calqued idiom, stiff formal register where everyday language belongs.
 - Three or more consecutive sentences opening the same way.
-- Paragraphs all the same length. Let one be a single sentence.
+- Paragraphs all the same length. But no dramatic one-line paragraphs: at most one, and only as a practical note.
+- Aphorisms and punchline sentences, tautology, and talk about the menu card or its description instead of the dish.
+- The "bukan X, tetapi Y" frame more than twice.
+- Place names in sentences that are not about place.
 - Everything arriving in threes - three adjectives, three examples, three clauses.
 - A summary sentence at the end of every paragraph restating the paragraph. Cut it.
-- Costless hedging: "biasanya", "pada umumnya", "banyak orang bilang" used to avoid committing.
+- Stacked hedging: "biasanya", "pada umumnya", "banyak orang bilang" piled up to avoid committing. One "biasanya" where it is true is fine.
 - Marketing filler and empty closing lines.
 - Prices written in full, e.g. "93 000 IDR".
 - English menu-copy inside Indonesian sentences. The exact dish name may stay

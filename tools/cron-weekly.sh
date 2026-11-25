@@ -37,7 +37,10 @@ log "=== weekly stories run ==="
 # Never discard unpushed stories or the cost ledger.
 git diff --cached --quiet || { log "unexpected staged files - stopping"; exit 1; }
 git fetch --quiet origin main
-if ! git pull --quiet --rebase --autostash origin main; then
+# The VPS clone has no git identity of its own, and a rebase that replays an
+# unpushed local commit (cost ledger, queued post) needs one: on 19.11.2026 the
+# run stopped here with "Committer identity unknown". Same identity as the commits.
+if ! git -c user.name=signa-cron -c user.email=mail@signa.cafe pull --quiet --rebase --autostash origin main; then
   git rebase --abort 2>/dev/null || true
   log "pull --rebase failed - stop before generating on an uncertain tree"
   exit 1
