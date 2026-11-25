@@ -99,11 +99,12 @@ WHAT GOOD LOOKS LIKE
 
 HARD RULES
 - Never invent facts about Signa Cafe. Use only the venue facts given. Culinary and world history is yours to write from knowledge, and must be accurate.
-- Do not invent a historical lineage for a modern menu item just to fill a "history" section. A cream-based chicken pizza is not automatically descended from Roman pizza bianca or an Italian-American recipe. Distinguish documented dish history from a broad culinary comparison. If the origin of Signa's recipe is unknown, say so plainly or write about the ingredients and the menu context instead.
+- Do not invent a historical lineage for a modern menu item just to fill a "history" section. A cream-based chicken pizza is not automatically descended from Roman pizza bianca or an Italian-American recipe. Distinguish documented dish history from a broad culinary comparison. If the origin of Signa's recipe is unknown, write about the dish category's real history and about the ingredients instead; don't comment on what is or isn't recorded.
 - Never invent awards, chef names, press mentions, customer quotes, or sales numbers you were not given. If you want a kitchen detail you do not have, write about the technique instead.
 - No marketing filler. Banned: "culinary journey", "burst of flavour", "hidden gem", "nestled", "elevate", "must-try", "tantalising", "symphony of", "a slice of heaven", "perfectly balanced".
 - No exclamation marks. No emoji. Dashes: only the short hyphen "-", never an em dash or en dash, in any language.
 - Prices exactly as supplied.
+- Never open three consecutive sentences with the same word ("It... It... It..."); the checker rejects the whole edition for it.
 
 THE NON-ENGLISH CONTRACT - the part most often done badly.
 The Russian and Indonesian versions are NOT translations. Each is written from scratch by someone who happens to know the same facts. They may open on different details, split into different sections, and land different jokes. If a version reads like the English with other words dropped in, it has failed.
@@ -142,7 +143,7 @@ THE DISH
 Name on the menu: ${dish.title}
 Menu price: ${dish.price}${/^\d+\s*k$/i.test(String(dish.price)) ? ` (in prose: ${fullPrice(dish.price)})` : ""}
 Menu section: ${dish.cat}
-Menu description: ${dish.desc}
+Menu description: ${String(dish.desc ?? "").replace(/[—–]/g, "-")}
 ${dish.badge ? `Menu badge: ${dish.badge}` : ""}
 ${dish.tags?.length ? `Menu tags: ${dish.tags.join(", ")}` : ""}
 Publication date: ${date}
@@ -164,12 +165,12 @@ ${langs.map((l) => `  ${LANG_NAME[l]}: ${GEO_SECONDARY[l].join(", ")}`).join("\n
 
 So: a title or a description that needs a place takes Nusa Dua, the Bukit or Ungasan. Kampial earns a mention when the sentence is genuinely about where the building stands - the address line, or a route someone is driving - and not otherwise.
 
-POSITIONING TERMS - each version uses all of its own, naturally
+POSITIONING TERMS - each version uses every one of its own literally at least once (the checker matches the exact phrase), inside sentences that would be there anyway
 ${langs.map((l) => `  ${LANG_NAME[l]}: ${POSITIONING[l].join(", ")}`).join("\n")}
 
 WHAT TO WRITE, per language (${langs.map((l) => LANG_NAME[l]).join(", ")})
 - lead: 1-2 sentences, under 200 characters, containing the dish name and one PRIMARY place name.
-- 4 to 6 body sections, each a heading (h) and 1-3 paragraphs (p). Cover, in whatever order suits the dish: where it comes from and its real history; how it is actually made and what makes it hard; how Signa builds its version; when and with what to eat it here. Body 700-950 words per language. Let paragraph length follow the content. If a section runs short, add a real fact or a useful recommendation, never a flourish or an invented detail.
+- 4 to 6 body sections, each a heading (h) and 1-3 paragraphs (p). Cover, in whatever order suits the dish: where it comes from and its real history; how it is actually made and what makes it hard; what is on Signa's plate (only what the menu says); when and with what to eat it here. Body 700-950 words per language. Let paragraph length follow the content. If a section runs short, add a real fact or a useful recommendation, never a flourish or an invented detail.
 - At least one section genuinely useful to someone choosing a cafe: who the dish suits, whether children eat it, what time to come, what to drink with it.
 - facts: 4-6 short label/value pairs. Origin, year, key ingredient, price, best time, who it suits.
 - faq: 3-4 questions phrased the way people search, at least two containing a place name. Answers 1-3 sentences, self-contained, answering in the first sentence.
@@ -205,7 +206,7 @@ ${promoFacts(promos)}
 
 Дата публикации: ${date}
 Цена блюда: ${fullPrice(dish.price)}
-Описание в меню: ${dish.desc || "нет"}
+Описание в меню: ${dish.desc ? String(dish.desc).replace(/[—–]/g, "-") : "нет"}
 
 САМОСТОЯТЕЛЬНАЯ КОМПОЗИЦИЯ
 - Выбери свой первый кадр. Не начинай с той же мысли, что английский текст.
@@ -286,7 +287,7 @@ ${promoFacts(promos)}
 
 Publication date: ${date}
 Dish price: ${fullPrice(dish.price)}
-Menu description: ${dish.desc || "none"}
+Menu description: ${dish.desc ? String(dish.desc).replace(/[—–]/g, "-") : "none"}
 
 INDEPENDENT COMPOSITION
 - Choose a different opening image from the English edition.
