@@ -1354,6 +1354,38 @@
         "reasoning": 35
       },
       "usd": 0.0765
+    },
+    {
+      "at": "2026-11-26T01:03:46.755Z",
+      "slug": "solo-meat-lovers",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "write:en",
+      "seconds": 216,
+      "responseId": "resp_016125165287637d006b07849c263087d0b2cc3067ace3c78c",
+      "tokens": {
+        "input": 3438,
+        "cachedInput": 0,
+        "output": 2521,
+        "reasoning": 150
+      },
+      "usd": 0.0928
+    },
+    {
+      "at": "2026-11-26T01:04:14.687Z",
+      "slug": "solo-meat-lovers",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "write:en",
+      "seconds": 28,
+      "responseId": "resp_079168cb9209c3ba006b078572e33087d0ad144379c8eea3dd",
+      "tokens": {
+        "input": 5729,
+        "cachedInput": 2816,
+        "output": 2206,
+        "reasoning": 0
+      },
+      "usd": 0.0822
     }
   ]
 }
