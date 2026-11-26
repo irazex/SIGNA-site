@@ -487,7 +487,9 @@ export async function generate({ dish, site, promos, usedAngles, date, key, lang
   // Editor passes only after every language is accepted and saved. An editor
   // call that fails, even one leaving a paid request with an unknown result,
   // can then cost the polish but never the post, and never spends cap room a
-  // transcreation still needs. Reused drafts were already edited.
+  // transcreation still needs. Reused drafts are not edited again: after a
+  // failed run an accepted language may ship without the editor - `--polish`
+  // fixes that for one call per language.
   for (const lang of fresh) {
     data[lang] = await polishLang(data[lang], dish, lang, key, { slug, date }, site);
     draft?.save(data);
