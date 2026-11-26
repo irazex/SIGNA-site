@@ -19,13 +19,13 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { fileURLToPath } from "node:url";
-import { systemPrompt, userPrompt, transcreationPrompt, schema, geoFixPrompt, geoFixSchema,
+import { systemPrompt, userPrompt, transcreationPrompt, editorPrompt, schema, geoFixPrompt, geoFixSchema,
          LANGS, GEO, GEO_PRIMARY, GEO_SECONDARY, POSITIONING } from "./story-prompt.mjs";
 import { fetchDishPhoto } from "./dish-photo.mjs";
 import { record as recordCost, spentOn, spentInMonth, pricing, load as loadCosts } from "./cost-ledger.mjs";
 import { openDraft, draftedDish } from "./story-draft.mjs";
 import { nextStoryDate } from "./story-schedule.mjs";
-import { validatedEdition, qualityFeedback, repeatedSentenceOpening } from "./story-quality.mjs";
+import { validatedEdition, polishedEdition, qualityFeedback, repeatedSentenceOpening } from "./story-quality.mjs";
 import { requestCeiling, checkBudget } from "./story-budget.mjs";
 import { lockGenerator, pendingResponse, savePending, clearPending, assertNoPending, definiteCreateRejection } from "./story-runtime.mjs";
 
@@ -57,6 +57,10 @@ const opts = {
   rewrite: flag("rewrite"),
   addlang: flag("addlang"),
   editOnly: flag("edit-only"),
+  // --polish <slug|all>: run the native editor over existing RU/ID editions.
+  polish: flag("polish"),
+  // --no-edit: skip the editor pass of a new post (one call per language).
+  noEdit: has("no-edit"),
   fixGeo: has("fix-geo"),
   recoverBilled: has("recover-billed"),
   slug: flag("slug"),
@@ -390,6 +394,36 @@ async function transcreateLang(facts, dish, site, promos, lang, key, bill = {}, 
   });
 }
 
+async function editLang(body, dish, lang, key, bill = {}) {
+  const one = schema([lang]).schema.properties[lang];
+  const persona = lang === "ru"
+    ? "Ты русскоязычный редактор колонки о еде. Ты правишь чужую статью так, чтобы она читалась как живой русский текст, написанный человеком. Факты, цены и число разделов не меняешь."
+    : "You are an Indonesian food-column editor. You edit a native article so it reads as natural Bahasa Indonesia written by a person. You never change a fact, a price or the number of sections.";
+  return normalizeNativeBody(await chat({
+    key,
+    messages: [
+      { role: "system", content: persona },
+      { role: "user", content: editorPrompt({ body, dish, lang }) },
+    ],
+    jsonSchema: { name: `signa_story_${lang}`, strict: true, schema: one },
+    maxTokens: 16000,
+    stage: `edit:${lang}`, slug: bill.slug ?? null, date: bill.date ?? null,
+  }), lang);
+}
+
+// The accepted native edition, polished once by an editor when the edit passes
+// the same gate; otherwise the native edition as it was.
+async function polishLang(body, dish, lang, key, bill = {}) {
+  if (opts.noEdit) return body;
+  if (opts.verbose) log(`    ${lang} editor`);
+  return polishedEdition({
+    body,
+    edit: (b) => editLang(b, dish, lang, key, bill),
+    check: (b) => validate({ [lang]: b }, [lang], dish.title),
+    onReject: (issues) => warn(`${lang} editor result discarded, native edition kept: ${issues.join("; ")}`),
+  });
+}
+
 export async function generate({ dish, site, promos, usedAngles, date, key, langs = opts.langs, reference = null, slug = null, draft = null }) {
   let data = draft?.data || {};
   let source = reference;
@@ -429,7 +463,9 @@ export async function generate({ dish, site, promos, usedAngles, date, key, lang
   }
 
   // Each language is commissioned independently from the English fact dossier.
-  // There is no intermediate translated draft and no editor pass.
+  // There is no intermediate translated draft. Since 26.11.2026 the accepted
+  // native edition gets one editor pass (polishLang): the editor sees only the
+  // native article, and an edit that fails the gate is discarded.
   for (const lang of langs.filter((l) => l !== "en")) {
     if (data[lang] && !validate(data, [lang], dish.title).length && data[lang].blocks.length === transcreationSectionCount(dish, lang, source?.blocks?.length || 5)) {
       log(`    reuse accepted ${lang} draft (no paid call)`);
@@ -439,6 +475,8 @@ export async function generate({ dish, site, promos, usedAngles, date, key, lang
     data[lang] = await transcreateLang(
       facts, dish, site, promos, lang, key, { slug, date }, source?.blocks?.length || 5,
     );
+    draft?.save(data);
+    data[lang] = await polishLang(data[lang], dish, lang, key, { slug, date });
     draft?.save(data);
   }
   return data;
@@ -714,6 +752,27 @@ async function main() {
       if (!opts.dryRun) writeStore(store);
     }
     log(opts.dryRun ? "--dry-run: nothing written" : `done, ${targets.length} post(s) rewritten independently`);
+    return;
+  }
+
+  // --polish: one editor pass over the RU/ID editions of existing posts.
+  if (opts.polish) {
+    const targets = store.posts.filter((p) => opts.polish === "all" || p.slug === opts.polish);
+    if (!targets.length) { console.error(`no post at slug "${opts.polish}"`); process.exit(1); }
+    const langs = opts.langs.filter((l) => l !== "en");
+    log(`editor pass over ${langs.join("+")} on ${targets.length} post(s)`);
+    let changed = 0;
+    for (const post of targets) {
+      for (const lang of langs.filter((l) => post[l])) {
+        log(`  ${post.date} ${post.slug} ${lang}`);
+        if (opts.dryRun) continue;
+        const before = post[lang];
+        const after = await polishLang(before, { title: post.dish?.name || post.slug }, lang, key, { slug: post.slug, date: post.date });
+        if (after !== before) { post[lang] = after; changed++; log(`    ${lang} polished`); }
+      }
+    }
+    if (changed && !opts.dryRun) writeStore(store);
+    log(opts.dryRun ? "--dry-run: nothing written" : `done, ${changed} edition(s) polished`);
     return;
   }
 

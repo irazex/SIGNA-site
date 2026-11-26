@@ -6,11 +6,11 @@ import path from 'node:path';
 import { execFileSync, spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { baliDate, nextStoryDate } from './story-schedule.mjs';
-import { validatedEdition, repeatedSentenceOpening } from './story-quality.mjs';
+import { validatedEdition, polishedEdition, repeatedSentenceOpening } from './story-quality.mjs';
 import { requestCeiling, checkBudget } from './story-budget.mjs';
 import { validate, generate, recoverBilledDraft } from './story-gen.mjs';
 import { openDraft, draftedDish } from './story-draft.mjs';
-import { userPrompt } from './story-prompt.mjs';
+import { userPrompt, editorPrompt } from './story-prompt.mjs';
 import { definiteCreateRejection } from './story-runtime.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -206,4 +206,27 @@ test('the postal address does not count against the side-district cap', () => {
   const stuffed=structuredClone(post);
   stuffed.en.blocks[0].p.push('Kampial, Benoa, Jimbaran and Kampial again are all close.');
   assert(validate(stuffed,['en']).some(x=>x.includes('side districts')));
+});
+
+test('the editor pass keeps the native edition unless the edit passes the same gate', async () => {
+  const body = { blocks: [{ h: 'a', p: ['x'] }, { h: 'b', p: ['y'] }, { h: 'c', p: ['z'] }, { h: 'd', p: ['w'] }] };
+  const better = { blocks: body.blocks.map((b) => ({ ...b, p: [b.p[0] + ' better'] })) };
+  const rejected = [];
+  assert.equal(await polishedEdition({ body, edit: async () => better, check: () => [] }), better);
+  assert.equal(await polishedEdition({ body, edit: async () => better, check: () => ['RU: missing бранч'], onReject: (i) => rejected.push(...i) }), body);
+  assert.equal(await polishedEdition({ body, edit: async () => ({ blocks: body.blocks.slice(0, 3) }), check: () => [], onReject: (i) => rejected.push(...i) }), body);
+  assert.equal(await polishedEdition({ body, edit: async () => { throw Error('network'); }, check: () => [], onReject: (i) => rejected.push(...i) }), body);
+  assert.equal(await polishedEdition({ body, edit: async () => null, check: () => [], onReject: (i) => rejected.push(...i) }), body);
+  assert(rejected.some((x) => x.includes('section count')));
+  assert(rejected.some((x) => x.includes('editor call failed')));
+});
+
+test('editor prompts name the exact section count and carry no unresolved values', () => {
+  const post = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/stories.json'))).posts.find((p) => p.ru && p.id);
+  for (const lang of ['ru', 'id']) {
+    const prompt = editorPrompt({ body: post[lang], dish: { title: post.dish.name }, lang });
+    assert(prompt.includes(String(post[lang].blocks.length)));
+    assert(!/undefined|\[object Object\]/.test(prompt));
+    assert(!/[—–]/.test(prompt.split(/СТАТЬЯ:|ARTICLE:/)[0]));
+  }
 });
