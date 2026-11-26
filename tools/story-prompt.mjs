@@ -37,6 +37,16 @@ export const POSITIONING = {
   id: ["sarapan", "kafe keluarga", "ramah anak", "brunch", "kopi"],
 };
 
+// Russian phrases validate() rejects. Kept here so the editor prompt and the
+// validator cannot drift apart: an edit that brings one back is a wasted call.
+export const RU_DEAD = ["является", "представляет собой", "не что иное", "стоит отметить", "в чистом виде", "ясный ответ"];
+export const RU_CRINGE = [
+  "музейная пыль", "авторская оценка", "моя оценка", "точка маршрута",
+  "туристического компромисса", "зеленая пауза", "зелёная пауза",
+  "не спорит с жарой", "умеет спорить с аппетитом", "без лишних реверансов",
+  "простота, которая не извиняется", "попадает в день", "никакой философии",
+];
+
 const LANG_NAME = { en: "English", ru: "Russian", id: "Indonesian (Bahasa Indonesia)" };
 
 // "93k" is fine on a menu tile, wrong in a sentence.
@@ -357,8 +367,9 @@ ${JSON.stringify(facts, null, 2)}`;
 // together", "in the menu the dish is listed as". This is not an edit of a
 // translation - the editor sees only the native article - and the generator
 // discards any edit that fails validate() or changes the section count.
-export function editorPrompt({ body, dish, lang }) {
+export function editorPrompt({ body, dish, lang, site = {} }) {
   const sections = body.blocks.length;
+  const reviews = site.reviewCount ? `«больше ${Math.floor(Number(site.reviewCount) / 100) * 100}» или точно ${site.reviewCount}` : "точное число из фактов";
   if (lang === "ru") {
     return `Ниже русская статья о блюде "${dish.title}" для сайта семейного кафе Signa Cafe в Нуса Дуа (Бали). Её написал автор по фактам. Отредактируй её как хороший редактор колонки о еде: текст должен читаться как живой русский, написанный человеком, - спокойно, ясно, связными абзацами, обычными словами.
 
@@ -371,15 +382,16 @@ export function editorPrompt({ body, dish, lang }) {
 - Кальки, канцелярит, английский порядок слов, повтор подлежащего там, где по-русски нужно местоимение.
 - Конструкцию «не X, а Y» больше двух раз.
 - Букву ё там, где она нужна (тёплый, даёт, лёгкий, ещё), и кавычки «ёлочки».
-- Число отзывов: «больше 1400» или точное число, но не «более чем 1426».
-- Запрещены обороты: «точка маршрута», «без лишних реверансов», «никакой философии», «не спорит с жарой», «умеет спорить с аппетитом», «простота, которая не извиняется», «попадает в день», «зелёная пауза», «авторская оценка».
+- Число отзывов: ${reviews}, но не «более чем ${site.reviewCount || "N"}».
+- Запрещены обороты (валидатор отклонит текст): ${[...RU_DEAD, ...RU_CRINGE].map((x) => `«${x}»`).join(", ")}.
 
 СОХРАНИТЬ
 - Все факты: цены в формате «93 000 IDR», часы, адрес, имена, даты, состав.
 - Ровно ${sections} разделов (blocks): не объединяй и не добавляй. В каждом разделе 1-4 абзаца.
 - Основной текст (lead, заголовки и абзацы) не короче 470 слов. Если после вычёркивания повторов он короче, добавь полезную конкретику из фактов: когда заказывать, с чем, кому подойдёт. Не воду.
 - Нуса Дуа, Букит и Унгасан - каждое хотя бы раз в тексте или FAQ. Кампьял, Беноа и Джимбаран - вместе не больше трёх раз и никогда в title, seoTitle и description.
-- Слова позиционирования буквально хотя бы по одному разу: завтрак, семейное кафе, с детьми, бранч, кофе.
+- Слова позиционирования буквально хотя бы по одному разу: ${POSITIONING.ru.join(", ")}.
+- Абзацы разной длины: самый длинный хотя бы на 12 слов длиннее самого короткого.
 - Три соседних предложения не начинаются одним словом. Тире только короткое "-". Без восклицательных знаков и эмодзи. Никаких строчных латинских слов в прозе, кроме названий из меню и Signa Cafe.
 - FAQ остаются поисковыми вопросами, хотя бы в одном - название места; ответ отвечает первым же предложением.
 - seoTitle не длиннее 58 символов, description не длиннее 155.
@@ -406,6 +418,7 @@ KEEP
 - A body (lead, headings and paragraphs) of at least 470 words. If cutting repetition makes it shorter, add useful specifics from the facts, never filler.
 - Nusa Dua, Bukit and Ungasan at least once each in the body or FAQ. Kampial, Benoa and Jimbaran together at most three times, never in title, seoTitle or description.
 - The positioning terms literally, at least once each: ${POSITIONING.id.join(", ")}.
+- Paragraph lengths vary: the longest is at least 12 words longer than the shortest.
 - No English menu copy inside Indonesian sentences (breakfast, lunch, pancakes, homemade, cream sauce, grilled chicken and the like - use the Indonesian words). The exact dish name may stay in English.
 - Never three neighbouring sentences opening with the same word. Only the short hyphen "-". No exclamation marks, no emoji.
 - The FAQ stay search-shaped, at least one naming a place, each answered in its first sentence.

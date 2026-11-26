@@ -82,6 +82,15 @@ if [ "$EXISTS" = "yes" ]; then
 else
   node tools/story-gen.mjs --count 1 --date "$NEXT" --verbose 2>&1 | tee "$RUN_LOG"
 fi
+# An editor call can leave a paid request with an unknown result while the
+# post itself is complete. Publish the post, but say so now: the next run
+# refuses to start until the request is checked in OpenAI.
+if [ -s .story-runtime/response.json ]; then
+  log "a paid request has an unknown result (.story-runtime/response.json) - post kept, check OpenAI before the next run"
+  node tools/notify-telegram.mjs --failure "незавершённый платный запрос" \
+    --details "Пост сохранён и выкладывается. Перед следующим запуском сверить запрос в OpenAI: .story-runtime/response.json" \
+    || log "failure notification FAILED"
+fi
 PHASE="подготовка фотографий и карточек"
 node tools/og-images.mjs >/dev/null
 PHASE="сохранение истории"

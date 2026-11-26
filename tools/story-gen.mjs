@@ -19,12 +19,12 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { fileURLToPath } from "node:url";
-import { systemPrompt, userPrompt, transcreationPrompt, editorPrompt, schema, geoFixPrompt, geoFixSchema,
+import { systemPrompt, userPrompt, transcreationPrompt, editorPrompt, RU_DEAD, RU_CRINGE, schema, geoFixPrompt, geoFixSchema,
          LANGS, GEO, GEO_PRIMARY, GEO_SECONDARY, POSITIONING } from "./story-prompt.mjs";
 import { fetchDishPhoto } from "./dish-photo.mjs";
 import { record as recordCost, spentOn, spentInMonth, pricing, load as loadCosts } from "./cost-ledger.mjs";
 import { openDraft, draftedDish } from "./story-draft.mjs";
-import { nextStoryDate } from "./story-schedule.mjs";
+import { nextStoryDate, baliDate } from "./story-schedule.mjs";
 import { validatedEdition, polishedEdition, qualityFeedback, repeatedSentenceOpening } from "./story-quality.mjs";
 import { requestCeiling, checkBudget } from "./story-budget.mjs";
 import { lockGenerator, pendingResponse, savePending, clearPending, assertNoPending, definiteCreateRejection } from "./story-runtime.mjs";
@@ -394,7 +394,7 @@ async function transcreateLang(facts, dish, site, promos, lang, key, bill = {}, 
   });
 }
 
-async function editLang(body, dish, lang, key, bill = {}) {
+async function editLang(body, dish, lang, key, bill = {}, site = {}) {
   const one = schema([lang]).schema.properties[lang];
   const persona = lang === "ru"
     ? "Ты русскоязычный редактор колонки о еде. Ты правишь чужую статью так, чтобы она читалась как живой русский текст, написанный человеком. Факты, цены и число разделов не меняешь."
@@ -403,22 +403,27 @@ async function editLang(body, dish, lang, key, bill = {}) {
     key,
     messages: [
       { role: "system", content: persona },
-      { role: "user", content: editorPrompt({ body, dish, lang }) },
+      { role: "user", content: editorPrompt({ body, dish, lang, site }) },
     ],
     jsonSchema: { name: `signa_story_${lang}`, strict: true, schema: one },
     maxTokens: 16000,
-    stage: `edit:${lang}`, slug: bill.slug ?? null, date: bill.date ?? null,
+    // Not edit:<lang> - that name belongs to the 2026-09 translation editor
+    // the ledger and admin keep as "legacy".
+    stage: `polish:${lang}`, slug: bill.slug ?? null, date: bill.date ?? null,
   }), lang);
 }
 
 // The accepted native edition, polished once by an editor when the edit passes
 // the same gate; otherwise the native edition as it was.
-async function polishLang(body, dish, lang, key, bill = {}) {
+async function polishLang(body, dish, lang, key, bill = {}, site = {}) {
   if (opts.noEdit) return body;
+  // A paid request with an unknown result blocks every further call; do not
+  // spend one on prose when it would only be refused.
+  if (pendingResponse() || stopping) { warn(`${lang} editor skipped: a paid request has an unknown result`); return body; }
   if (opts.verbose) log(`    ${lang} editor`);
   return polishedEdition({
     body,
-    edit: (b) => editLang(b, dish, lang, key, bill),
+    edit: (b) => editLang(b, dish, lang, key, bill, site),
     check: (b) => validate({ [lang]: b }, [lang], dish.title),
     onReject: (issues) => warn(`${lang} editor result discarded, native edition kept: ${issues.join("; ")}`),
   });
@@ -466,6 +471,7 @@ export async function generate({ dish, site, promos, usedAngles, date, key, lang
   // There is no intermediate translated draft. Since 26.11.2026 the accepted
   // native edition gets one editor pass (polishLang): the editor sees only the
   // native article, and an edit that fails the gate is discarded.
+  const fresh = [];
   for (const lang of langs.filter((l) => l !== "en")) {
     if (data[lang] && !validate(data, [lang], dish.title).length && data[lang].blocks.length === transcreationSectionCount(dish, lang, source?.blocks?.length || 5)) {
       log(`    reuse accepted ${lang} draft (no paid call)`);
@@ -475,8 +481,15 @@ export async function generate({ dish, site, promos, usedAngles, date, key, lang
     data[lang] = await transcreateLang(
       facts, dish, site, promos, lang, key, { slug, date }, source?.blocks?.length || 5,
     );
+    fresh.push(lang);
     draft?.save(data);
-    data[lang] = await polishLang(data[lang], dish, lang, key, { slug, date });
+  }
+  // Editor passes only after every language is accepted and saved. An editor
+  // call that fails, even one leaving a paid request with an unknown result,
+  // can then cost the polish but never the post, and never spends cap room a
+  // transcreation still needs. Reused drafts were already edited.
+  for (const lang of fresh) {
+    data[lang] = await polishLang(data[lang], dish, lang, key, { slug, date }, site);
     draft?.save(data);
   }
   return data;
@@ -587,16 +600,11 @@ export function validate(post, langs = opts.langs, menuName = post.dish?.name) {
       const latin = [...new Set((prose.match(/[A-Za-z][A-Za-z'-]{2,}/g) || []).filter((w) => LABELS.test(w) || /^[a-z]/.test(w)))];
       if (latin.length) issues.push(`RU: english words in russian prose: ${latin.slice(0, 6).join(", ")}`);
       if (/\b\d+\s*k\b/i.test(blob)) issues.push('RU: menu-shorthand price ("93k"), spell it out');
-      for (const dead of ["является", "представляет собой", "не что иное", "стоит отметить", "в чистом виде", "ясный ответ"]) {
+      for (const dead of RU_DEAD) {
         const exact = new RegExp(`(?<![а-яё])${dead.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![а-яё])`, "i");
         if (exact.test(blob)) issues.push(`RU: dead construction "${dead}"`);
       }
-      const cringe = [
-        "музейная пыль", "авторская оценка", "моя оценка", "точка маршрута",
-        "туристического компромисса", "зеленая пауза", "зелёная пауза",
-        "не спорит с жарой", "умеет спорить с аппетитом", "без лишних реверансов",
-        "простота, которая не извиняется", "попадает в день", "никакой философии",
-      ].filter((phrase) => low.includes(phrase));
+      const cringe = RU_CRINGE.filter((phrase) => low.includes(phrase));
       if (cringe.length) issues.push(`RU: pseudo-literary filler: ${cringe.join(", ")}`);
     }
     if (lang === "id") {
@@ -756,6 +764,7 @@ async function main() {
   }
 
   // --polish: one editor pass over the RU/ID editions of existing posts.
+  if (has("polish") && !opts.polish) { console.error("--polish needs a slug or all"); process.exit(1); }
   if (opts.polish) {
     const targets = store.posts.filter((p) => opts.polish === "all" || p.slug === opts.polish);
     if (!targets.length) { console.error(`no post at slug "${opts.polish}"`); process.exit(1); }
@@ -763,15 +772,25 @@ async function main() {
     log(`editor pass over ${langs.join("+")} on ${targets.length} post(s)`);
     let changed = 0;
     for (const post of targets) {
+      let postChanged = false;
       for (const lang of langs.filter((l) => post[l])) {
         log(`  ${post.date} ${post.slug} ${lang}`);
         if (opts.dryRun) continue;
         const before = post[lang];
-        const after = await polishLang(before, { title: post.dish?.name || post.slug }, lang, key, { slug: post.slug, date: post.date });
-        if (after !== before) { post[lang] = after; changed++; log(`    ${lang} polished`); }
+        const after = await polishLang(before, { title: post.dish?.name || post.slug }, lang, key, { slug: post.slug, date: post.date }, site);
+        if (after !== before) { post[lang] = after; changed++; postChanged = true; log(`    ${lang} polished`); }
+        if (pendingResponse() || stopping) break;
+      }
+      // Saved per post, like --fix-geo: an interrupted run keeps what it paid for.
+      if (postChanged && !opts.dryRun) {
+        const today = baliDate();
+        if (post.date <= today) post.updated = today;
+        writeStore(store);
+      }
+      if (pendingResponse() || stopping) {
+        throw new Error("a paid editor request has an unknown result; polished editions are saved - check OpenAI before the next run");
       }
     }
-    if (changed && !opts.dryRun) writeStore(store);
     log(opts.dryRun ? "--dry-run: nothing written" : `done, ${changed} edition(s) polished`);
     return;
   }
