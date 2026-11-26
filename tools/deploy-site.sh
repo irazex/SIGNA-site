@@ -44,14 +44,14 @@ echo "deploying site to signa.cafe"
 for f in js/*.js; do up "$f"; done
 
 BACKUP="$(mktemp -d)/htaccess.prod"
-curl -sS --max-time 60 "$FTP_HOST/.htaccess" --user "$FTP_CRED" -o "$BACKUP"
+curl -4 -sS --max-time 60 --retry 3 --retry-all-errors "$FTP_HOST/.htaccess" --user "$FTP_CRED" -o "$BACKUP"
 up .htaccess
 for u in / /stories /admin "/js/core.js"; do
   c=$(code "$SITE$u")
   case "$c" in
     2*|3*) ;;
     *) echo "  $u answered $c after .htaccess - restoring the previous one" >&2
-       curl -sS -T "$BACKUP" "$FTP_HOST/.htaccess" --user "$FTP_CRED"
+       curl -4 -sS --max-time 120 --retry 3 --retry-all-errors -T "$BACKUP" "$FTP_HOST/.htaccess" --user "$FTP_CRED"
        exit 1 ;;
   esac
 done
