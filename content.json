@@ -24,45 +24,45 @@
     {
       "id": 1,
       "title": "Syrniki — cottage cheese pancakes",
-      "price": "93k",
+      "price": "80k",
       "cat": "breakfast",
       "img": "assets/menu-01-syrniki-cottage-cheese-pancake.webp",
       "badge": "Popular",
       "tags": [
         "veg"
       ],
-      "desc": "Cottage cheese pancakes with sour cream, salted caramel and berries."
+      "desc": "Four cottage cheese pancakes with sour cream and your choice of condensed milk, strawberry jam or salted caramel."
     },
     {
       "id": 2,
       "title": "Big Breakfast",
-      "price": "79k",
+      "price": "85k",
       "cat": "breakfast",
       "img": "assets/menu-02-big-breakfast.webp",
       "badge": "Popular",
-      "desc": "Eggs, sausage, hashbrowns, beans, toast — the full plate."
+      "desc": "Two scrambled eggs, grilled beef bacon or chicken, mushrooms, sautéed spinach and tomatoes, beans in tomato sauce and grilled sourdough."
     },
     {
       "id": 3,
       "title": "Best Scramble",
-      "price": "71k",
+      "price": "55k",
       "cat": "breakfast",
       "img": "assets/menu-03-best-scramble.webp",
       "tags": [
         "veg"
       ],
-      "desc": "Creamy scrambled eggs with fresh herbs and sourdough toast."
+      "desc": "Two scrambled eggs with sautéed green beans, sliced avocado, green salad and sourdough. Add salmon, bacon or prawns if you like."
     },
     {
       "id": 4,
       "title": "Avo Benedict Toast",
-      "price": "65k",
+      "price": "60k",
       "cat": "breakfast",
       "img": "assets/menu-04-avo-benedict-toast.webp",
       "tags": [
         "veg"
       ],
-      "desc": "Sourdough, smashed avocado, poached eggs, hollandaise."
+      "desc": "Sourdough with smashed avocado, poached eggs and the house hollandaise. Add salmon, bacon or prawns if you like."
     },
     {
       "id": 5,
@@ -70,55 +70,53 @@
       "price": "75k",
       "cat": "breakfast",
       "img": "assets/menu-05-french-omelette.webp",
-      "tags": [
-        "veg"
-      ],
-      "desc": "Classic French folded omelette with herbs."
+      "tags": [],
+      "desc": "Fluffy eggs with salted salmon, Greek yogurt sauce, fresh dill and grilled sourdough."
     },
     {
       "id": 6,
-      "title": "Creamy Bacon Pasta",
-      "price": "89k",
+      "title": "Creamy Beef Bacon Pasta",
+      "price": "80k",
       "cat": "pasta",
       "img": "assets/menu-06-creamy-bacon-pasta.webp",
-      "desc": "Penne in cream sauce with crispy bacon and parmesan."
+      "desc": "Home-made fettuccine with beef bacon, garlic, onion, cream and parmesan."
     },
     {
       "id": 7,
-      "title": "Big Salmon Poke Bowl",
-      "price": "145k",
+      "title": "Big Poke Bowl",
+      "price": "75k",
       "cat": "main",
       "img": "assets/menu-07-big-salmon-poke-bowl.webp",
       "badge": "★ Chef's",
-      "desc": "Salmon, rice, edamame, mango, avocado, sesame, soy."
+      "desc": "Steamed rice with chicken, prawns or salmon, cucumber, edamame, avocado, pineapple, ginger, red cabbage, coriander and nori."
     },
     {
       "id": 8,
-      "title": "Caesar with chicken",
-      "price": "92k",
+      "title": "Caesar Salad",
+      "price": "79k",
       "cat": "main",
-      "img": "assets/menu-08-caesar-with-chicken.webp",
-      "desc": "Grilled chicken, romaine, parmesan, anchovy dressing, croutons."
+      "img": "assets/menu-08-caesar-salad.webp",
+      "desc": "Romaine, cherry tomatoes, croutons, parmesan and Caesar sauce."
     },
     {
       "id": 9,
-      "title": "Mango smoothie bowl",
-      "price": "86k",
+      "title": "Mango Smoothie",
+      "price": "60k",
       "cat": "drinks",
-      "img": "assets/menu-09-mango-smoothie-bowl.webp",
+      "img": "assets/menu-09-mango-smoothie.webp",
       "badge": "Popular",
       "tags": [
         "veg"
       ],
-      "desc": "Mango, banana, coconut milk, chia, granola, fresh fruit."
+      "desc": "Fresh mango blended with ice and a little sugar."
     },
     {
       "id": 10,
       "title": "Norwegian salmon soup",
-      "price": "89k",
+      "price": "70k",
       "cat": "main",
       "img": "assets/menu-10-norwegian-salmon-soup.webp",
-      "desc": "Creamy salmon soup with potato, leek, dill."
+      "desc": "Creamy fish broth with salmon, carrot, potato and croutons."
     },
     {
       "id": 11,
@@ -126,18 +124,18 @@
       "price": "80k",
       "cat": "main",
       "img": "assets/menu-11-classic-burger.webp",
-      "desc": "Beef patty, cheddar, lettuce, tomato, signa sauce, brioche."
+      "desc": "Toasted brioche potato bun, beef patty, cheddar, lettuce, tomato and creamy house sauce, with beet chips."
     },
     {
       "id": 12,
-      "title": "Napoleon cake with Nutella",
+      "title": "Mille-feuille Nutella (Napoleon cake)",
       "price": "85k",
       "cat": "dessert",
       "img": "assets/menu-12-napoleon-cake-with-nutella.webp",
       "tags": [
         "veg"
       ],
-      "desc": "Flaky layers, vanilla cream and a generous Nutella swirl."
+      "desc": "Crisp puff pastry layers with vanilla cream, topped with Nutella."
     }
   ],
   "menuCategories": [
@@ -230,13 +228,13 @@
     {
       "n": 1,
       "title": "Ricotta\nPancakes",
-      "meta": "Brunch · 75k",
+      "meta": "Brunch · 80k",
       "img": "assets/photo-breakfast.webp"
     },
     {
       "n": 2,
       "title": "Mango\nSmoothie",
-      "meta": "Cold · 55k",
+      "meta": "Cold · 60k",
       "img": "assets/photo-smoothie.webp"
     },
     {
