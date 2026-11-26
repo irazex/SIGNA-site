@@ -1498,6 +1498,38 @@
         "reasoning": 43
       },
       "usd": 0.0642
+    },
+    {
+      "at": "2026-11-26T09:00:33.574Z",
+      "slug": "chicken-club-sandwich-nusa-dua",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "polish:ru",
+      "seconds": 124,
+      "responseId": "resp_018c88b4d3d9a3f9006b07f4b6ee1487d09560967f2259859c",
+      "tokens": {
+        "input": 3066,
+        "cachedInput": 0,
+        "output": 2104,
+        "reasoning": 107
+      },
+      "usd": 0.0785
+    },
+    {
+      "at": "2026-11-26T09:01:51.411Z",
+      "slug": "chicken-club-sandwich-nusa-dua",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "polish:id",
+      "seconds": 78,
+      "responseId": "resp_0eeb8e9a6995089e006b07f531b00487d084ca1b6c0812af0d",
+      "tokens": {
+        "input": 2684,
+        "cachedInput": 0,
+        "output": 2031,
+        "reasoning": 173
+      },
+      "usd": 0.0743
     }
   ]
 }
