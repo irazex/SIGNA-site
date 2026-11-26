@@ -1,17 +1,18 @@
 {
-  "version": "20261126a",
+  "version": "20261126c",
   "note": "Source of truth for /stories. Edited by hand or via /admin -> Stories tab. Rendered server-side by story.php / stories.php - no build step, no JS required, so AI crawlers see full text.",
   "posts": [
     {
       "slug": "caesar-salad-nusa-dua",
-      "date": "2026-12-03",
+      "date": "2026-11-26",
       "cover": "assets/stories/caesar-salad-da5b48a9.webp",
       "dish": {
         "name": "Caesar Salad",
         "price": "79 000 IDR",
         "menuUrl": "https://signa.dishi.rest/",
         "syrveId": "da5b48a9-04c7-4f62-b8bb-83dd0aa18f01",
-        "syrveCategory": "SALADS AND APPETIZERS"
+        "syrveCategory": "SALADS AND APPETIZERS",
+        "menuId": 8
       },
       "tags": [
         "caesar salad",
@@ -44,25 +45,21 @@
       "en": {
         "faq": [
           {
-            "q": "Where can I get a Caesar Salad in Nusa Dua?",
-            "a": "You can get Caesar Salad at Signa Cafe in Nusa Dua for 79 000 IDR. Signa Cafe is open daily from 08:00 to 23:00, with last order at 22:30."
+            "q": "Where can you eat a Caesar salad in Nusa Dua?",
+            "a": "At Signa Cafe, a cafe in Nusa Dua on the Bukit peninsula. The cafe posts its news on Instagram at @signa.cafe."
           },
           {
-            "q": "Is Signa Cafe a good brunch place on the Bukit?",
-            "a": "Yes, Signa Cafe is a family cafe on the Bukit that works well for brunch, especially if you want something lighter than a cooked breakfast. Caesar Salad suits a late morning or early afternoon meal with coffee or a cold drink."
+            "q": "Is Signa Cafe far from Ungasan?",
+            "a": "No, it is a short drive, since both are on the Bukit peninsula. If you need directions, call +62 896 540 27190."
           },
           {
-            "q": "Is the Caesar Salad at Signa Cafe kid-friendly?",
-            "a": "Yes, Caesar Salad can be kid-friendly for children who like crisp lettuce, croutons and parmesan. The dressing is the part to consider, because Caesar sauce is usually savoury and garlicky."
-          },
-          {
-            "q": "Where should I eat near Ungasan if I want a light lunch?",
-            "a": "Signa Cafe is a short drive from Ungasan and serves Caesar Salad for 79 000 IDR. It is a practical choice when you want a light lunch rather than a heavy main course."
+            "q": "Can you order the Caesar salad for delivery?",
+            "a": "Yes, through the online menu at https://signa.dishi.rest/. Eat it soon after it arrives, because croutons soften as they sit in the sauce."
           }
         ],
-        "seoTitle": "Caesar Salad in Nusa Dua: crisp lunch",
+        "seoTitle": "Caesar salad in Nusa Dua | Signa Cafe",
         "category": "Salad",
-        "description": "Caesar Salad in Nusa Dua at Signa Cafe: Romano salad, cherry tomatoes, croutons, parmesan and caesar sauce for 79 000 IDR.",
+        "description": "Signa Cafe in Nusa Dua serves Caesar salad with romaine, cherry tomatoes, croutons, parmesan and Caesar sauce for 79 000 IDR.",
         "keywords": [
           "caesar salad",
           "caesar salad nusa dua",
@@ -88,7 +85,7 @@
           ],
           [
             "Key ingredients",
-            "Romano salad, cherry tomatoes, croutons, parmesan, caesar sauce"
+            "Romaine, cherry tomatoes, croutons, parmesan, Caesar sauce"
           ],
           [
             "Price",
@@ -96,81 +93,77 @@
           ],
           [
             "Best time",
-            "Brunch or a light lunch"
+            "Brunch, a light lunch or a late dinner"
           ],
           [
             "Good for",
-            "Guests who want a crisp, savoury salad without a heavy main course"
+            "Anyone who wants a crisp, savoury salad instead of a heavy main"
+          ],
+          [
+            "Address",
+            "Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361"
           ]
         ],
-        "lead": "Caesar Salad at Signa Cafe in Nusa Dua is a crisp plate of Romano salad, cherry tomatoes, croutons, parmesan and caesar sauce for 79 000 IDR.",
-        "title": "Caesar Salad in Nusa Dua: the crisp classic that started in Tijuana",
+        "lead": "The Caesar salad began in a Tijuana restaurant in the 1920s and now turns up on cafe menus almost everywhere. At Signa Cafe in Nusa Dua it keeps the classic base and adds cherry tomatoes.",
+        "title": "Caesar salad in Nusa Dua: the Tijuana classic at Signa Cafe",
         "blocks": [
           {
-            "h": "A Caesar Salad with a real origin story",
+            "h": "Where the Caesar salad comes from",
             "p": [
-              "Caesar Salad has one of the clearer origin stories in modern restaurant food, even if the details are still argued over. The popular account credits Caesar Cardini, an Italian-born restaurateur working in Tijuana, Mexico, with creating it in 1924. Tijuana was busy with American visitors during Prohibition, and restaurants there served guests who crossed the border for a night out. Cardini’s restaurant was part of that scene, which is why an Italian name, a Mexican city and an American dining habit all sit behind one famous salad.",
-              "The early Caesar was usually built around romaine lettuce, croutons, parmesan and a rich dressing mixed close to service. Worcestershire sauce was part of the classic flavour, while anchovies became a later point of debate because some cooks used them directly and others relied on the anchovy note already inside Worcestershire. What matters on the plate is the same today: crisp leaves, toasted bread, salty cheese and a dressing strong enough to season the whole bowl.",
-              "That history is useful because it explains why Caesar Salad does not eat like a side salad. It was designed as a restaurant dish, with crunch, fat, salt and acidity working together. At Signa Cafe, the version stays in that familiar lane, with Romano salad, cherry tomatoes, croutons, parmesan and caesar sauce."
+              "The popular story takes the salad back to Tijuana, just across the border from San Diego. It credits Caesar Cardini, an Italian-born restaurateur who ran a restaurant there in the 1920s, when Prohibition sent Americans south of the border to eat and drink without breaking the law.",
+              "His daughter Rosa later said he put the salad together on the Fourth of July, when a holiday rush had nearly emptied the kitchen, and tossed it at the table in front of the guests. The year usually given is 1924, though the details change from one telling to the next.",
+              "The classic version needs very little: romaine, parmesan, croutons and a dressing of egg, olive oil, lemon juice and Worcestershire sauce. Cooks still argue about whether the first Caesar had anchovies in it, but most Caesar dressings today do. Grilled chicken came much later, when American restaurants turned the salad from a starter into a lunch main."
             ]
           },
           {
-            "h": "What is on Signa Cafe’s plate",
+            "h": "What goes into the salad at Signa Cafe",
             "p": [
-              "Signa Cafe serves Caesar Salad for 79 000 IDR. The plate is built from Romano salad, cherry tomatoes, croutons, parmesan and caesar sauce. That makes it a good order when you want something cool and savoury, but still more satisfying than plain greens.",
-              "The Romano salad gives the dish its main texture. Long, firm leaves hold dressing well, so a Caesar can keep its bite instead of turning soft straight away. Cherry tomatoes add a fresh, juicy contrast, which is especially welcome because the dressing and cheese are rich. Croutons bring the dry crunch that makes the salad feel complete, and parmesan adds salt and a nutty edge.",
-              "The sauce is the centre of the dish. A Caesar dressing is usually made as an emulsion, which means fat and liquid are held together so the sauce coats the leaves instead of running to the bottom of the plate. In a classic version, egg yolk or a similar emulsifier helps bind oil with lemon juice or vinegar, while garlic, Worcestershire, mustard or anchovy give the deep savoury taste people associate with Caesar. The exact recipe can vary, but the job is always the same: coat, season and cling."
+              "At Signa Cafe the Caesar Salad costs 79 000 IDR and is made with romaine, cherry tomatoes, croutons, parmesan and Caesar sauce. It is listed under salads and appetizers, so you can order it as a starter for the table or as a light meal on its own. If you would like chicken with it, ask the staff whether it can be added.",
+              "Romaine, also called cos or romano lettuce, has long, firm leaves that give the salad a cold, fresh crunch, and the croutons add a drier, toastier one. The cherry tomatoes are the most obvious departure from the 1920s recipe, and a sensible one: they bring juice and a little sweetness next to the salty parmesan and the savoury sauce."
             ]
           },
           {
-            "h": "Why a simple salad is easy to get wrong",
+            "h": "What makes a Caesar good",
             "p": [
-              "A Caesar Salad looks straightforward, which is why weak versions are common. The lettuce has to be crisp and dry before dressing. If water stays on the leaves, the sauce thins out and slides away. If the leaves are overdressed, the croutons soften too quickly and the cheese disappears into the sauce.",
-              "Croutons matter more than many people think. They are not just garnish. Good croutons give a firm bite, take a little dressing on the outside and stay dry enough inside to contrast with the leaves. Parmesan also needs to be present enough to season the salad, because the cheese supplies much of the salty finish.",
-              "The balance is practical rather than fancy. Too much sauce makes the plate heavy. Too little makes it taste like lettuce with bread. Cherry tomatoes are not part of the earliest Caesar story, but they make sense in a cafe version because they bring brightness and a clean break from the creamy dressing."
+              "With five ingredients, every one of them shows. The leaves should be cold and crisp, the croutons dry enough to snap, and the parmesan there to season the salad rather than bury it. The sauce should coat each leaf without collecting at the bottom of the plate, and the salad is at its best soon after it reaches the table, before the croutons soften."
             ]
           },
           {
-            "h": "When to order it at Signa Cafe",
+            "h": "When to order it",
             "p": [
-              "Signa Cafe is in Nusa Dua on the Bukit, a short drive from the resort strip and from Ungasan, so Caesar Salad is an easy stop if you want a lighter meal before heading back to the beach, villa or hotel. The cafe is open daily from 08:00 to 23:00, with last order at 22:30, which gives the dish a wide window. It works for brunch, lunch or an early dinner when a heavier plate does not sound right.",
-              "For breakfast, some guests want eggs, pancakes or a cooked plate, but others prefer something fresh after travel, heat or a morning walk. This salad fits that second mood. It is also a useful order if one person wants a main meal and another wants to keep lunch light, because Caesar has enough richness from the sauce, parmesan and croutons to feel like food rather than a compromise.",
-              "If you come between 08:00 and 09:00, Signa Cafe offers free coffee with any order. That timing suits a guest who wants an early, simple start, although Caesar Salad will usually feel more natural as late breakfast or brunch than as the first bite of the day. Later on, it pairs well with coffee if you like a savoury cafe lunch, or with a cold drink if you want a cleaner finish."
+              "Signa Cafe is open every day from 08:00 to 23:00, and the last order is taken at 22:30. That leaves plenty of room for a Caesar: brunch after a morning on the beach, a quick midday meal, or a late dinner when a main course feels like too much.",
+              "Early guests get a free coffee. From 08:00 to 09:00 any order comes with an espresso-based drink, hot or iced, and if you would rather start the day with something savoury than sweet, a Caesar makes a perfectly good breakfast.",
+              "The pizza oven is lit from 14:00, which helps when a group can't agree: one person orders the salad and the others share a pizza."
             ]
           },
           {
-            "h": "Who will enjoy it",
+            "h": "Finding the cafe, and coming with children",
             "p": [
-              "Caesar Salad is a good choice for guests who want crunch, cheese and a creamy savoury dressing without ordering a large main. It suits solo diners with a laptop, couples sharing a few plates and families who need one reliable lighter option on the table. Signa Cafe is a family cafe, and this is the kind of dish that can sit beside heavier orders without making the meal feel complicated.",
-              "For children, it depends on taste. The croutons and parmesan are usually the easy parts, while the dressing can be more grown-up because Caesar sauce is often garlicky, salty and tangy. If your child already likes dressed salads, this is likely to be approachable. If they prefer plain food, the sauce is the part to think about.",
-              "The dish is also useful for people who are not very hungry but still want to eat properly. A plate of dressed leaves with croutons and parmesan gives texture and flavour, while the tomatoes keep it fresh. That is why Caesar Salad has lasted for a century: when made with care, it gives the pleasure of a restaurant dish without the weight of a full main course."
+              "Signa Cafe is in Nusa Dua on the Bukit peninsula, a short drive from the resort hotels and from the villas around Ungasan. It opened in 2024 and has a Google rating of 4.7 from more than 1,400 reviews.",
+              "It is a kid-friendly family cafe, and a Caesar is an easy dish to share at a table with children. The croutons and parmesan usually go down well with them. Caesar sauce tends to be garlicky and salty, though, so a child who prefers plain food may not take to it."
             ]
           }
         ],
-        "coverAlt": "Caesar Salad with Romano salad, cherry tomatoes, croutons, parmesan and caesar sauce"
+        "coverAlt": "Caesar salad at Signa Cafe in Nusa Dua"
       },
       "ru": {
         "faq": [
           {
-            "q": "Сколько стоит салат в Signa Cafe?",
-            "a": "Салат стоит 79 000 IDR. В составе - романо, помидоры черри, крутоны, пармезан и соус."
+            "q": "Где в Нуса Дуа поесть салат «Цезарь»?",
+            "a": "В Signa Cafe: это кафе в Нуса Дуа на полуострове Букит. Свои новости кафе публикует в Instagram @signa.cafe."
           },
           {
-            "q": "Где находится Signa Cafe в Нуса Дуа?",
-            "a": "Signa Cafe находится по адресу Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Кафе работает ежедневно с 08:00 до 23:00, последний заказ принимают в 22:30."
+            "q": "Далеко ли ехать в Signa Cafe из Унгасана?",
+            "a": "Нет, Унгасан и Нуса Дуа находятся на одном полуострове Букит, дорога недолгая. Если нужна помощь с маршрутом, позвоните по номеру +62 896 540 27190."
           },
           {
-            "q": "Удобно ли ехать в Signa Cafe с Букита и из Унгасана?",
-            "a": "Да, Signa Cafe расположен в Нуса Дуа на полуострове Букит, недалеко от курортной полосы Нуса Дуа и в короткой поездке от Унгасана. Для уточнения заказа можно позвонить по номеру +62 896 540 27190."
-          },
-          {
-            "q": "Можно ли заказать салат в Signa Cafe онлайн?",
-            "a": "Да, онлайн-меню и доставка доступны по ссылке https://signa.dishi.rest/. Актуальные новости кафе также публикуются в Instagram @signa.cafe."
+            "q": "Можно ли заказать «Цезарь» с доставкой?",
+            "a": "Да, через онлайн-меню на https://signa.dishi.rest/. Лучше съесть салат сразу после доставки: гренки в соусе быстро размокают."
           }
         ],
-        "seoTitle": "Caesar Salad в Signa Cafe - салат за 79 000 IDR",
+        "seoTitle": "Салат «Цезарь» в Нуса Дуа | Signa Cafe",
         "category": "Салаты и закуски",
-        "description": "Салат с романо, черри, крутонами, пармезаном и соусом в Signa Cafe в Нуса Дуа. Цена - 79 000 IDR.",
+        "description": "В Signa Cafe в Нуса Дуа салат «Цезарь» с ромэном, помидорами черри, гренками, пармезаном и соусом стоит 79 000 IDR.",
         "keywords": [
           "Caesar Salad",
           "Signa Cafe",
@@ -186,7 +179,7 @@
         "facts": [
           [
             "Блюдо",
-            "Caesar Salad"
+            "салат «Цезарь» (Caesar Salad)"
           ],
           [
             "Цена",
@@ -194,7 +187,7 @@
           ],
           [
             "Состав",
-            "романо, помидоры черри, крутоны, пармезан, соус"
+            "ромэн, помидоры черри, гренки, пармезан, соус «Цезарь»"
           ],
           [
             "Кафе",
@@ -206,85 +199,68 @@
           ],
           [
             "Открыто с",
-            "2024 года олдунда ачылган тамактануучу жай эмес, 2024 года открытое кафе Signa Cafe."
+            "2024 года"
+          ],
+          [
+            "Адрес",
+            "Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361"
           ]
         ],
-        "lead": "Салат в Signa Cafe - понятная тарелка для тех, кто хочет свежую зелень, хрустящие крутоны, солёный пармезан и плотный соус без тяжёлого обеда. Он стоит 79 000 IDR и хорошо подходит для бранча, лёгкого ужина или заказа с кофе после позднего завтрака.",
-        "title": "Caesar Salad в Signa Cafe",
+        "lead": "Салат «Цезарь» назван не в честь императора, а в честь Цезаря Кардини, ресторатора из Тихуаны. В Нуса Дуа его можно попробовать в Signa Cafe: состав почти классический, добавлены только помидоры черри.",
+        "title": "Салат «Цезарь» в Нуса Дуа: классика родом из Тихуаны",
         "blocks": [
           {
-            "h": "Свежий салат среди дневных заказов",
+            "h": "Что в салате и сколько он стоит",
             "p": [
-              "В меню Signa Cafe этот салат стоит 79 000 IDR и относится к разделу салатов и закусок. Состав короткий: романо, помидоры черри, крутоны, пармезан и соус. За счёт такой сборки блюдо легко понять ещё до заказа: здесь есть сочная зелень, кисло-сладкие томаты, хлебный хруст, выдержанная солёность сыра и густая заправка.",
-              "Романо даёт основу с плотным листом и умеренной горчинкой. Черри добавляют свежую кислотность и сок, особенно заметную рядом с соусом. Крутоны нужны не только для хруста: они удерживают часть заправки и делают каждый кусок более насыщенным. Пармезан работает тонко, но отчётливо - солёный вкус сыра связывает зелень и соус, не превращая салат в тяжёлую закуску.",
-              "Такой заказ удобен, когда нужен обед без большой порции риса, пасты или мяса. Его можно взять перед более плотным блюдом, разделить на стол или оставить как самостоятельный вариант, если день начинается поздно и завтрак уже перешёл в бранч. Для гостей, которые приходят с детьми, это ещё и спокойный выбор: в составе нет сложных соусов с острой подачей или редких продуктов, к которым нужно привыкать."
+              "В Signa Cafe «Цезарь» (в меню - Caesar Salad) стоит 79 000 IDR. Его собирают из листьев ромэна, помидоров черри, гренок и пармезана и заправляют соусом «Цезарь». Он из раздела салатов и закусок, так что его можно взять на всех перед горячим или съесть как самостоятельное лёгкое блюдо.",
+              "Ромэн - тот же салат, что продают под названием «романо»: длинные плотные листья с сочной жилкой посередине. Он даёт свежий хруст, гренки - сухой и поджаристый, пармезан отвечает за соль. Помидоров черри в классическом рецепте не было, но здесь они к месту: их сочная кислинка уравновешивает солёный сыр и соус.",
+              "Хороший «Цезарь» узнаётся по простым признакам: листья холодные и хрустящие, гренки сухие, а пармезана столько, чтобы посолить салат, но не засыпать его. Соус должен обволакивать листья, не стекая на дно тарелки."
             ]
           },
           {
-            "h": "Что делает вкус узнаваемым",
+            "h": "Откуда взялся «Цезарь»",
             "p": [
-              "Салат этого типа держится на равновесии между зеленью и заправкой. В Signa Cafe основа из романо важна именно текстурой: лист не размокает сразу, выдерживает соус и сохраняет свежий хруст. Помидоры черри смягчают солёность пармезана, поэтому вкус не уходит только в сливочную сторону.",
-              "Крутоны дают сухую хлебную ноту. В сочетании с соусом они становятся мягче по краям, но в середине остаётся хруст. Это делает салат более плотным по ощущению, чем обычная зелёная смесь. Пармезан добавляет выдержанный вкус и лёгкую ореховую ноту, которая особенно заметна в местах, где сыр попадает на соус.",
-              "Соус соединяет все части блюда. Он покрывает листья, цепляется за крутоны и подчёркивает томаты. Такой салат не требует сложного сопровождения: стакан воды, холодный напиток или кофе рядом с ним смотрятся естественно. Утром это может быть второй заказ после завтрака, днём - лёгкий перерыв, вечером - закуска перед более основательной едой."
+              "По самой известной версии, салат придумал Цезарь Кардини, итальянец по происхождению, который в 1920-е годы держал ресторан в Тихуане, мексиканском городе у самой границы с США. В Штатах тогда действовал сухой закон, и американцы ездили через границу, чтобы спокойно поужинать и выпить.",
+              "Его дочь Роза рассказывала, что салат появился в День независимости США, когда наплыв гостей почти опустошил кухню и пришлось обходиться тем, что осталось. Готовили его прямо у столика: Джулия Чайлд, которая девочкой бывала там с родителями, много лет спустя вспоминала, как Кардини сам перемешивал салат на глазах у публики. Год обычно называют 1924-й, хотя подробности в разных пересказах расходятся.",
+              "Классический «Цезарь» - это ромэн, пармезан, гренки и заправка из яйца, оливкового масла, лимонного сока и вустерского соуса. Были ли в самой первой версии анчоусы, спорят до сих пор, хотя сегодня их кладут в заправку почти всегда. Курица появилась гораздо позже, когда в американских ресторанах салат превратился из закуски в полноценный обед. Если вам привычнее «Цезарь» с курицей, спросите у персонала, можно ли её добавить."
             ]
           },
           {
-            "h": "История блюда без лишней торжественности",
+            "h": "Когда его заказать",
             "p": [
-              "У салата есть известная история происхождения. По популярной версии, его создал Цезарь Кардини - ресторатор итальянского происхождения, работавший в Тихуане в Мексике. Датой создания называют 1924 год. За сто лет блюдо стало международным и пережило множество вариантов, но узнаваемые элементы остались прежними: хрустящий лист, хлеб, сыр и выразительная заправка.",
-              "В Signa Cafe подача опирается на знакомую логику, но без перегруза. В составе нет длинного списка добавок, поэтому внимание остаётся на фактуре романо, свежести черри и сочетании соуса с пармезаном. Это важно для блюда, которое часто заказывают не ради эксперимента, а ради предсказуемого вкуса.",
-              "Салат хорошо подходит тем, кто выбирает еду между встречами, работой за ноутбуком или прогулкой по району. Слоган Signa Cafe - Eat. Meet. Create. - как раз описывает формат места: поесть, встретиться, поработать над идеей или просто сделать перерыв. Само кафе открыто с 2024 года и уже собрало рейтинг 4.7 в Google на основе более 1426 отзывов."
+              "Signa Cafe работает каждый день с 08:00 до 23:00, последний заказ принимают в 22:30. «Цезарь» уместен почти в любое время: на бранч после утра на пляже, на лёгкий обед или поздним вечером, когда плотно ужинать уже не хочется. В жару холодный хрустящий салат многим вообще приятнее горячего.",
+              "С 08:00 до 09:00 к любому заказу полагается бесплатный кофе на основе эспрессо, горячий или со льдом. Если по утрам вы не едите сладкого, салат с такой чашкой вполне сойдёт за завтрак.",
+              "С 14:00 работает печь для пиццы. Это выручает, когда компания не может договориться: один берёт салат, остальные делят пиццу на всех."
             ]
           },
           {
-            "h": "Где находится Signa Cafe",
+            "h": "Где находится кафе и удобно ли здесь детям",
             "p": [
-              "Signa Cafe работает в Нуса Дуа на полуострове Букит, в короткой поездке от курортной полосы Нуса Дуа и от Унгасана. Полный адрес: Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Такое расположение удобно для тех, кто живёт поблизости, приезжает на встречу или ищет семейное кафе после пляжа, дороги или утренних дел.",
-              "Кафе открыто ежедневно с 08:00 до 23:00. Последний заказ принимают в 22:30, поэтому салат можно взять и поздно вечером, если не хочется плотного ужина. С 08:00 до 09:00 действует акция: бесплатный кофе к любому заказу. Для тех, кто начинает день рано, это заметная деталь, особенно если нужен завтрак без долгого ожидания и затем кофе с собой или за столом.",
-              "Пицца в Signa Cafe готовится в печи с 14:00. Это не связано напрямую с салатом, но помогает планировать заказ: до обеда можно выбрать более лёгкие блюда, а после двух часов дня собрать стол шире. Салат при этом остаётся универсальной позицией - его удобно добавить к пицце, заказать перед основным блюдом или оставить единственной тарелкой."
-            ]
-          },
-          {
-            "h": "Когда салат особенно уместен",
-            "p": [
-              "Лучшее время для такого блюда зависит не от расписания кухни, а от аппетита. После плотного утра салат подойдёт как поздний бранч: зелень и томаты освежают, крутоны дают сытость, соус и пармезан делают вкус завершённым. В середине дня он хорошо работает как пауза между делами, когда нужен не десерт и не напиток, а еда с понятной структурой.",
-              "Вечером блюдо можно заказать перед горячим или вместо тяжёлого ужина. Последний заказ в Signa Cafe - в 22:30, поэтому салат остаётся доступным почти до закрытия. Для компании он удобен как общая закуска: его легко поставить в центр стола, а состав не требует пояснений. Гостям с детьми также проще ориентироваться, когда в тарелке видны все основные части.",
-              "Цена 79 000 IDR делает салат одним из тех заказов, которые легко добавить к напитку или к основной еде. Он не заменяет большой ужин для очень голодного гостя, зато хорошо подходит для тех, кто хочет свежести, хруста и солёного акцента пармезана. В жаркий день такое сочетание ощущается легче, чем блюда с большим количеством соуса, теста или жареных ингредиентов."
-            ]
-          },
-          {
-            "h": "Практические детали для заказа",
-            "p": [
-              "Заказать салат можно в кафе, по телефону +62 896 540 27190 или через онлайн-меню с доставкой: https://signa.dishi.rest/. Там же удобно посмотреть актуальные позиции перед поездкой. Instagram кафе - @signa.cafe, полезен для новостей и визуального представления о формате места.",
-              "Signa Cafe открыто каждый день с 08:00 до 23:00, так что салат можно включить в утренний, дневной или вечерний план. Для раннего визита есть завтрак, для встречи ближе к полудню - бранч, для спокойного перерыва - кофе и лёгкая еда. Формат семейное кафе означает, что сюда можно прийти с детьми, на встречу или одному, если нужно поесть без сложного сценария.",
-              "В блюде важна именно простая сборка: романо, черри, крутоны, пармезан и соус. Она даёт свежий вкус, хруст и заметную сырную солёность. Салат подойдёт тем, кто ищет знакомое блюдо в Signa Cafe и хочет заказать его без долгого выбора между несколькими насыщенными вариантами."
+              "Signa Cafe находится в Нуса Дуа, на полуострове Букит: от отелей курортной зоны и от вилл в Унгасане сюда ехать недолго. Кафе открылось в 2024 году, его слоган - Eat. Meet. Create. В Google у него оценка 4,7 по более чем 1400 отзывам.",
+              "Это семейное кафе, и с детьми здесь удобно. «Цезарь» легко поставить в центр стола и есть вместе: гренки и пармезан дети обычно едят охотно. А вот соус у «Цезаря», как правило, чесночный и солоноватый, и ребёнку, привыкшему к простой еде, он может не понравиться."
             ]
           }
         ],
-        "coverAlt": "Caesar Salad в Signa Cafe с романо, черри, крутонами, пармезаном и соусом"
+        "coverAlt": "Салат «Цезарь» в Signa Cafe в Нуса Дуа"
       },
       "id": {
         "faq": [
           {
-            "q": "Berapa harga Caesar Salad di Signa Cafe Nusa Dua?",
-            "a": "Caesar Salad di Signa Cafe Nusa Dua seharga 79 000 IDR. Isinya selada Romano, tomat ceri, crouton, parmesan, dan saus caesar."
+            "q": "Di mana bisa makan Caesar Salad di Nusa Dua?",
+            "a": "Di Signa Cafe, kafe di Nusa Dua yang terletak di semenanjung Bukit. Kabar terbaru dari kafe ini bisa dilihat di Instagram @signa.cafe."
           },
           {
-            "q": "Apakah Signa Cafe dekat dari Ungasan untuk brunch?",
-            "a": "Signa Cafe berada di Nusa Dua di kawasan Bukit, dengan jarak berkendara singkat dari Ungasan. Tempat ini buka setiap hari dari 08:00, sehingga bisa dipilih untuk brunch, kopi, atau makan siang ringan."
+            "q": "Apakah Signa Cafe jauh dari Ungasan?",
+            "a": "Tidak, dari Ungasan hanya perlu berkendara sebentar karena keduanya ada di semenanjung Bukit. Kalau butuh petunjuk jalan, hubungi +62 896 540 27190."
           },
           {
-            "q": "Jam berapa Signa Cafe buka dan kapan pesanan terakhir?",
-            "a": "Signa Cafe buka setiap hari pukul 08:00-23:00. Pesanan terakhir diterima pukul 22:30."
-          },
-          {
-            "q": "Apakah Signa Cafe termasuk kafe keluarga yang ramah anak?",
-            "a": "Signa Cafe dikenal sebagai kafe keluarga dengan tagline Eat. Meet. Create. Suasananya diposisikan ramah anak untuk makan bersama keluarga di Nusa Dua."
+            "q": "Bisakah Caesar Salad dipesan antar?",
+            "a": "Bisa, lewat menu online di https://signa.dishi.rest/. Sebaiknya salad langsung dimakan setelah tiba, karena crouton cepat melunak di dalam saus."
           }
         ],
-        "seoTitle": "Caesar Salad di Signa Cafe Nusa Dua Bali",
-        "category": "Salads and Appetizers",
-        "description": "Caesar Salad 79 000 IDR di Signa Cafe Nusa Dua: selada Romano, tomat ceri, crouton, parmesan, dan saus caesar.",
+        "seoTitle": "Caesar Salad di Nusa Dua, Bali | Signa Cafe",
+        "category": "Salad",
+        "description": "Signa Cafe di Nusa Dua menyajikan Caesar Salad berisi selada romaine, tomat ceri, crouton, parmesan, dan saus Caesar seharga 79 000 IDR.",
         "keywords": [
           "Caesar Salad",
           "Signa Cafe",
@@ -308,11 +284,11 @@
           ],
           [
             "Bagian menu",
-            "Salads and Appetizers"
+            "Salad dan hidangan pembuka"
           ],
           [
             "Isi hidangan",
-            "Selada Romano, tomat ceri, crouton, parmesan, saus caesar"
+            "Selada romaine, tomat ceri, crouton, parmesan, saus Caesar"
           ],
           [
             "Nama tempat",
@@ -321,62 +297,64 @@
           [
             "Tagline",
             "Eat. Meet. Create."
+          ],
+          [
+            "Alamat",
+            "Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361"
           ]
         ],
-        "lead": "Di antara pilihan salad dan hidangan pembuka, Caesar Salad di Signa Cafe menawarkan susunan yang lugas: selada Romano yang renyah, tomat ceri, crouton, parmesan, dan saus caesar. Harganya 79 000 IDR, cocok untuk jeda makan yang ringan di Nusa Dua tanpa terasa terlalu sederhana.",
-        "title": "Caesar Salad di Signa Cafe, Nusa Dua",
+        "lead": "Caesar Salad di Signa Cafe, Nusa Dua, adalah pilihan ringan yang segar, renyah, dan gurih. Susunannya dekat dengan salad klasik yang lahir di Meksiko lebih dari seratus tahun lalu.",
+        "title": "Caesar Salad di Nusa Dua: Salad Klasik dari Tijuana",
         "blocks": [
           {
-            "h": "Renyah yang mudah dipahami",
+            "h": "Isi piring dan harga",
             "p": [
-              "Ada jenis makanan yang enak dibaca dari tampilannya saja. Caesar Salad termasuk di dalamnya: daun selada yang memberi gigitan segar, potongan tomat ceri yang membawa rasa asam-manis, crouton yang menambah tekstur, lalu parmesan dan saus caesar yang membuat semuanya terasa lebih bulat. Di Signa Cafe, hidangan ini berada di bagian Salads and Appetizers dengan harga 79 000 IDR.",
-              "Komposisinya tidak ramai. Justru dari susunan yang ringkas itu, rasa Caesar Salad lebih mudah ditangkap. Selada Romano menjadi dasar yang renyah, bukan sekadar alas hijau. Tomat ceri memberi sela rasa segar di tengah saus yang gurih. Crouton hadir sebagai kontras, sementara parmesan menambah sentuhan asin yang khas tanpa perlu penjelasan panjang.",
-              "Bagi yang ingin makan ringan setelah sarapan, atau mencari pembuka sebelum hidangan utama, salad seperti ini terasa masuk akal. Porsinya bisa menjadi teman kopi saat brunch, bisa juga dipilih ketika ingin makan siang yang tidak berat. Pilihan ini cocok untuk pengunjung yang ingin rasa dikenal, bahan jelas, dan kombinasi yang tidak memaksa lidah bekerja keras."
+              "Versi Signa Cafe terdiri dari selada romaine, tomat ceri, potongan roti panggang atau crouton, keju parmesan, dan saus Caesar, dengan harga 79 000 IDR. Di menu, salad ini masuk kelompok salad dan hidangan pembuka. Artinya, Anda bisa memesannya sebagai pembuka untuk dinikmati bersama, atau sebagai santapan ringan untuk sendiri."
             ]
           },
           {
-            "h": "Dari Tijuana ke meja makan modern",
+            "h": "Rasa dan tekstur",
             "p": [
-              "Cerita asal-usul Caesar salad yang populer biasanya mengarah ke Caesar Cardini, seorang pemilik restoran kelahiran Italia yang dikreditkan menciptakan salad ini di Tijuana, Meksiko, pada 1924. Dari sana, namanya berjalan jauh melewati restoran hotel, kafe kota, hingga tempat makan keluarga. Menariknya, salad ini tetap dikenal karena format yang sederhana: daun segar, unsur renyah, keju, dan saus yang kuat karakternya.",
-              "Versi di Signa Cafe mengikuti garis rasa yang akrab itu melalui selada Romano, tomat ceri, crouton, parmesan, dan saus caesar. Tidak perlu menebak-nebak terlalu banyak. Rasa gurih dari saus dan parmesan bertemu dengan kesegaran sayur, lalu crouton memberi bunyi renyah di sela kunyahan. Untuk menu yang ditempatkan sebagai salad dan hidangan pembuka, susunan seperti ini membuatnya fleksibel.",
-              "Caesar Salad juga punya kelebihan lain: ia tidak terlalu terikat waktu. Di pagi menjelang siang, hidangan ini bisa mendampingi kopi. Setelah jam makan siang lewat, ia tetap terasa pantas sebagai jeda. Pada makan malam lebih awal, salad ini bisa membuka selera sebelum memilih menu lain."
+              "Karena bahannya hanya sedikit, peran tiap bahan langsung terasa. Selada romaine, yang juga dikenal sebagai selada romano atau cos, berdaun panjang dan kokoh, dengan rasa segar dan renyah. Crouton menambah tekstur renyah yang lebih kering, parmesan membawa rasa asin yang khas, dan saus Caesar membuat semuanya gurih.",
+              "Tomat ceri sebenarnya tidak ada dalam resep klasik, tetapi tambahan ini masuk akal. Rasanya segar dan sedikit asam, sehingga menyeimbangkan keju dan saus yang gurih.",
+              "Caesar yang baik mudah dikenali: daunnya dingin dan renyah, crouton-nya kering, dan sausnya melapisi daun tanpa menggenang di dasar piring."
             ]
           },
           {
-            "h": "Signa Cafe di Nusa Dua dan ritme Bukit",
+            "h": "Asal-usulnya di Tijuana",
             "p": [
-              "Signa Cafe buka sejak 2024 dan berada di Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Lokasinya di Nusa Dua pada semenanjung Bukit, dengan jarak berkendara singkat dari deretan resort Nusa Dua dan dari Ungasan. Penyebutan lokasi ini penting karena kawasan Bukit punya ritme makan yang beragam: tamu hotel, keluarga lokal, pekerja jarak jauh, dan orang yang bergerak di antara pantai, kampus, vila, atau pertemuan.",
-              "Dengan tagline Eat. Meet. Create., Signa Cafe menempatkan diri sebagai kafe keluarga. Istilah kafe keluarga di sini relevan untuk pembaca yang mencari tempat makan yang ramah anak, sekaligus tetap nyaman untuk orang dewasa yang ingin duduk sambil berbincang atau membuka laptop. Caesar Salad masuk dalam kebutuhan seperti itu karena mudah dibagi sebagai pembuka, tetapi juga cukup jelas untuk dipesan sendiri.",
-              "Nusa Dua sering diasosiasikan dengan makan di area resort, sedangkan Ungasan dan bagian lain Bukit punya banyak pergerakan harian. Signa Cafe berada di antara kebutuhan itu: tempat untuk sarapan, brunch, kopi, makan siang, atau makan malam larut tanpa harus mengubah rencana terlalu jauh."
+              "Menurut cerita yang paling populer, salad ini diciptakan oleh Caesar Cardini, pemilik restoran kelahiran Italia, di Tijuana, Meksiko, pada 1924. Kota itu berada tepat di seberang perbatasan dengan Amerika Serikat. Waktu itu Amerika Serikat sedang memberlakukan larangan minuman beralkohol, sehingga banyak warganya menyeberang ke Tijuana untuk makan dan minum. Nama salad ini diambil dari nama Cardini sendiri, bukan dari Julius Caesar.",
+              "Putri Cardini, Rosa, bercerita bahwa salad ini lahir pada Hari Kemerdekaan Amerika, 4 Juli, ketika restoran kebanjiran tamu dan bahan di dapur hampir habis. Cardini meracik salad dari bahan yang tersisa dan mengaduknya di samping meja tamu. Detail kisahnya memang sering berbeda, tergantung siapa yang bercerita.",
+              "Versi klasiknya sederhana: selada romaine, parmesan, crouton, dan saus dari telur, minyak zaitun, perasan lemon, serta saus Worcestershire. Ayam baru muncul jauh kemudian, ketika restoran di Amerika menjadikan Caesar menu makan siang yang mengenyangkan. Kalau Anda lebih suka versi dengan ayam, tanyakan ke staf apakah ayam bisa ditambahkan."
             ]
           },
           {
-            "h": "Kapan paling pas memesan Caesar Salad",
+            "h": "Kapan sebaiknya datang",
             "p": [
-              "Jam operasional Signa Cafe adalah 08:00-23:00 setiap hari, dengan pesanan terakhir pukul 22:30. Rentang waktu ini membuat Caesar Salad tidak terkurung dalam satu momen makan. Setelah pagi yang dimulai dengan kopi, salad bisa menjadi pilihan saat perut belum ingin menu berat. Menjelang sore, ia bisa menemani obrolan atau pertemuan singkat.",
-              "Dapur pizza mulai menyala pukul 14:00, jadi pengunjung yang datang setelah jam itu punya pilihan ritme makan yang lebih lebar. Caesar Salad dapat dipesan sebagai pembuka sebelum pizza, atau sebagai penyeimbang ketika meja memesan hidangan yang lebih mengenyangkan. Untuk penawaran yang relevan, ada promo Pizza for 89.000 IDR setiap hari pukul 14:00-18:00. Cukup sebut satu promo itu karena hubungannya jelas dengan waktu ketika salad bisa menjadi pembuka.",
-              "Bagi yang datang bersama anak, pasangan, atau teman kerja, Caesar Salad punya posisi aman. Rasanya dikenal, tampilannya bersih, dan bahan-bahannya tidak menuntut penjelasan panjang. Dalam meja makan bersama, hidangan seperti ini sering berguna karena bisa menjembatani selera yang berbeda."
+              "Signa Cafe buka setiap hari pukul 08:00-23:00, dan pesanan terakhir diterima pukul 22:30. Caesar Salad cocok untuk brunch sepulang dari pantai, makan siang ringan, atau makan malam saat tidak ingin hidangan berat. Saat cuaca terik, salad dingin yang renyah sering terasa lebih menggoda daripada hidangan hangat.",
+              "Pada pukul 08:00-09:00, setiap pesanan mendapat kopi gratis berbasis espresso, panas atau dingin. Bagi yang pagi-pagi tidak suka makanan manis, salad ini bisa menjadi sarapan yang gurih.",
+              "Mulai pukul 14:00 oven pizza sudah menyala. Ini memudahkan kalau selera rombongan berbeda: satu orang memesan salad, yang lain berbagi pizza."
             ]
           },
           {
-            "h": "Rasa, tekstur, dan keseimbangan di piring",
+            "h": "Datang bersama anak",
             "p": [
-              "Kekuatan Caesar Salad ada pada pertemuan tekstur. Selada Romano memberi renyah yang basah dan segar. Crouton memberi renyah kering. Tomat ceri memotong rasa gurih dengan asam ringan, sementara parmesan membawa aroma keju yang khas. Saus caesar mengikat semuanya sehingga tiap suapan terasa menyatu, tidak seperti kumpulan bahan yang kebetulan berada di satu piring.",
-              "Rasa gurih menjadi tulang punggungnya, tetapi tomat dan selada menjaga agar hidangan tidak terasa berat. Ini penting untuk salad bergaya caesar, karena sausnya bisa terasa dominan jika tidak ditopang bahan segar. Kehadiran parmesan mempertegas karakter asin dan umami, sedangkan crouton membuat ritme makan lebih hidup.",
-              "Untuk pembaca yang mencari menu lebih ringan di sela bekerja seharian, Caesar Salad memberi pilihan yang tidak terlalu manis, tidak terlalu pedas, dan tidak bergantung pada porsi besar. Ia bisa menjadi jeda dari menu nasi, roti, atau pasta, sambil tetap memberi rasa gurih yang memuaskan."
+              "Signa Cafe adalah kafe keluarga yang ramah anak, dan Caesar Salad mudah dibagi di meja bersama anak-anak. Crouton dan parmesan biasanya cepat habis di tangan mereka. Saus Caesar umumnya beraroma bawang putih dan cukup asin, sehingga anak yang kurang suka rasa kuat mungkin kurang cocok dengannya."
             ]
           },
           {
-            "h": "Info praktis sebelum datang atau pesan",
+            "h": "Lokasi Signa Cafe",
             "p": [
-              "Signa Cafe memiliki rating Google 4.7 dari 1426+ ulasan, sebuah angka yang membantu calon tamu menilai tempat sebelum berangkat. Untuk menghubungi kafe, nomor telepon yang tersedia adalah +62 896 540 27190. Menu daring dan pemesanan antar dapat diakses melalui https://signa.dishi.rest/, sedangkan Instagram resminya adalah @signa.cafe.",
-              "Caesar Salad seharga 79 000 IDR dapat dipertimbangkan ketika ingin makan di Nusa Dua tanpa memilih hidangan berat. Bagi tamu dari Ungasan atau area Bukit lain, alamat resminya sudah cukup jelas untuk dicari tanpa perlu mengubah nama jalan atau menebak rute. Jam buka yang panjang juga memberi ruang bagi kunjungan pagi, siang, sore, hingga malam.",
-              "Jika rencana makan melibatkan anak, teman kerja, atau keluarga, posisi Signa Cafe sebagai kafe keluarga yang ramah anak membuat menu seperti Caesar Salad terasa relevan. Ia bukan menu yang berusaha menjadi pusat perhatian meja, melainkan pilihan segar dan gurih yang mudah masuk ke berbagai situasi makan."
+              "Kafe ini berada di Nusa Dua, di semenanjung Bukit, tidak jauh dari deretan hotel resor dan dari Ungasan. Signa Cafe beroperasi sejak 2024 dengan slogan Eat. Meet. Create.: makan, bertemu, dan berkarya. Di Google, kafe ini mendapat nilai 4,7 berdasarkan lebih dari 1.400 ulasan."
             ]
           }
         ],
-        "coverAlt": "Caesar Salad dengan selada Romano, tomat ceri, crouton, parmesan, dan saus caesar di Signa Cafe Nusa Dua"
-      }
+        "coverAlt": "Caesar Salad di Signa Cafe, Nusa Dua"
+      },
+      "aliases": [
+        "caesar-with-chicken-nusa-dua",
+        "caesar-with-chicken-kampial-nusa-dua"
+      ]
     },
     {
       "slug": "omg-cold-drink-nusa-dua",
@@ -3117,352 +3095,6 @@
         "Price: 80k",
         "Best time: Brunch, lunch or late dinner before last order at 22:30",
         "Who it suits: Solo diners, families and kid-friendly cafe meals"
-      ],
-      "updated": "2026-11-26"
-    },
-    {
-      "slug": "caesar-with-chicken-nusa-dua",
-      "date": "2026-08-13",
-      "cover": "assets/menu-08-caesar-with-chicken.webp",
-      "dish": {
-        "name": "Caesar with chicken",
-        "price": "92 000 IDR",
-        "menuId": 8,
-        "menuUrl": "https://signa.dishi.rest/"
-      },
-      "tags": [
-        "caesar salad",
-        "chicken salad",
-        "nusa dua",
-        "bukit",
-        "brunch"
-      ],
-      "en": {
-        "title": "Caesar with chicken in Nusa Dua: a salad that works as lunch",
-        "seoTitle": "Caesar with chicken in Nusa Dua | Signa Cafe",
-        "description": "Signa Cafe in Nusa Dua serves Caesar with chicken as a main: romaine, grilled chicken, parmesan, anchovy dressing and croutons.",
-        "keywords": [
-          "caesar with chicken",
-          "caesar salad nusa dua",
-          "chicken salad nusa dua",
-          "brunch nusa dua",
-          "breakfast nusa dua",
-          "family cafe bali",
-          "kid-friendly cafe nusa dua",
-          "coffee nusa dua",
-          "bukit lunch",
-          "benoa cafe",
-          "jimbaran to nusa dua",
-          "ungasan cafe"
-        ],
-        "category": "Main",
-        "coverAlt": "Caesar with chicken at Signa Cafe: romaine, grilled chicken, parmesan and croutons",
-        "lead": "Signa Cafe's Caesar with chicken is a proper main: crisp romaine, grilled chicken, parmesan, croutons and anchovy dressing, filling enough for lunch and still light.",
-        "blocks": [
-          {
-            "h": "Where Caesar salad comes from",
-            "p": [
-              "Caesar salad is usually traced to Tijuana, just across the border from San Diego. The usual account credits Caesar Cardini, an Italian-born restaurateur who was working there in the 1920s, when Prohibition sent Americans south to eat and drink without breaking the law. The year most often given is 1924, although the details change from one telling to the next.",
-              "The classic salad is short on ingredients: romaine, parmesan, croutons and a dressing of egg, olive oil, lemon juice and Worcestershire sauce. People still argue over whether Cardini's own version had anchovies in it, but most Caesar dressings today do, and much of the salty, savoury depth comes from them.",
-              "Chicken arrived much later. As American restaurants turned the Caesar from a starter into a lunch plate, grilled chicken became the usual way to make it a full meal, and in that form the salad spread to cafe menus around the world."
-            ]
-          },
-          {
-            "h": "What a good chicken Caesar needs",
-            "p": [
-              "With so few ingredients, each one shows. The romaine should be cold and crisp, the croutons dry and crunchy, and the parmesan there for salt and flavour, not piled on as a blanket over the leaves.",
-              "Most of the work is in the dressing. A good anchovy dressing tastes savoury and a little sharp rather than fishy, and there should be just enough of it to coat the leaves. Overdress the salad and the romaine goes limp before it reaches the table; underdress it and you are eating plain lettuce with chicken.",
-              "Timing matters as well. Croutons soften the longer they sit in dressing, so a Caesar is best eaten soon after it is served, which makes it a better dish to eat at the cafe than to order for a long delivery ride."
-            ]
-          },
-          {
-            "h": "How Signa Cafe makes it",
-            "p": [
-              "Signa Cafe keeps to the familiar version: grilled chicken, romaine, parmesan, anchovy dressing and croutons. It is listed among the mains and costs 92 000 IDR.",
-              "Romaine is the right leaf for the job. Its firm ribs hold a thick dressing that would flatten softer lettuce within minutes. The parmesan brings a nutty saltiness, the anchovy gives the dressing its depth, the croutons add crunch, and the chicken turns the salad into a proper meal.",
-              "It suits anyone who wants a light main with protein. You get a full lunch without rice, pasta or a heavy sauce, and you are not left feeling sluggish for the rest of a hot afternoon."
-            ]
-          },
-          {
-            "h": "Brunch, lunch or an early dinner",
-            "p": [
-              "The salad fits the middle of the day best: a late breakfast that drifts into brunch, a working lunch, or an early dinner before the drive home. Signa Cafe is open every day from 08:00 to 23:00, and the last order is taken at 22:30.",
-              "Early guests get their coffee on the house. From 08:00 to 09:00, any order comes with a free espresso-based coffee, hot or iced, so a Caesar and a cup of coffee make a good breakfast for anyone who would rather not start the day with something sweet.",
-              "Pizza from the oven is available from 14:00, which helps when a group can't agree on lunch: one person orders the salad and the others share a pizza."
-            ]
-          },
-          {
-            "h": "A family cafe in Nusa Dua",
-            "p": [
-              "Signa Cafe is a family cafe on Jl. Dharmawangsa in Nusa Dua, on the Bukit peninsula. It is a short drive from the resort hotels and from the villas around Ungasan, and people come here for breakfast and brunch, for meetings over coffee and with their children, since the place is kid-friendly.",
-              "With children, the chicken and croutons are usually the easy part. The anchovy dressing is stronger than mayonnaise, though, and some kids won't like it; in that case a few pieces of chicken from a parent's plate will do.",
-              "The cafe opened in 2024 and has a Google rating of 4.7 from more than 1,400 reviews. You can see the menu and order delivery at https://signa.dishi.rest/ or call +62 896 540 27190."
-            ]
-          }
-        ],
-        "facts": [
-          [
-            "Origin",
-            "Tijuana, Mexico, usually dated to 1924"
-          ],
-          [
-            "Key ingredient",
-            "Romaine with anchovy dressing"
-          ],
-          [
-            "Signa version",
-            "Grilled chicken, romaine, parmesan, anchovy dressing, croutons"
-          ],
-          [
-            "Price",
-            "92 000 IDR"
-          ],
-          [
-            "Best time",
-            "Brunch, lunch or early dinner"
-          ],
-          [
-            "Who it suits",
-            "Diners who want a light main with protein"
-          ]
-        ],
-        "faq": [
-          {
-            "q": "Where can you get a chicken Caesar salad in Nusa Dua?",
-            "a": "At Signa Cafe on Jl. Dharmawangsa in Nusa Dua. Its Caesar with chicken comes with romaine, grilled chicken, parmesan, anchovy dressing and croutons, and costs 92 000 IDR."
-          },
-          {
-            "q": "Is Caesar with chicken a good brunch dish?",
-            "a": "Yes, if you want something savoury that won't weigh you down. The grilled chicken makes it filling, and it goes well with a coffee."
-          },
-          {
-            "q": "Is Signa Cafe kid-friendly for families staying on the Bukit?",
-            "a": "Yes, Signa Cafe is a family cafe and children are welcome. Kids who don't like the anchovy dressing will usually still eat the chicken and croutons."
-          },
-          {
-            "q": "How late can you order the salad when driving over from Ungasan or Jimbaran?",
-            "a": "Until 22:30, when the cafe takes its last orders. Signa Cafe is open daily from 08:00 to 23:00, so there is time for brunch, lunch or an early dinner."
-          }
-        ]
-      },
-      "ru": {
-        "faq": [
-          {
-            "q": "Сколько стоит «Цезарь» с курицей в Signa Cafe?",
-            "a": "Салат стоит 92 000 IDR. Это основное блюдо: ромэн, курица гриль, пармезан, гренки и анчоусная заправка."
-          },
-          {
-            "q": "Где в Нуса Дуа поесть «Цезарь» с курицей?",
-            "a": "В Signa Cafe на Jl. Dharmawangsa. Кафе открыто каждый день с 08:00 до 23:00, последний заказ - в 22:30."
-          },
-          {
-            "q": "Можно ли прийти в Signa Cafe с детьми?",
-            "a": "Да, Signa Cafe - семейное кафе, с детьми сюда приходят на завтрак, обед и ужин. Курицу и гренки из «Цезаря» дети обычно едят охотно, а анчоусная заправка нравится не всем."
-          },
-          {
-            "q": "Далеко ли ехать в Signa Cafe из Унгасана или из других мест на Буките?",
-            "a": "Недалеко: кафе находится в Нуса Дуа, на том же полуострове Букит. Так что заехать сюда на бранч или обед несложно, а «Цезарь» с курицей для этого хорошо подходит: он сытный, но не тяжёлый."
-          }
-        ],
-        "seoTitle": "Салат «Цезарь» с курицей в Нуса Дуа | Signa Cafe",
-        "category": "Салаты",
-        "description": "Signa Cafe в Нуса Дуа подаёт «Цезарь» с курицей как основное блюдо: ромэн, курица гриль, пармезан, гренки и анчоусная заправка.",
-        "keywords": [
-          "салат с курицей Нуса Дуа",
-          "Signa Cafe",
-          "салат с ромэном",
-          "бранч на Бали",
-          "семейное кафе Нуса Дуа",
-          "кофе Нуса Дуа",
-          "обед на Буките"
-        ],
-        "facts": [
-          [
-            "Дата публикации",
-            "2026-08-13"
-          ],
-          [
-            "Кафе",
-            "Signa Cafe, открыто с 2024 года"
-          ],
-          [
-            "Слоган",
-            "Eat. Meet. Create."
-          ],
-          [
-            "Адрес",
-            "Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361"
-          ],
-          [
-            "Часы работы",
-            "ежедневно 08:00-23:00, последний заказ в 22:30"
-          ],
-          [
-            "Печь для пиццы",
-            "пицца из печи - с 14:00"
-          ]
-        ],
-        "lead": "Если хочется пообедать сытно, но без тяжести, «Цезарь» с курицей - один из самых надёжных вариантов. В Signa Cafe его подают как основное блюдо.",
-        "title": "«Цезарь» с курицей в Нуса Дуа: салат, которым можно пообедать",
-        "blocks": [
-          {
-            "h": "Что в салате и сколько он стоит",
-            "p": [
-              "В Signa Cafe «Цезарь» с курицей делают в привычном виде: листья ромэна, курица гриль, пармезан, гренки и заправка с анчоусами. Салат относится к основным блюдам и стоит 92 000 IDR.",
-              "У каждого ингредиента своя задача. Ромэн плотный и хрустящий: благодаря жёстким прожилкам листья держат густую заправку и не раскисают так быстро, как нежные сорта салата. Пармезан добавляет соль и лёгкий ореховый привкус, анчоусы придают заправке насыщенность, гренки дают хруст, а курица делает салат сытным.",
-              "Анчоусов в заправке пугаться не нужно. В хорошем «Цезаре» они отвечают за солоноватый пикантный вкус, а рыбой салат почти не отдаёт. Если же вы анчоусы совсем не едите, лучше выбрать другое блюдо.",
-              "Есть салат лучше сразу, пока гренки хрустят, а листья ещё холодные. Если он постоит, ромэн пропитается заправкой и обмякнет, а гренки размокнут. Поэтому для доставки издалека «Цезарь» подходит хуже, чем для обеда в самом кафе."
-            ]
-          },
-          {
-            "h": "Когда его заказывать",
-            "p": [
-              "Удобнее всего брать «Цезарь» с курицей на поздний завтрак, бранч, обед или ранний ужин, то есть в те часы, когда нужно нормально поесть, но не хочется гарнира и тяжёлого соуса. Салат хорошо подходит тем, кто ищет лёгкое основное блюдо с белком: им можно наесться, и после такого обеда не хочется сразу прилечь. Signa Cafe открыто каждый день с 08:00 до 23:00, последний заказ принимают в 22:30.",
-              "С 08:00 до 09:00 к любому заказу полагается бесплатный кофе на основе эспрессо, горячий или со льдом. Тем, кто по утрам не ест сладкого, салат с чашкой кофе вполне подойдёт на завтрак.",
-              "С 14:00 начинает работать печь для пиццы. Это удобно, если компания никак не договорится об обеде: один берёт салат, остальные - пиццу на всех."
-            ]
-          },
-          {
-            "h": "Откуда взялся «Цезарь»",
-            "p": [
-              "Салат придумали не в Риме, и к императору он отношения не имеет. Его историю обычно связывают с Тихуаной, мексиканским городом у самой границы с США, и с ресторатором итальянского происхождения Цезарем Кардини, который держал там ресторан в 1920-е годы.",
-              "В США тогда действовал сухой закон, и американцы ездили в Тихуану из Калифорнии, чтобы спокойно поесть и выпить. Год появления салата чаще всего называют 1924-й, хотя подробности в разных пересказах расходятся.",
-              "Классический «Цезарь» - это ромэн, пармезан, гренки и заправка из яйца, оливкового масла, лимонного сока и вустерского соуса. Были ли анчоусы в самой первой версии, спорят до сих пор, но сегодня их почти всегда добавляют в заправку. Курица появилась гораздо позже, когда в американских ресторанах салат из закуски превратился в самостоятельное блюдо на обед."
-            ]
-          },
-          {
-            "h": "Семейное кафе в Нуса Дуа",
-            "p": [
-              "Signa Cafe работает с 2024 года на Jl. Dharmawangsa в Нуса Дуа, на полуострове Букит. Из отелей курортной зоны и с вилл в Унгасане ехать сюда недолго. Это семейное кафе: здесь завтракают, приходят на бранч и на встречи за кофе, многие - с детьми.",
-              "Если вы пришли с детьми, курица и гренки из этого салата обычно идут на ура. А вот анчоусная заправка на вкус ярче майонеза, и некоторым детям она не нравится. Тогда проще отложить ребёнку курицу из своей тарелки.",
-              "У кафе рейтинг 4,7 в Google по более чем 1400 отзывам. Меню и доставка - на https://signa.dishi.rest/, телефон: +62 896 540 27190, Instagram - @signa.cafe."
-            ]
-          }
-        ],
-        "coverAlt": "Салат «Цезарь» с курицей гриль, ромэном, пармезаном и гренками в Signa Cafe"
-      },
-      "id": {
-        "faq": [
-          {
-            "q": "Berapa harga Caesar with chicken di Signa Cafe?",
-            "a": "Harganya 92 000 IDR. Salad ini berisi selada romaine, ayam panggang, keju parmesan, saus ansovi, dan roti panggang renyah."
-          },
-          {
-            "q": "Di mana bisa makan salad Caesar ayam di Nusa Dua?",
-            "a": "Di Signa Cafe, Jl. Dharmawangsa, Nusa Dua. Kafe ini buka setiap hari pukul 08:00-23:00 dengan pesanan terakhir pukul 22:30."
-          },
-          {
-            "q": "Apakah Signa Cafe cocok untuk keluarga dari Bukit atau Ungasan?",
-            "a": "Ya, Signa Cafe adalah kafe keluarga yang ramah anak dan mudah dijangkau dari Ungasan maupun daerah lain di Bukit. Anak-anak biasanya suka ayam dan roti panggangnya."
-          },
-          {
-            "q": "Apakah Caesar with chicken cocok untuk brunch?",
-            "a": "Cocok, terutama kalau ingin sesuatu yang gurih dan tidak terlalu berat. Ayam panggang membuatnya mengenyangkan, dan salad ini enak ditemani kopi."
-          }
-        ],
-        "seoTitle": "Salad Caesar ayam di Nusa Dua | Signa Cafe",
-        "category": "Menu",
-        "description": "Signa Cafe di Nusa Dua menyajikan Caesar with chicken sebagai hidangan utama: selada romaine, ayam panggang, keju parmesan, dan saus ansovi.",
-        "keywords": [
-          "Caesar with chicken",
-          "Signa Cafe",
-          "Nusa Dua",
-          "salad ayam",
-          "brunch",
-          "makan siang",
-          "kafe keluarga",
-          "ramah anak",
-          "kopi",
-          "Bukit",
-          "Ungasan"
-        ],
-        "facts": [
-          [
-            "Nama tempat",
-            "Signa Cafe"
-          ],
-          [
-            "Tagline",
-            "Eat. Meet. Create."
-          ],
-          [
-            "Buka sejak",
-            "2024"
-          ],
-          [
-            "Area",
-            "Nusa Dua, Bali 80361"
-          ],
-          [
-            "Jam operasional",
-            "Setiap hari 08:00-23:00, pesanan terakhir 22:30"
-          ],
-          [
-            "Oven pizza",
-            "Mulai pukul 14:00 setiap hari"
-          ]
-        ],
-        "lead": "Kalau ingin makan siang yang mengenyangkan tetapi tidak berat, salad Caesar dengan ayam panggang adalah pilihan yang aman. Di Signa Cafe, salad ini termasuk hidangan utama dengan harga 92 000 IDR.",
-        "title": "Caesar with chicken di Nusa Dua: salad ayam yang cukup untuk makan siang",
-        "blocks": [
-          {
-            "h": "Untuk siapa salad ini",
-            "p": [
-              "Caesar with chicken cocok untuk orang yang ingin hidangan utama ringan tetapi tetap ada proteinnya. Isinya sayur segar, ayam, keju, dan roti renyah, tanpa nasi, pasta, atau saus kental, jadi perut kenyang tanpa rasa berat sesudahnya.",
-              "Salad ini juga praktis kalau makan bersama teman atau keluarga yang seleranya berbeda-beda. Rasanya sudah akrab bagi kebanyakan orang, jadi satu orang bisa memesannya sementara yang lain memilih menu lain."
-            ]
-          },
-          {
-            "h": "Isi piringnya",
-            "p": [
-              "Signa Cafe menyajikan versi yang sudah dikenal luas: selada romaine, ayam panggang, keju parmesan, potongan roti panggang yang renyah, dan saus berbahan ikan ansovi.",
-              "Setiap bahan punya peran. Romaine dipakai untuk Caesar karena daunnya tebal dan tulang daunnya kokoh, sehingga kuat menahan saus kental tanpa cepat layu. Parmesan memberi rasa asin dan gurih, ansovi membuat rasa sausnya lebih kaya, roti panggang memberi tekstur renyah, dan ayam menjadikan salad ini makanan utama yang mengenyangkan."
-            ]
-          },
-          {
-            "h": "Yang membuat Caesar enak",
-            "p": [
-              "Bahan salad Caesar tidak banyak, jadi setiap kekurangan langsung terasa. Daun harus dingin dan renyah, roti panggang harus tetap kering, dan parmesan cukup untuk memberi rasa asin, tidak sampai menutupi seluruh piring.",
-              "Saus yang baik terasa gurih dan sedikit asam, tidak amis. Takarannya juga harus pas: kalau terlalu banyak, daun romaine cepat lembek; kalau terlalu sedikit, yang tersisa hanya daun polos dan ayam. Karena itu salad ini paling enak dimakan begitu disajikan, selagi roti panggangnya masih renyah, dan kurang cocok untuk pesan antar yang lama di jalan."
-            ]
-          },
-          {
-            "h": "Dari Tijuana, bukan dari Roma",
-            "p": [
-              "Meski namanya mengingatkan pada kaisar Romawi, salad Caesar lahir di Tijuana, Meksiko, dekat perbatasan dengan Amerika Serikat. Cerita yang biasa dikutip menyebut Caesar Cardini, pemilik restoran kelahiran Italia, sebagai penciptanya pada tahun 1920-an, dan tahun yang paling sering disebut adalah 1924.",
-              "Saat itu Amerika Serikat sedang memberlakukan larangan minuman beralkohol, sehingga banyak orang Amerika menyeberang ke Tijuana untuk makan dan minum. Resep klasiknya berisi romaine, parmesan, roti panggang, serta saus dari telur, minyak zaitun, perasan lemon, dan saus Worcestershire. Apakah versi pertama Cardini memakai ansovi masih diperdebatkan, tetapi sekarang hampir semua saus Caesar memakainya.",
-              "Ayam baru ditambahkan jauh kemudian, ketika restoran di Amerika menjadikan Caesar sebagai menu makan siang yang lengkap."
-            ]
-          },
-          {
-            "h": "Waktu terbaik untuk memesan",
-            "p": [
-              "Salad ini paling pas untuk brunch, makan siang, atau makan malam lebih awal. Signa Cafe buka setiap hari pukul 08:00-23:00, dan pesanan terakhir diterima pukul 22:30.",
-              "Tamu yang datang pagi mendapat bonus: setiap hari pukul 08:00-09:00 ada kopi gratis berbasis espresso, panas atau dingin, untuk pesanan apa pun. Bagi yang tidak suka makanan manis saat sarapan, Caesar dengan secangkir kopi bisa menjadi awal hari yang enak.",
-              "Mulai pukul 14:00 oven pizza sudah menyala. Jadi kalau rombongan sulit sepakat, satu orang bisa memesan salad dan yang lain berbagi pizza."
-            ]
-          },
-          {
-            "h": "Kafe keluarga di Nusa Dua",
-            "p": [
-              "Signa Cafe berada di Jl. Dharmawangsa, Nusa Dua, di Semenanjung Bukit. Perjalanan dari hotel-hotel di kawasan resor maupun dari vila di Ungasan tidak lama. Kafe yang buka sejak 2024 ini adalah kafe keluarga yang ramah anak: orang datang untuk sarapan, brunch, rapat sambil minum kopi, atau makan bersama anak-anak.",
-              "Untuk anak-anak, ayam dan roti panggangnya biasanya aman. Saus ansovi rasanya lebih tajam daripada mayones, jadi kalau si kecil tidak suka, cukup bagi beberapa potong ayam dari piring orang tuanya.",
-              "Signa Cafe punya rating 4,7 di Google berdasarkan lebih dari 1400 ulasan. Menu lengkap dan pesan antar ada di https://signa.dishi.rest/, nomor teleponnya +62 896 540 27190, dan Instagram-nya @signa.cafe."
-            ]
-          }
-        ],
-        "coverAlt": "Caesar with chicken di Signa Cafe: selada romaine, ayam panggang, keju parmesan, dan roti panggang renyah"
-      },
-      "aliases": [
-        "caesar-with-chicken-kampial-nusa-dua"
-      ],
-      "sourceFacts": [
-        "Origin: Tijuana, Mexico, usually dated to 1924",
-        "Key ingredient: Romaine with anchovy dressing",
-        "Signa version: Grilled chicken, romaine, parmesan, anchovy dressing, croutons",
-        "Price: 92k",
-        "Best time: Brunch, lunch or early dinner",
-        "Who it suits: Diners who want a light main with protein"
       ],
       "updated": "2026-11-26"
     },

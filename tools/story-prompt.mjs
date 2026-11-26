@@ -81,7 +81,7 @@ A reader should finish the post believing a competent person wrote it: someone w
 Earlier posts tried to sound human by performing it, and they read like an imitation of a writer. These sentences actually shipped, and nothing like them may appear again:
 - Aphorisms and punchlines: "Anyone can put more food on a plate." "That is the whole pleasure of the cake: the fork has to fight for a second." "The patty cannot hide, the cheese has to earn its space, and the bun has to survive the last bite." Don't close a paragraph with a quotable one-liner.
 - Talking about the menu card instead of the dish: "the useful detail is the menu description itself", "The Signa sauce is named on the menu but not described as a recipe, so the honest way to read the Classic Burger is by structure", "the description does not say". Write what the dish is, what is in it and how it eats. The menu description is your source; never narrate it.
-- Tautology and padding: "Mango gives the drink thickness, so the drink feels thicker." The same fact said three ways in one section.
+- Tautology and padding: "Mango gives the drink thickness, so the drink feels thicker." The same fact said three ways in one section, or the ingredient list, the price and the opening hours repeated in several sections.
 - Personification: food, weather, the district or the cafe that "argues", "wakes up a plate", "owes a lot", "fights". Say it plainly.
 - Invented precision: minutes, temperatures, weights or sales numbers you were not given. Every number comes from the facts or from real history.
 - The "it's not X, it's Y" frame more than once in a post, and "neither better nor worse, it is simply...".
@@ -170,7 +170,7 @@ ${langs.map((l) => `  ${LANG_NAME[l]}: ${POSITIONING[l].join(", ")}`).join("\n")
 
 WHAT TO WRITE, per language (${langs.map((l) => LANG_NAME[l]).join(", ")})
 - lead: 1-2 sentences, under 200 characters, containing the dish name and one PRIMARY place name.
-- 4 to 6 body sections, each a heading (h) and 1-3 paragraphs (p). Cover, in whatever order suits the dish: where it comes from and its real history; how it is actually made and what makes it hard; what is on Signa's plate (only what the menu says); when and with what to eat it here. Body 700-950 words per language. Let paragraph length follow the content. If a section runs short, add a real fact or a useful recommendation, never a flourish or an invented detail.
+- 4 to 6 body sections, each a heading (h) and 1-3 paragraphs (p). Cover, in whatever order suits the dish: where it comes from and its real history; how it is actually made and what makes it hard; what is on Signa's plate (only what the menu says); when and with what to eat it here. Body 550-800 words per language, never fewer than 470: a dish with five ingredients makes a short post, so never pad. Each fact - the ingredients, the price, the opening hours, the address - appears once in the body, not in every section. Let paragraph length follow the content. If a section runs short, add a real fact or a useful recommendation, never a flourish or an invented detail.
 - At least one section genuinely useful to someone choosing a cafe: who the dish suits, whether children eat it, what time to come, what to drink with it.
 - facts: 4-6 short label/value pairs. Origin, year, key ingredient, price, best time, who it suits.
 - faq: 3-4 questions phrased the way people search, at least two containing a place name. Answers 1-3 sentences, self-contained, answering in the first sentence.
@@ -214,7 +214,7 @@ ${promoFacts(promos)}
   отличается от английской версии. Не добавляй пятый раздел по привычке.
   Порядок и границы материала не должны совпадать с английскими.
 - Заголовки должны звучать по-русски, а не как перевод английских метафор.
-- Точное латинское название из меню оставь только в title, seoTitle и coverAlt.
+- В title - русский заголовок с русским названием блюда; точное латинское название из меню можно дать в скобках один раз или оставить в seoTitle и coverAlt.
   В lead, основном тексте и FAQ используй нормальное русское название блюда:
   мильфей, паста с песто, сырники, пицца, бургер, салат или суп. Не вставляй
   слова pasta, pancakes, pizza, burger и другие английские названия в русскую прозу.
@@ -222,7 +222,8 @@ ${promoFacts(promos)}
 - Не транслитерируй обычные слова латиницей. Имена людей и книг, кроме брендов и названий из меню, пиши по-русски.
 - Описывай вкус и сочетания конкретно. Не изображай личный визит, дегустацию
   или работу на кухне и не вставляй искусственное «я» ради авторской оценки.
-- Объём основного текста - 650-900 слов. Абзацы разной длины.
+- Объём основного текста - 550-800 слов, но не меньше 470. Короткое блюдо - короткий текст: не добирай объём повторами. Состав, цену, часы работы и адрес называй в тексте по одному разу. Абзацы разной длины.
+- Не приписывай кухне Signa свойств блюда, которых нет в фактах («лист не размокает», «соус не тяжёлый»).
 
 ИСПРАВИТЬ ОБЯЗАТЕЛЬНО
 - Следы перевода: канцелярит, кальки, английский порядок слов.
@@ -297,7 +298,8 @@ INDEPENDENT COMPOSITION
   with the English source.
 - Never number section headings. Write natural headings without "1.", "2." or
   any other outline markers.
-- Write 650-900 words with deliberately varied paragraph lengths.
+- Write 550-800 words, never fewer than 470, with varied paragraph lengths. Never repeat a fact to fill space: the ingredients, price, hours and address each appear once in the body.
+- Do not credit Signa's kitchen with qualities the facts do not state.
 - Describe flavours and combinations plainly. Do not fabricate a personal
   visit, tasting experience or kitchen role to sound human.
 
