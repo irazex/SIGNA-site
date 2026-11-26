@@ -1,5 +1,5 @@
 {
-  "version": "20261126r",
+  "version": "20261126a",
   "note": "Source of truth for /stories. Edited by hand or via /admin -> Stories tab. Rendered server-side by story.php / stories.php - no build step, no JS required, so AI crawlers see full text.",
   "posts": [
     {
@@ -161,8 +161,8 @@
             "a": "Signa Cafe находится в Нуса Дуа по адресу Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Кафе расположено на полуострове Букит."
           },
           {
-            "q": "Подойдет ли Signa Cafe с детьми для бранча?",
-            "a": "Signa Cafe с детьми подходит для бранча, если нужен понятный выбор и спокойный формат еды. Клаб-сэндвич с курицей удобен как легкий заказ без долгого застолья."
+            "q": "Подойдёт ли Signa Cafe с детьми для бранча?",
+            "a": "Signa Cafe с детьми подходит для бранча, если нужен спокойный формат еды без долгого застолья. Клаб-сэндвич с курицей удобно заказать на завтрак или днём вместе с кофе."
           },
           {
             "q": "Как заказать доставку из Signa Cafe из Унгасан?",
@@ -209,39 +209,39 @@
             "2024 года у Signa Cafe как заведения, блюдо находится в разделе новых позиций меню на дату публикации."
           ]
         ],
-        "lead": "Клаб-сэндвич с курицей в Signa Cafe - понятный горячий сэндвич на тостовом хлебе: курица гриль, хрустящая капуста, спелый томат и сливочный соус. Он подходит для завтрака, бранча или быстрого заказа с кофе.",
+        "lead": "Клаб-сэндвич с курицей в Signa Cafe - горячий сэндвич на тостовом хлебе с курицей гриль, капустой, томатом и сливочным соусом. Его удобно взять на завтрак, бранч или быстрый перекус с кофе, когда хочется сытной еды без долгого ожидания.",
         "title": "Клаб-сэндвич с курицей в Signa Cafe",
         "blocks": [
           {
             "h": "Горячий сэндвич без лишней сложности",
             "p": [
-              "Клаб-сэндвич с курицей - из тех блюд, которые не требуют длинного объяснения. Его удобно заказать, когда хочется еды с понятным составом: поджаренный тостовый хлеб, слой курицы гриль, хрустящая капуста, спелый томат и сливочный соус. Вкус строится на знакомом сочетании теплого хлеба, мясной основы, свежего овощного слоя и мягкой сливочности.",
-              "У такого сэндвича важна не эффектная подача, а баланс текстур. Тост дает легкую корочку и держит начинку. Капуста добавляет свежий хруст, томат - сочность и мягкую кислинку. Курица гриль делает блюдо более сытным, а соус связывает слои между собой, чтобы вкус не распадался на отдельные детали.",
-              "В меню блюдо указано как Chicken Club-sandwitch и стоит 35 000 IDR. Для кафе в курортной части Бали это формат недорогого заказа, который можно взять отдельно или добавить к напитку. По ощущениям это не тяжелый обед на несколько блюд, а быстрый вариант для момента, когда нужно поесть между делами, перед поездкой или после утренней прогулки."
+              "Клаб-сэндвич с курицей хорошо работает как повседневная еда: поджаренный хлеб, тёплая начинка, свежие овощи и мягкий соус дают понятный вкус без тяжести. Его можно заказать отдельно, если нужен быстрый перекус, или поставить рядом с напитком, когда полноценная тарелка кажется слишком большой.",
+              "В таком сэндвиче важны простые вещи. Тост даёт корочку и держит форму, капуста добавляет хруст, томат - сочность и лёгкую кислинку. Курица делает заказ сытнее, а сливочный соус смягчает вкус тоста и мяса, поэтому блюдо не кажется сухим.",
+              "Chicken Club-sandwitch стоит 35 000 IDR. Для курортной части Бали это недорогой формат заказа, который подходит между делами, перед поездкой по району или после утренней прогулки. Его удобно есть без длинной паузы на обед, но при этом это всё же еда, а не просто закуска к напитку."
             ]
           },
           {
             "h": "Когда его удобно заказать",
             "p": [
-              "Сэндвич хорошо вписывается в завтрак, особенно если сладкие блюда не подходят. С 08:00 до 09:00 в Signa Cafe действует акция: бесплатный кофе с любым заказом, поэтому утренний клаб-сэндвич можно сочетать с чашкой кофе без отдельной доплаты за напиток. Акция уместна именно для этого блюда: хлеб, курица и овощи дают основу, а кофе делает заказ завершенным без перегруза.",
-              "Для бранча сэндвич тоже выглядит практично. Он не требует приборов в той же степени, что большая тарелка с гарниром, и подходит тем, кто ест быстро, но не хочет ограничиваться десертом или напитком. Сливочный соус смягчает вкус курицы и тоста, а свежие овощи не дают блюду стать однообразным.",
-              "Формат удобен и для гостей с детьми: состав читается сразу, без сложных специй и редких ингредиентов в описании. В семейное кафе обычно приходят с разными ожиданиями - кому-то нужен полноценный прием пищи, кому-то легкий перекус. Клаб-сэндвич занимает середину между этими вариантами и помогает собрать заказ без долгого выбора."
+              "Сэндвич уместен на завтрак, особенно если сладкая выпечка или десерты с утра не подходят. С 08:00 до 09:00 в Signa Cafe действует акция: бесплатный кофе с любым заказом. В это время клаб-сэндвич можно взять как плотное начало дня, а чашка кофе добавит привычный утренний ритм без отдельной доплаты за напиток.",
+              "Для бранча это тоже практичный вариант. Он не требует такого внимания, как большая тарелка с гарниром, и подходит тем, кто хочет поесть быстро, но не ограничиваться только напитком. Такой заказ легко вписать в день, когда после кафе запланированы пляж, дорога или встречи.",
+              "Гостям с детьми формат тоже может быть удобен: в составе нет редких ингредиентов или сложных специй, а размер и подача больше похожи на привычный сэндвич. В семейное кафе часто приходят компанией, где у всех разный аппетит. Кому-то нужен плотный приём пищи, кому-то - лёгкий перекус, и клаб-сэндвич занимает спокойную середину между этими вариантами."
             ]
           },
           {
             "h": "Signa Cafe и район вокруг",
             "p": [
-              "Signa Cafe работает с 2024 года и использует короткий слоган Eat. Meet. Create. Это семейное кафе в Нуса Дуа на полуострове Букит, куда удобно заехать из курортной зоны и из Унгасан. Для гостей, которые живут поблизости или передвигаются по южной части острова, такой сэндвич подходит как простой заказ на месте или как еда с собой.",
-              "Полный адрес кафе: Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Заведение работает ежедневно с 08:00 до 23:00, последний заказ принимают в 22:30. Это расписание покрывает и ранний завтрак, и поздний перекус, так что клаб-сэндвич не привязан к одному времени дня.",
-              "У Signa Cafe рейтинг 4.7 в Google на основе более чем 1426 отзывов. Для нового кафе, открытого в 2024 году, это заметный публичный ориентир. При этом сэндвич остается простым блюдом: его ценность не в редких продуктах, а в предсказуемом сочетании курицы гриль, овощей, соуса и мягкого тоста."
+              "Signa Cafe работает с 2024 года и использует короткий слоган Eat. Meet. Create. Это семейное кафе в Нуса Дуа на полуострове Букит, куда удобно заехать из курортной зоны и из Унгасан. Если вы живёте рядом или передвигаетесь по южной части острова, такой сэндвич подойдёт для заказа на месте и для еды с собой.",
+              "Полный адрес кафе: Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Заведение открыто ежедневно с 08:00 до 23:00, последний заказ принимают в 22:30. Расписание захватывает утро, дневной бранч и поздний перекус, поэтому клаб-сэндвич не привязан к одному времени дня.",
+              "У Signa Cafe рейтинг 4.7 в Google на основе 1426 отзывов. Для кафе, открытого в 2024 году, это заметный публичный ориентир, особенно в районе, где гости часто выбирают место по картам и свежим оценкам. Сам сэндвич остаётся простым заказом: его ценность в знакомом формате, нормальной сытости и возможности быстро поесть без сложной сервировки."
             ]
           },
           {
             "h": "Как оформить заказ и что учесть",
             "p": [
-              "Актуальное меню и доставку можно посмотреть по ссылке https://signa.dishi.rest/. Это удобный способ проверить позиции перед заказом, особенно если планируется еда на дом или в отель. Для связи с кафе указан телефон +62 896 540 27190, а за новостями и визуальными обновлениями можно следить в Instagram: @signa.cafe.",
-              "Клаб-сэндвич с курицей стоит выбирать тем, кто хочет быстрый, теплый и понятный заказ без сложной сервировки. Он подойдет к кофе утром, к легкому бранчу днем и к перекусу перед вечерними планами. В составе нет неожиданной логики: хлеб дает основу, курица - сытость, капуста и томат - свежесть, соус - мягкость.",
-              "Это блюдо из раздела новых позиций меню, поэтому для постоянных гостей Signa Cafe оно может стать способом попробовать что-то свежее без риска уйти в непривычный вкус. Для первого знакомства с кафе сэндвич тоже уместен: он показывает повседневную сторону кухни, где важны температура, тостовый хлеб, сочность томата и аккуратно собранная начинка."
+              "Актуальное меню и доставку можно посмотреть по ссылке https://signa.dishi.rest/. Это удобно, если еда нужна в отель, домой или к определённому времени. Для связи с кафе указан телефон +62 896 540 27190, а за новостями и визуальными обновлениями можно следить в Instagram: @signa.cafe.",
+              "Клаб-сэндвич стоит выбирать тем, кто хочет тёплый и быстрый заказ без сложной подачи. Утром он хорошо сочетается с кофе, днём подходит для бранча, а вечером может закрыть небольшой голод перед дальнейшими планами. Если за столом несколько человек, его легко добавить к другим блюдам, чтобы разделить или взять как личный перекус.",
+              "Блюдо относится к новым позициям Signa Cafe на дату публикации 2026-12-03, поэтому постоянным гостям оно даёт повод попробовать что-то ещё в привычном месте. Для первого визита это безопасный выбор по формату: тостовый хлеб, курица и овощи знакомы большинству гостей, а сливочный соус делает вкус мягче. Такой заказ особенно выручает, когда не хочется долго читать меню, но нужно поесть нормально."
             ]
           }
         ],
@@ -251,7 +251,7 @@
         "faq": [
           {
             "q": "Apakah Chicken Club-sandwitch tersedia di Signa Cafe Nusa Dua?",
-            "a": "Ya, Chicken Club-sandwitch tersedia di Signa Cafe Nusa Dua sebagai bagian dari TRY NEW ITEMS. Hidangan ini berupa roti toast lembut yang dipanggang dengan isian ayam panggang, kol renyah, tomat matang, dan saus krim."
+            "a": "Ya, Chicken Club-sandwitch tersedia di Signa Cafe Nusa Dua. Hidangan ini berupa roti toast lembut yang dipanggang dengan isian ayam panggang, kol renyah, tomat matang, dan saus krim."
           },
           {
             "q": "Berapa harga Chicken Club-sandwitch di Signa Cafe?",
@@ -259,7 +259,7 @@
           },
           {
             "q": "Apakah Signa Cafe cocok untuk keluarga dari Ungasan atau area Bukit?",
-            "a": "Ya, Signa Cafe adalah kafe keluarga di Nusa Dua, di semenanjung Bukit, dan berjarak berkendara singkat dari Ungasan. Suasananya relevan untuk tamu yang mencari tempat ramah anak dengan pilihan makanan ringan hingga mengenyangkan."
+            "a": "Ya, Signa Cafe adalah kafe keluarga di Nusa Dua, di semenanjung Bukit, dan berjarak berkendara singkat dari Ungasan. Tempat ini relevan untuk tamu yang mencari tempat ramah anak dengan pilihan makanan ringan hingga mengenyangkan."
           },
           {
             "q": "Jam berapa Signa Cafe buka?",
@@ -268,7 +268,7 @@
         ],
         "seoTitle": "Chicken Club-sandwitch di Signa Cafe Nusa Dua",
         "category": "Food",
-        "description": "Chicken Club-sandwitch 35 000 IDR di Signa Cafe Nusa Dua: ayam panggang, kol, tomat, saus krim, dan roti toast lembut.",
+        "description": "Chicken Club-sandwitch 35 000 IDR di Signa Cafe Nusa Dua: roti isi panggang yang praktis untuk sarapan, brunch, atau jeda keluarga.",
         "keywords": [
           "Chicken Club-sandwitch",
           "Signa Cafe",
@@ -307,22 +307,22 @@
             "08:00-23:00 setiap hari, pesanan terakhir 22:30; oven pizza menyala mulai 14:00; pukul 08:00-09:00 tersedia kopi gratis dengan pesanan apa pun."
           ]
         ],
-        "lead": "Chicken Club-sandwitch di Signa Cafe membawa format roti isi yang praktis ke meja kafe keluarga di Nusa Dua: ayam panggang, kol renyah, tomat matang, dan saus krim dalam roti toast lembut yang dipanggang.",
+        "lead": "Chicken Club-sandwitch di Signa Cafe membawa roti isi panggang yang praktis ke meja kafe keluarga di Nusa Dua. Porsinya cocok untuk sarapan yang agak padat, brunch santai, atau jeda singkat sebelum lanjut beraktivitas di selatan Bali.",
         "title": "Chicken Club-sandwitch: roti panggang isi ayam untuk jeda di Nusa Dua",
         "blocks": [
           {
             "h": "Roti isi yang mudah masuk ke ritme hari",
             "p": [
-              "Ada makanan yang terasa paling pas ketika hari belum menentukan arahnya: mungkin berangkat ke pantai, mungkin bekerja seharian dari laptop, mungkin menunggu keluarga selesai bersiap. Chicken Club-sandwitch di Signa Cafe berada di wilayah itu. Bentuknya ringkas, tidak banyak basa-basi, dan mudah dibagi bila meja diisi beberapa orang dengan selera berbeda.",
-              "Di Signa Cafe, hidangan ini tercatat dalam bagian TRY NEW ITEMS dengan harga 35 000 IDR. Isinya terdiri dari ayam panggang yang disusun dalam roti toast lembut yang sudah dipanggang, bersama kol renyah, tomat matang, dan saus krim. Kombinasi ini tidak mengejar sensasi berlebihan. Roti memberi dasar yang hangat, ayam membuatnya terasa lebih mengenyangkan, sementara kol dan tomat menjaga gigitan tetap segar.",
-              "Nama Chicken Club-sandwitch memang memakai ejaan menu yang khas. Namun yang penting di piring adalah gagasan sederhana dari sandwich panggang: lapisan roti, protein, sayur, dan saus yang menyatukan semuanya. Untuk tamu yang mencari sarapan agak padat atau brunch tanpa porsi terlalu berat, pilihan ini berada di tengah yang nyaman."
+              "Ada makanan yang terasa pas ketika hari belum benar-benar tersusun: mungkin berangkat ke pantai, mungkin bekerja dari laptop, mungkin menunggu keluarga selesai bersiap. Chicken Club-sandwitch di Signa Cafe berada di wilayah itu. Bentuknya ringkas, mudah disantap, dan bisa dibagi ketika meja diisi beberapa orang dengan selera berbeda.",
+              "Hidangan ini berisi ayam panggang, kol renyah, tomat matang, dan saus krim dalam roti toast lembut yang dipanggang, dengan harga 35 000 IDR. Roti memberi dasar yang hangat, ayam membuatnya lebih mengenyangkan, sementara sayuran menjaga gigitan tetap segar. Susunannya jelas, jadi tamu tidak perlu menebak-nebak rasa yang akan muncul di piring.",
+              "Nama Chicken Club-sandwitch memakai ejaan yang khas. Di luar nama itu, idenya sederhana: roti panggang berisi protein, sayur, dan saus dalam porsi yang tidak terasa terlalu berat. Untuk tamu yang ingin makan gurih pada pagi menjelang siang, pilihan ini berada di tengah antara camilan dan makan besar."
             ]
           },
           {
             "h": "Rasa yang akrab, susunan yang jelas",
             "p": [
-              "Ayam panggang menjadi pusat rasa. Karakternya cocok dengan roti toast karena tidak perlu kuah atau bumbu berat untuk terasa utuh. Saus krim memberi kelembapan agar roti dan ayam tidak terasa kering, sedangkan tomat matang membawa sedikit rasa asam segar. Kol renyah menambah tekstur, terutama saat bertemu roti yang permukaannya dipanggang.",
-              "Susunan seperti ini mudah diterima oleh anak-anak maupun orang dewasa, sehingga cocok dengan posisi Signa Cafe sebagai kafe keluarga. Kata ramah anak di sini bukan berarti menu harus dibuat terlalu polos. Roti isi seperti Chicken Club-sandwitch justru bekerja karena elemen di dalamnya mudah dikenali: ayam, sayur, saus, dan roti.",
+              "Ayam panggang menjadi pusat rasa. Karakternya cocok dengan roti panggang karena tidak membutuhkan kuah atau bumbu berat agar terasa utuh. Saus krim memberi kelembapan, tomat membawa sedikit rasa asam segar, dan kol menambah tekstur renyah pada tiap gigitan.",
+              "Susunan seperti ini mudah diterima oleh anak-anak maupun orang dewasa, sehingga cocok dengan posisi Signa Cafe sebagai kafe keluarga. Kata ramah anak di sini tidak harus berarti makanan dibuat terlalu polos. Roti isi seperti Chicken Club-sandwitch bekerja karena elemen di dalamnya mudah dikenali dan tidak rumit.",
               "Untuk pagi hari, roti isi ini bisa berdampingan dengan kopi tanpa terasa janggal. Dari pukul 08:00 sampai 09:00, Signa Cafe menawarkan kopi gratis dengan pesanan apa pun. Penawaran itu relevan bagi tamu yang datang lebih awal dan ingin memulai hari dengan makanan yang tidak terlalu formal, tetapi tetap cukup mengisi sebelum bergerak ke agenda berikutnya."
             ]
           },
@@ -330,16 +330,16 @@
             "h": "Letak yang masuk akal untuk Nusa Dua, Bukit, dan Ungasan",
             "p": [
               "Signa Cafe berada di Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Lokasinya di Nusa Dua pada semenanjung Bukit, dengan jarak berkendara singkat dari kawasan resor Nusa Dua dan dari Ungasan. Bagi tamu yang bergerak di selatan Bali, kafe ini bisa menjadi titik berhenti antara urusan wisata, pekerjaan, dan waktu keluarga.",
-              "Konteks tempat ikut menentukan mengapa menu seperti Chicken Club-sandwitch terasa berguna. Di area yang banyak diisi perpindahan singkat - dari hotel ke aktivitas, dari rumah ke pertemuan, dari pantai ke makan siang - roti isi panggang menawarkan cara makan yang rapi dan langsung. Tidak semua momen membutuhkan hidangan besar, namun tetap ada kebutuhan untuk sesuatu yang lebih serius daripada camilan manis.",
-              "Signa Cafe buka sejak 2024 dan mengusung tagline Eat. Meet. Create. Kalimat itu sejalan dengan pola penggunaan kafe masa kini: makan, bertemu, lalu mengerjakan sesuatu atau merancang agenda berikutnya. Chicken Club-sandwitch tidak perlu dipaksakan menjadi menu utama untuk semua orang, tetapi ia punya tempat yang jelas ketika tamu ingin makanan gurih yang praktis."
+              "Konteks tempat ikut menentukan mengapa menu seperti Chicken Club-sandwitch terasa berguna. Di area yang banyak diisi perpindahan singkat - dari hotel ke aktivitas, dari rumah ke pertemuan, dari pantai ke makan siang - roti isi panggang menawarkan cara makan yang rapi dan langsung. Tidak semua momen membutuhkan hidangan besar, namun tetap ada kebutuhan untuk sesuatu yang lebih mengenyangkan daripada kue atau minuman manis.",
+              "Signa Cafe buka sejak 2024 dan mengusung tagline Eat. Meet. Create. Kalimat itu dekat dengan pola penggunaan kafe masa kini: makan, bertemu, lalu mengerjakan sesuatu atau merancang agenda berikutnya. Chicken Club-sandwitch punya tempat yang jelas ketika tamu ingin makanan gurih yang praktis, terutama saat waktu makan belum terasa pas untuk porsi besar."
             ]
           },
           {
             "h": "Catatan praktis sebelum datang atau pesan",
             "p": [
-              "Signa Cafe buka setiap hari pukul 08:00-23:00, dengan pesanan terakhir pukul 22:30. Informasi ini penting bagi tamu yang merencanakan makan pagi, makan siang santai, atau makan malam larut setelah aktivitas di sekitar Bukit. Untuk menu lain, perlu dicatat bahwa oven pizza menyala mulai pukul 14:00, sehingga pilihan roti isi seperti Chicken Club-sandwitch dapat menjadi opsi lebih awal di hari yang sama.",
+              "Signa Cafe buka setiap hari pukul 08:00-23:00, dengan pesanan terakhir pukul 22:30. Informasi ini membantu tamu yang merencanakan makan pagi, makan siang santai, atau makan malam larut setelah aktivitas di sekitar Bukit. Untuk menu lain, perlu dicatat bahwa oven pizza menyala mulai pukul 14:00, sehingga roti isi seperti Chicken Club-sandwitch dapat menjadi opsi lebih awal pada hari yang sama.",
               "Kafe ini memiliki rating Google 4.7 dari lebih dari 1426 ulasan. Angka tersebut memberi gambaran umum tentang jejak kunjungan publik, tanpa perlu menambahkan klaim yang tidak tercantum. Untuk pertanyaan langsung, nomor telepon yang tersedia adalah +62 896 540 27190. Menu online dan delivery dapat diakses melalui https://signa.dishi.rest/, sedangkan akun Instagram resminya adalah @signa.cafe.",
-              "Bagi pencari brunch, keluarga dengan anak, atau tamu yang sekadar ingin roti panggang isi ayam sebelum melanjutkan perjalanan, Chicken Club-sandwitch menawarkan pilihan yang mudah dibaca. Rasa utamanya datang dari ayam panggang, roti toast, sayur segar, dan saus krim; cukup jelas untuk dipesan cepat, cukup mengenyangkan untuk dijadikan jeda makan."
+              "Bagi pencari brunch, keluarga dengan anak, atau tamu yang ingin roti panggang isi ayam sebelum melanjutkan perjalanan, Chicken Club-sandwitch menawarkan pilihan yang mudah dipahami. Ia praktis untuk dipesan cepat, cukup mengenyangkan untuk jeda makan, dan tetap terasa wajar di meja bersama minuman pagi."
             ]
           }
         ],
