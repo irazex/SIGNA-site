@@ -1434,6 +1434,70 @@
         "reasoning": 42
       },
       "usd": 0.0766
+    },
+    {
+      "at": "2026-11-26T08:39:07.805Z",
+      "slug": "chicken-club-sandwitch",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "write:en",
+      "seconds": 37,
+      "responseId": "resp_06e10eb464042d95006b07f009101c87d085c90ff054cff63a",
+      "tokens": {
+        "input": 3532,
+        "cachedInput": 0,
+        "output": 1834,
+        "reasoning": 39
+      },
+      "usd": 0.0727
+    },
+    {
+      "at": "2026-11-26T08:39:42.829Z",
+      "slug": "chicken-club-sandwitch",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "write:en",
+      "seconds": 35,
+      "responseId": "resp_052e49661bb79b51006b07f02bfebc87d0b28461dcbaeb7893",
+      "tokens": {
+        "input": 5356,
+        "cachedInput": 2816,
+        "output": 1819,
+        "reasoning": 33
+      },
+      "usd": 0.0687
+    },
+    {
+      "at": "2026-11-26T08:40:17.809Z",
+      "slug": "chicken-club-sandwitch",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "transcreate:ru",
+      "seconds": 35,
+      "responseId": "resp_05cd2a7be62790c1006b07f04eece487d0a350c7d28a0aa6b8",
+      "tokens": {
+        "input": 2521,
+        "cachedInput": 0,
+        "output": 1825,
+        "reasoning": 42
+      },
+      "usd": 0.0674
+    },
+    {
+      "at": "2026-11-26T08:40:58.372Z",
+      "slug": "chicken-club-sandwitch",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "transcreate:id",
+      "seconds": 41,
+      "responseId": "resp_0951e3597bca81a4006b07f071e7f487d08730334ac72632dc",
+      "tokens": {
+        "input": 1802,
+        "cachedInput": 0,
+        "output": 1839,
+        "reasoning": 43
+      },
+      "usd": 0.0642
     }
   ]
 }
