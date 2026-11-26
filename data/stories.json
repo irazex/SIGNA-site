@@ -1750,7 +1750,7 @@
       "en": {
         "title": "Syrniki in Nusa Dua: cottage cheese pancakes for breakfast",
         "seoTitle": "Syrniki in Nusa Dua: cottage cheese pancakes",
-        "description": "Syrniki at Signa Cafe in Nusa Dua: cottage cheese pancakes with sour cream and salted caramel, jam or condensed milk, a sweet vegetarian breakfast with coffee.",
+        "description": "Syrniki at Signa Cafe in Nusa Dua: four cottage cheese pancakes with sour cream and your choice of jam, condensed milk or salted caramel.",
         "keywords": [
           "syrniki",
           "cottage cheese pancakes",
@@ -1872,7 +1872,7 @@
         ],
         "seoTitle": "Сырники в Нуса Дуа - завтрак в Signa Cafe",
         "category": "Завтрак",
-        "description": "Сырники в Signa Cafe в Нуса Дуа - творожный завтрак со сметаной и сгущёнкой, клубничным вареньем или солёной карамелью к утреннему кофе или на бранч.",
+        "description": "Сырники в Signa Cafe в Нуса Дуа: четыре штуки со сметаной и на выбор сгущёнкой, клубничным вареньем или солёной карамелью, к завтраку или бранчу.",
         "keywords": [
           "сырники",
           "творог",
@@ -2192,7 +2192,7 @@
           },
           {
             "q": "Сколько стоит «Маргарита» в Signa Cafe?",
-            "a": "Она стоит 65 000 IDR, пиццу подают с 14:00 до 23:00. Посмотреть меню и заказать доставку можно на https://signa.dishi.rest/."
+            "a": "Она стоит 65 000 IDR. Пиццу подают с 14:00 до 23:00. Посмотреть меню и заказать доставку можно на https://signa.dishi.rest/."
           },
           {
             "q": "Можно ли прийти в Signa Cafe в Нуса Дуа с детьми?",
@@ -2402,7 +2402,7 @@
       "cover": "assets/menu-11-classic-burger.webp",
       "dish": {
         "name": "Classic Burger",
-        "price": "80k",
+        "price": "80 000 IDR",
         "menuId": 11,
         "menuUrl": "https://signa.dishi.rest/"
       },
@@ -2750,7 +2750,7 @@
       "cover": "assets/menu-08-caesar-with-chicken.webp",
       "dish": {
         "name": "Caesar with chicken",
-        "price": "92k",
+        "price": "92 000 IDR",
         "menuId": 8,
         "menuUrl": "https://signa.dishi.rest/"
       },

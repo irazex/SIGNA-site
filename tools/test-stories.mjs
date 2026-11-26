@@ -201,7 +201,7 @@ test('internal writing notes are rejected in public fact values as well as prose
 test('the postal address does not count against the side-district cap', () => {
   const post=JSON.parse(fs.readFileSync(path.join(ROOT,'data/stories.json'))).posts.find(p=>!validate(p,['en']).length);
   const withAddress=structuredClone(post);
-  withAddress.en.blocks[0].p.push('Signa Cafe is at Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361, a short drive from Ungasan.');
+  withAddress.en.blocks[0].p.push('Signa Cafe is at Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361, between Kampial and Jimbaran and a short drive from Ungasan.');
   assert(!validate(withAddress,['en']).some(x=>x.includes('side districts')));
   const stuffed=structuredClone(post);
   stuffed.en.blocks[0].p.push('Kampial, Benoa, Jimbaran and Kampial again are all close.');
