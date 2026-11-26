@@ -170,7 +170,7 @@ ${langs.map((l) => `  ${LANG_NAME[l]}: ${POSITIONING[l].join(", ")}`).join("\n")
 
 WHAT TO WRITE, per language (${langs.map((l) => LANG_NAME[l]).join(", ")})
 - lead: 1-2 sentences, under 200 characters, containing the dish name and one PRIMARY place name.
-- 4 to 6 body sections, each a heading (h) and 1-3 paragraphs (p). Cover, in whatever order suits the dish: where it comes from and its real history; how it is actually made and what makes it hard; what is on Signa's plate (only what the menu says); when and with what to eat it here. Body 550-800 words per language, never fewer than 470: a dish with five ingredients makes a short post, so never pad. Each fact - the ingredients, the price, the opening hours, the address - appears once in the body, not in every section. Let paragraph length follow the content. If a section runs short, add a real fact or a useful recommendation, never a flourish or an invented detail.
+- 4 to 6 body sections, each a heading (h) and 1-3 paragraphs (p). Cover, in whatever order suits the dish: where it comes from and its real history; how it is actually made and what makes it hard; what is on Signa's plate (only what the menu says); when and with what to eat it here. Body 550-800 words per language, never fewer than 470: a dish with five ingredients makes a short post, so never pad. Each fact - the ingredients, the price, the opening hours - appears once in the body, not in every section; the address stays in the facts field. Let paragraph length follow the content. If a section runs short, add a real fact or a useful recommendation, never a flourish or an invented detail.
 - At least one section genuinely useful to someone choosing a cafe: who the dish suits, whether children eat it, what time to come, what to drink with it.
 - facts: 4-6 short label/value pairs. Origin, year, key ingredient, price, best time, who it suits.
 - faq: 3-4 questions phrased the way people search, at least two containing a place name. Answers 1-3 sentences, self-contained, answering in the first sentence.
@@ -222,7 +222,7 @@ ${promoFacts(promos)}
 - Не транслитерируй обычные слова латиницей. Имена людей и книг, кроме брендов и названий из меню, пиши по-русски.
 - Описывай вкус и сочетания конкретно. Не изображай личный визит, дегустацию
   или работу на кухне и не вставляй искусственное «я» ради авторской оценки.
-- Объём основного текста - 550-800 слов, но не меньше 470. Короткое блюдо - короткий текст: не добирай объём повторами. Состав, цену, часы работы и адрес называй в тексте по одному разу. Абзацы разной длины.
+- Объём основного текста - 550-800 слов, но не меньше 470. Короткое блюдо - короткий текст: не добирай объём повторами. Состав, цену и часы работы называй в тексте по одному разу. Абзацы разной длины.
 - Не приписывай кухне Signa свойств блюда, которых нет в фактах («лист не размокает», «соус не тяжёлый»).
 
 ИСПРАВИТЬ ОБЯЗАТЕЛЬНО
@@ -298,7 +298,7 @@ INDEPENDENT COMPOSITION
   with the English source.
 - Never number section headings. Write natural headings without "1.", "2." or
   any other outline markers.
-- Write 550-800 words, never fewer than 470, with varied paragraph lengths. Never repeat a fact to fill space: the ingredients, price, hours and address each appear once in the body.
+- Write 550-800 words, never fewer than 470, with varied paragraph lengths. Never repeat a fact to fill space: the ingredients, price and hours each appear once in the body.
 - Do not credit Signa's kitchen with qualities the facts do not state.
 - Describe flavours and combinations plainly. Do not fabricate a personal
   visit, tasting experience or kitchen role to sound human.
