@@ -1386,6 +1386,54 @@
         "reasoning": 0
       },
       "usd": 0.0822
+    },
+    {
+      "at": "2026-11-26T06:17:52.303Z",
+      "slug": "caesar-salad",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "write:en",
+      "seconds": 200,
+      "responseId": "resp_0eed17afab09b84d006b07ce49ba3c87d080abd81e521dd1ad",
+      "tokens": {
+        "input": 3458,
+        "cachedInput": 0,
+        "output": 2334,
+        "reasoning": 111
+      },
+      "usd": 0.0873
+    },
+    {
+      "at": "2026-11-26T06:18:36.383Z",
+      "slug": "caesar-salad",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "transcreate:ru",
+      "seconds": 44,
+      "responseId": "resp_0261ed7647334b3e006b07cf106c0087d0a3d51797f0d02a74",
+      "tokens": {
+        "input": 2424,
+        "cachedInput": 0,
+        "output": 2603,
+        "reasoning": 96
+      },
+      "usd": 0.0902
+    },
+    {
+      "at": "2026-11-26T06:19:20.506Z",
+      "slug": "caesar-salad",
+      "postDate": "2026-12-03",
+      "model": "gpt-5.5",
+      "stage": "transcreate:id",
+      "seconds": 44,
+      "responseId": "resp_0662b73fcea7b31a006b07cf3c836087d0b32c56a021f61c0f",
+      "tokens": {
+        "input": 1758,
+        "cachedInput": 0,
+        "output": 2260,
+        "reasoning": 42
+      },
+      "usd": 0.0766
     }
   ]
 }
