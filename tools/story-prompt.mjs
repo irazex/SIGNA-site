@@ -37,6 +37,16 @@ export const POSITIONING = {
   id: ["sarapan", "kafe keluarga", "ramah anak", "brunch", "kopi"],
 };
 
+// Russian phrases validate() rejects. Kept here so the editor prompt and the
+// validator cannot drift apart: an edit that brings one back is a wasted call.
+export const RU_DEAD = ["является", "представляет собой", "не что иное", "стоит отметить", "в чистом виде", "ясный ответ"];
+export const RU_CRINGE = [
+  "музейная пыль", "авторская оценка", "моя оценка", "точка маршрута",
+  "туристического компромисса", "зеленая пауза", "зелёная пауза",
+  "не спорит с жарой", "умеет спорить с аппетитом", "без лишних реверансов",
+  "простота, которая не извиняется", "попадает в день", "никакой философии",
+];
+
 const LANG_NAME = { en: "English", ru: "Russian", id: "Indonesian (Bahasa Indonesia)" };
 
 // "93k" is fine on a menu tile, wrong in a sentence.
@@ -349,6 +359,75 @@ Return JSON matching the provided schema exactly.
 
 NEUTRAL FACT DOSSIER - this is not an article and contains no prose to translate:
 ${JSON.stringify(facts, null, 2)}`;
+}
+
+// One native editor pass over an accepted RU or ID edition (26.11.2026).
+// Transcreation fixed the calques, but a single pass still shipped padded,
+// repetitive prose: the ingredient list four times, "the sauce ties the layers
+// together", "in the menu the dish is listed as". This is not an edit of a
+// translation - the editor sees only the native article - and the generator
+// discards any edit that fails validate() or changes the section count.
+export function editorPrompt({ body, dish, lang, site = {} }) {
+  const sections = body.blocks.length;
+  const reviews = site.reviewCount ? `«больше ${Math.floor(Number(site.reviewCount) / 100) * 100}» или точно ${site.reviewCount}` : "точное число из фактов";
+  if (lang === "ru") {
+    return `Ниже русская статья о блюде "${dish.title}" для сайта семейного кафе Signa Cafe в Нуса Дуа (Бали). Её написал автор по фактам. Отредактируй её как хороший редактор колонки о еде: текст должен читаться как живой русский, написанный человеком, - спокойно, ясно, связными абзацами, обычными словами.
+
+ИСПРАВИТЬ
+- Повторы. Состав блюда, цену и часы работы называй в тексте по одному разу. Вычеркни фразы и абзацы, которые пересказывают уже сказанное.
+- Вату и пустые фразы: «не требует длинного объяснения», «вкус строится на сочетании», «соус связывает слои», «в составе нет неожиданной логики», «понятный выбор». Убрать или заменить конкретикой из фактов.
+- Рассуждения про меню и его описание («в меню блюдо указано как», «описание короткое», «это блюдо из раздела»): писать о самом блюде.
+- Тавтологию, афоризмы, олицетворения еды, погоды и кафе, пафос.
+- Свойства, которые текст приписывает кухне Signa без опоры на факты («лист не размокает», «тост всегда хрустит»).
+- Кальки, канцелярит, английский порядок слов, повтор подлежащего там, где по-русски нужно местоимение.
+- Конструкцию «не X, а Y» больше двух раз.
+- Букву ё там, где она нужна (тёплый, даёт, лёгкий, ещё), и кавычки «ёлочки».
+- Число отзывов: ${reviews}, но не «более чем ${site.reviewCount || "N"}».
+- Запрещены обороты (валидатор отклонит текст): ${[...RU_DEAD, ...RU_CRINGE].map((x) => `«${x}»`).join(", ")}.
+
+СОХРАНИТЬ
+- Все факты: цены в формате «93 000 IDR», часы, адрес, имена, даты, состав.
+- Ровно ${sections} разделов (blocks): не объединяй и не добавляй. В каждом разделе 1-4 абзаца.
+- Основной текст (lead, заголовки и абзацы) не короче 470 слов. Если после вычёркивания повторов он короче, добавь полезную конкретику из фактов: когда заказывать, с чем, кому подойдёт. Не воду.
+- Нуса Дуа, Букит и Унгасан - каждое хотя бы раз в тексте или FAQ. Кампьял, Беноа и Джимбаран - вместе не больше трёх раз и никогда в title, seoTitle и description.
+- Слова позиционирования буквально хотя бы по одному разу: ${POSITIONING.ru.join(", ")}.
+- Абзацы разной длины: самый длинный хотя бы на 12 слов длиннее самого короткого.
+- Три соседних предложения не начинаются одним словом. Тире только короткое "-". Без восклицательных знаков и эмодзи. Никаких строчных латинских слов в прозе, кроме названий из меню и Signa Cafe.
+- FAQ остаются поисковыми вопросами, хотя бы в одном - название места; ответ отвечает первым же предложением.
+- seoTitle не длиннее 58 символов, description не длиннее 155.
+
+Верни JSON ровно той же структуры.
+
+СТАТЬЯ:
+${JSON.stringify(body, null, 2)}`;
+  }
+  return `Below is a Bahasa Indonesia article about "${dish.title}" for the website of Signa Cafe, a family cafe in Nusa Dua, Bali. A native writer wrote it from a fact sheet. Edit it as a good food-column editor would, so it reads as natural Indonesian written by a person: calm, clear, connected paragraphs, everyday words.
+
+FIX
+- Repetition: the ingredients, the price and the opening hours appear once each in the body. Cut sentences and paragraphs that restate what was already said.
+- Filler and empty lines ("rasanya dibangun dari perpaduan", "saus menyatukan lapisan", "tidak perlu penjelasan panjang"). Cut them or replace them with a concrete fact.
+- Talk about the menu or its description ("di menu tercantum sebagai", "deskripsinya singkat"): write about the dish itself.
+- Tautology, aphorisms, personified food or weather, pathos.
+- Qualities credited to Signa's kitchen that the facts do not state.
+- Calques, stiff formal register, English word order.
+- The "bukan X, tetapi Y" frame more than twice.
+
+KEEP
+- Every fact: prices exactly as written, hours, address, names, dates, ingredients.
+- Exactly ${sections} sections (blocks): do not merge or add any. 1-4 paragraphs each. Never number the headings.
+- A body (lead, headings and paragraphs) of at least 470 words. If cutting repetition makes it shorter, add useful specifics from the facts, never filler.
+- Nusa Dua, Bukit and Ungasan at least once each in the body or FAQ. Kampial, Benoa and Jimbaran together at most three times, never in title, seoTitle or description.
+- The positioning terms literally, at least once each: ${POSITIONING.id.join(", ")}.
+- Paragraph lengths vary: the longest is at least 12 words longer than the shortest.
+- No English menu copy inside Indonesian sentences (breakfast, lunch, pancakes, homemade, cream sauce, grilled chicken and the like - use the Indonesian words). The exact dish name may stay in English.
+- Never three neighbouring sentences opening with the same word. Only the short hyphen "-". No exclamation marks, no emoji.
+- The FAQ stay search-shaped, at least one naming a place, each answered in its first sentence.
+- seoTitle at most 58 characters, description at most 155.
+
+Return JSON with exactly the same structure.
+
+ARTICLE:
+${JSON.stringify(body, null, 2)}`;
 }
 
 // JSON schema handed to the API so the model cannot drift from the shape

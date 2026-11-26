@@ -1215,6 +1215,7 @@ function CostsTab() {
     write: "draft", "write:en": "English original", "fix-geo": "geo fix",
     "edit:ru": "legacy editor ru", "edit:id": "legacy editor id", "edit:en": "legacy editor en",
     "transcreate:ru": "native Russian", "transcreate:id": "native Indonesian",
+    "polish:ru": "editor Russian", "polish:id": "editor Indonesian",
   };
   const stageLabel = (s) => {
     const [base, flag] = String(s || "").split(/:(?=abandoned$)/);
