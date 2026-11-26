@@ -645,27 +645,32 @@ function BrandSection({ scrapOn }) {
 // MENU
 // ============================================================
 const MENU_DATA_DEFAULT = [
-  { id: 1, title: "Syrniki — cottage cheese pancakes", price: "93k", cat: "breakfast", img: "assets/syrniki.webp", badge: "★ Popular", tags: ["veg"] },
-  { id: 2, title: "Big Breakfast", price: "79k", cat: "breakfast", img: "assets/photo-breakfast.webp", badge: "★ Popular" },
-  { id: 3, title: "Best Scramble", price: "71k", cat: "breakfast", img: "assets/photo-9742.webp", tags: ["veg"] },
-  { id: 4, title: "Pizza Margarita", price: "69k", cat: "pizza", img: "assets/pizza-margherita.webp", badge: "from 14:00", tags: ["veg"] },
-  { id: 5, title: "Creamy Bacon Pasta", price: "89k", cat: "pasta", img: "assets/photo-dinner.webp" },
-  { id: 6, title: "Big Salmon Poke Bowl", price: "145k", cat: "main", img: "assets/photo-9887.webp", badge: "★ Chef's" },
-  { id: 7, title: "Caesar with chicken", price: "92k", cat: "main", img: "assets/photo-9831.webp" },
-  { id: 8, title: "Mango smoothie", price: "55k", cat: "drinks", img: "assets/photo-smoothie.webp", tags: ["veg"] },
+  { id: 1, title: "Syrniki — cottage cheese pancakes", price: "80k", cat: "breakfast", img: "assets/syrniki.webp", badge: "★ Popular", tags: ["veg"] },
+  { id: 2, title: "Big Breakfast", price: "85k", cat: "breakfast", img: "assets/photo-breakfast.webp", badge: "★ Popular" },
+  { id: 3, title: "Best Scramble", price: "55k", cat: "breakfast", img: "assets/photo-9742.webp", tags: ["veg"] },
+  { id: 4, title: "Pizza Margarita", price: "65k", cat: "pizza", img: "assets/pizza-margherita.webp", badge: "from 14:00", tags: ["veg"] },
+  { id: 5, title: "Creamy Beef Bacon Pasta", price: "80k", cat: "pasta", img: "assets/photo-dinner.webp" },
+  { id: 6, title: "Big Poke Bowl", price: "75k", cat: "main", img: "assets/photo-9887.webp", badge: "★ Chef's" },
+  { id: 7, title: "Caesar Salad", price: "79k", cat: "main", img: "assets/photo-9831.webp" },
+  { id: 8, title: "Mango smoothie", price: "60k", cat: "drinks", img: "assets/photo-smoothie.webp", tags: ["veg"] },
 ];
 const _content = () => (window.CONTENT || {});
-const MENU_DATA = (window.CONTENT && window.CONTENT.menu) || MENU_DATA_DEFAULT;
+// content.json arrives after this file runs (hydrateContent is async), so the
+// menu, tiles and FAQ are read at render time, not at load: until 26.11.2026 the
+// site always showed the defaults below and content.json edits never reached it.
+const menuData = () => (window.CONTENT && window.CONTENT.menu) || MENU_DATA_DEFAULT;
 
-const MENU_CATS = (window.CONTENT && window.CONTENT.menuCategories) || ["All", "Breakfast", "Pizza", "Pasta", "Main", "Drinks", "Dessert"];
+const menuCats = () => (window.CONTENT && window.CONTENT.menuCategories) || ["All", "Breakfast", "Pizza", "Pasta", "Main", "Drinks", "Dessert"];
 
 function MenuSection({ scrapOn, lang }) {
+  const MENU_DATA = menuData();
+  const MENU_CATS = menuCats();
   const [cat, setCat] = useState("All");
   const ref = window.useReveal();
   const filtered = useMemo(() => {
     if (cat === "All") return MENU_DATA;
     return MENU_DATA.filter((m) => m.cat.toLowerCase() === cat.toLowerCase());
-  }, [cat]);
+  }, [cat, MENU_DATA]);
 
   return (
     <section id="menu" className="s-section menu-sec reveal" ref={ref} data-screen-label="menu">
@@ -729,14 +734,17 @@ function MenuSection({ scrapOn, lang }) {
 // ============================================================
 // SIGNATURE — horizontal swipe carousel
 // ============================================================
-const SIGNATURE_DATA = (window.CONTENT && window.CONTENT.signatureDishes) || [
-  { n: 1, title: "Ricotta\nPancakes", meta: "Brunch · 75k", img: "assets/photo-breakfast.webp" },
-  { n: 2, title: "Mango\nSmoothie",   meta: "Cold · 55k",   img: "assets/photo-smoothie.webp" },
+const SIGNATURE_DEFAULT = [
+  { n: 1, title: "Ricotta\nPancakes", meta: "Brunch · 80k", img: "assets/photo-breakfast.webp" },
+  { n: 2, title: "Mango\nSmoothie",   meta: "Cold · 60k",   img: "assets/photo-smoothie.webp" },
   { n: 3, title: "Family\nDinner",    meta: "Evening · 120k+", img: "assets/photo-dinner.webp" },
 ];
 
 
+const signatureData = () => (window.CONTENT && window.CONTENT.signatureDishes) || SIGNATURE_DEFAULT;
+
 function SignatureSection({ scrapOn, lang }) {
+  const SIGNATURE_DATA = signatureData();
   const railRef = useRef(null);
   const [idx, setIdx] = useState(0);
   const ref = window.useReveal();
@@ -1183,14 +1191,17 @@ window.PromosSection = PromosSection;
 // ============================================================
 // FAQ — quick answers to common visitor questions
 // ============================================================
-const FAQ_DATA = (window.CONTENT && window.CONTENT.faq) || [
+const FAQ_DEFAULT = [
   { q: "Good for working or meeting?", a: "Yes. WiFi, outlets at most tables, room for solo work and small meet-ups alike." },
   { q: "Vegetarian options?",    a: "Many. Most breakfast, salad, pasta, bakery and pizza items have plant-based versions." },
   { q: "WiFi?",                  a: "Free fast WiFi. Outlets at most tables." },
   { q: "Parking?",               a: "Free parking on-site." },
 ];
 
+const faqData = () => (window.CONTENT && window.CONTENT.faq) || FAQ_DEFAULT;
+
 function FAQSection({ scrapOn, lang }) {
+  const FAQ_DATA = faqData();
   const ref = window.useReveal();
   const [openIdx, setOpenIdx] = React.useState(0);
   return (

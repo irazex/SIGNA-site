@@ -32,7 +32,9 @@ node tools/build-js.mjs --check
 
 up() {
   local local_path="$1" remote_path="${2:-$1}"
-  curl -sS --ftp-create-dirs --max-time 120 --retry 3 --retry-all-errors \
+  # IPv4 only, as in deploy-stories.sh: on 26.11.2026 three uploads hung on
+  # connection timeouts of 4-7 minutes each before the retries got through.
+  curl -4 -sS --ftp-create-dirs --max-time 120 --retry 3 --retry-all-errors \
        -T "$local_path" "$FTP_HOST/$remote_path" --user "$FTP_CRED"
   echo "  uploaded $local_path"
 }
