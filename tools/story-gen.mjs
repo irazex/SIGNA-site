@@ -509,9 +509,13 @@ export function validate(post, langs = opts.langs, menuName = post.dish?.name) {
     const inHead = GEO_SECONDARY[lang].filter((g) => headline.includes(g.toLowerCase()) && !isBali(g));
     if (inHead.length) issues.push(`${tag}: "${inHead.join(", ")}" in the title or description - use ${GEO_PRIMARY[lang][0]} there`);
 
+    // The postal address ("Jl. Raya Kampial, Benoa, Nusa Dua") is a fact, not a
+    // keyword: it does not count against the side-district cap. On 26.11.2026
+    // the draft for 03.12 was rejected twice at "4 mentions, cap is 3".
+    const lowNoAddr = low.replace(/jl\.?\s*raya\s+kampial,?\s*benoa/g, "jl. raya");
     const secondaryCount = GEO_SECONDARY[lang]
       .filter((g) => !isBali(g))
-      .reduce((n, g) => n + (low.match(new RegExp(g.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || []).length, 0);
+      .reduce((n, g) => n + (lowNoAddr.match(new RegExp(g.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || []).length, 0);
     if (secondaryCount > 3) issues.push(`${tag}: ${secondaryCount} mentions of the side districts, cap is 3`);
 
     const posMiss = POSITIONING[lang].filter((t) => !low.includes(t.toLowerCase()));

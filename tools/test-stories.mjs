@@ -197,3 +197,13 @@ test('internal writing notes are rejected in public fact values as well as prose
   p.ru.facts[0][1]+=' артикул факта сохранен';
   assert(validate(p,['ru']).some(x=>x.includes('internal writing instructions')));
 });
+
+test('the postal address does not count against the side-district cap', () => {
+  const post=JSON.parse(fs.readFileSync(path.join(ROOT,'data/stories.json'))).posts.find(p=>!validate(p,['en']).length);
+  const withAddress=structuredClone(post);
+  withAddress.en.blocks[0].p.push('Signa Cafe is at Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361, a short drive from Ungasan.');
+  assert(!validate(withAddress,['en']).some(x=>x.includes('side districts')));
+  const stuffed=structuredClone(post);
+  stuffed.en.blocks[0].p.push('Kampial, Benoa, Jimbaran and Kampial again are all close.');
+  assert(validate(stuffed,['en']).some(x=>x.includes('side districts')));
+});
