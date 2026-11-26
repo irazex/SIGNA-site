@@ -1,7 +1,354 @@
 {
-  "version": "20261126c",
+  "version": "20261126r",
   "note": "Source of truth for /stories. Edited by hand or via /admin -> Stories tab. Rendered server-side by story.php / stories.php - no build step, no JS required, so AI crawlers see full text.",
   "posts": [
+    {
+      "slug": "chicken-club-sandwich-nusa-dua",
+      "date": "2026-12-03",
+      "cover": "assets/stories/chicken-club-sandwitch-ef79fa9a.webp",
+      "dish": {
+        "name": "Chicken Club-sandwitch",
+        "price": "35 000 IDR",
+        "menuUrl": "https://signa.dishi.rest/",
+        "syrveId": "ef79fa9a-91c0-4cd7-9904-276cff4d1755",
+        "syrveCategory": "TRY NEW ITEMS"
+      },
+      "tags": [
+        "chicken sandwich",
+        "club sandwich",
+        "nusa dua",
+        "bukit",
+        "ungasan",
+        "breakfast",
+        "brunch",
+        "family cafe"
+      ],
+      "sourceFacts": [
+        "Dish name on the menu: Chicken Club-sandwitch.",
+        "Menu price: 35 000 IDR.",
+        "Menu section: TRY NEW ITEMS.",
+        "Menu description: grilled chicken layered in a toasted sandwich with crisp cabbage, ripe tomato, and creamy sauce on soft toast bread.",
+        "Publication date: 2026-12-03.",
+        "Signa Cafe is a family cafe in Nusa Dua on the Bukit peninsula.",
+        "Signa Cafe is a short drive from the Nusa Dua resort strip and from Ungasan.",
+        "Signa Cafe opened in 2024.",
+        "Signa Cafe tagline: Eat. Meet. Create.",
+        "Signa Cafe address: Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361.",
+        "Signa Cafe hours: 08:00-23:00 daily, last order 22:30.",
+        "Signa Cafe offers free coffee with any order from 08:00 till 09:00.",
+        "Signa Cafe Google rating: 4.7 from 1426+ reviews.",
+        "Signa Cafe phone: +62 896 540 27190.",
+        "Signa Cafe online menu and delivery URL: https://signa.dishi.rest/.",
+        "Signa Cafe Instagram: @signa.cafe."
+      ],
+      "en": {
+        "faq": [
+          {
+            "q": "Where can I get a chicken club sandwich in Nusa Dua?",
+            "a": "You can order the Chicken Club-sandwitch at Signa Cafe in Nusa Dua. It is grilled chicken in toasted soft bread with crisp cabbage, ripe tomato, and creamy sauce for 35 000 IDR."
+          },
+          {
+            "q": "Is Signa Cafe near Ungasan for brunch?",
+            "a": "Yes, Signa Cafe is in Nusa Dua on the Bukit peninsula, a short drive from Ungasan. The Chicken Club-sandwitch is a practical brunch order because it is toasted, filling, and easy to share with another plate."
+          },
+          {
+            "q": "Is the Chicken Club-sandwitch kid-friendly?",
+            "a": "Yes, the Chicken Club-sandwitch is a kid-friendly choice for children who like chicken, toast, tomato, cabbage, and creamy sauce. The soft toast bread also makes it easier to eat than a hard-crusted sandwich."
+          },
+          {
+            "q": "What time is best for breakfast at Signa Cafe in Nusa Dua?",
+            "a": "Signa Cafe opens at 08:00 daily, so breakfast can start early. From 08:00 till 09:00 there is free coffee with any order, which fits well with a toasted chicken sandwich."
+          }
+        ],
+        "seoTitle": "Chicken Club-sandwitch in Nusa Dua",
+        "category": "Sandwich",
+        "description": "Chicken Club-sandwitch in Nusa Dua: grilled chicken, tomato, cabbage and creamy sauce on soft toast bread at Signa Cafe.",
+        "keywords": [
+          "chicken club-sandwitch",
+          "chicken sandwich",
+          "club sandwich",
+          "nusa dua breakfast",
+          "nusa dua brunch",
+          "bukit cafe",
+          "ungasan cafe",
+          "family cafe",
+          "kid-friendly cafe",
+          "coffee",
+          "toasted sandwich"
+        ],
+        "facts": [
+          [
+            "Origin",
+            "The club sandwich is usually linked to late nineteenth-century New York club dining."
+          ],
+          [
+            "First printed use",
+            "The phrase \"club sandwich\" appeared in American newspapers by the 1890s."
+          ],
+          [
+            "Key ingredient",
+            "Grilled chicken on soft toast bread."
+          ],
+          [
+            "Price",
+            "35 000 IDR."
+          ],
+          [
+            "Best time",
+            "Breakfast or brunch, especially from 08:00 till 09:00 with the free coffee offer."
+          ],
+          [
+            "Who it suits",
+            "Guests who want a kid-friendly, easy chicken sandwich at a family cafe."
+          ]
+        ],
+        "lead": "Chicken Club-sandwitch brings grilled chicken, toast and creamy sauce to Nusa Dua for a simple breakfast or brunch stop.",
+        "title": "Chicken Club-sandwitch in Nusa Dua: a toasted chicken club for breakfast or brunch",
+        "blocks": [
+          {
+            "h": "A club sandwich with a long working life",
+            "p": [
+              "The club sandwich has been part of American cafe and hotel cooking since the late nineteenth century. The popular story links it to private club dining in New York, and printed mentions of a “club sandwich” were appearing in American newspapers by the 1890s. Early versions usually used toast, poultry, bacon, lettuce, tomato and mayonnaise, often stacked in layers and cut into neat triangles.",
+              "That history matters because the form is practical. A club sandwich is built to be eaten without a knife and fork, but it still feels like a proper meal. Toast gives structure, chicken brings the main protein, tomato adds juice, and a creamy sauce keeps the bread from feeling dry. The best versions are not complicated; they are tidy, warm where they should be warm, and easy to finish."
+            ]
+          },
+          {
+            "h": "What is in Signa Cafe’s Chicken Club-sandwitch",
+            "p": [
+              "Signa Cafe’s Chicken Club-sandwitch is grilled chicken layered in a toasted sandwich with crisp cabbage, ripe tomato, and creamy sauce on soft toast bread. It costs 35 000 IDR.",
+              "The cabbage is a useful choice in a warm sandwich because it stays crunchy longer than delicate leaves. Tomato gives freshness and moisture, while the creamy sauce ties the grilled chicken to the toast. Soft toast bread makes the sandwich gentle to bite, so it suits a quick breakfast as much as a slower brunch."
+            ]
+          },
+          {
+            "h": "Why a simple sandwich still needs care",
+            "p": [
+              "A toasted chicken sandwich can go wrong in ordinary ways. When the bread is too dry, the filling feels separate. A tomato sliced too wet or carelessly can make the toast lose its edge. Unevenly cooked chicken makes the sandwich feel heavy in some bites and thin in others.",
+              "In general, the craft is in the order of the layers and the balance of moisture. Toast needs enough colour to hold its shape, but it should still be soft enough to compress when you pick it up. Grilled chicken works best when it is sliced or arranged so each bite gets meat, vegetable and sauce together. Cabbage helps here because it gives clean crunch without flooding the bread."
+            ]
+          },
+          {
+            "h": "When to order it at Signa",
+            "p": [
+              "Signa Cafe is in Nusa Dua on the Bukit peninsula, a short drive from the Nusa Dua resort strip and from Ungasan. For visitors moving between a hotel morning, a school run, a meeting or a beach plan, this is the kind of order that does not slow the day down.",
+              "The cafe is open 08:00-23:00 daily, with last order at 22:30, so the sandwich works beyond breakfast. Still, the neatest time to come is early: from 08:00 till 09:00, Signa offers free coffee with any order. A hot coffee and a toasted chicken sandwich is a straightforward start, especially if you want something savoury before the sun gets high."
+            ]
+          },
+          {
+            "h": "Who will like it",
+            "p": [
+              "This is a good choice for someone who wants chicken without a large plate of rice or pasta. It is also kid-friendly in the usual cafe sense: familiar bread, mild vegetables, chicken, and sauce in a format children recognise. If you are eating with family, it can sit next to eggs, pastries or a sweet order without making the table feel too heavy.",
+              "For adults, the appeal is speed and clarity. You know what you are getting, and the price makes it an easy add-on if two people want to share a lighter savoury dish. At a family cafe, that matters because not every table is here for the same meal: one person may want coffee, another may want brunch, and a child may just want something warm and simple."
+            ]
+          },
+          {
+            "h": "A practical stop before the next plan",
+            "p": [
+              "The Chicken Club-sandwitch is not trying to turn lunch into a ceremony. It is grilled chicken, crisp cabbage, ripe tomato and creamy sauce inside toasted soft bread, which is exactly why it fits the hour between plans.",
+              "Order it when you want a savoury bite that travels well from breakfast into lunch. If you are nearby and deciding where to eat in the next hour, Signa Cafe gives you a clear answer: a toasted chicken sandwich at 35 000 IDR, coffee available, and daily hours that leave room for a relaxed stop."
+            ]
+          }
+        ],
+        "coverAlt": "Chicken Club-sandwitch with grilled chicken, cabbage, tomato and creamy sauce on toast bread"
+      },
+      "ru": {
+        "faq": [
+          {
+            "q": "Сколько стоит клаб-сэндвич с курицей в Signa Cafe?",
+            "a": "Клаб-сэндвич с курицей в Signa Cafe стоит 35 000 IDR. В него входят курица гриль, тостовый хлеб, капуста, томат и сливочный соус."
+          },
+          {
+            "q": "Где находится Signa Cafe в Нуса Дуа?",
+            "a": "Signa Cafe находится в Нуса Дуа по адресу Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Кафе расположено на полуострове Букит."
+          },
+          {
+            "q": "Подойдет ли Signa Cafe с детьми для бранча?",
+            "a": "Signa Cafe с детьми подходит для бранча, если нужен понятный выбор и спокойный формат еды. Клаб-сэндвич с курицей удобен как легкий заказ без долгого застолья."
+          },
+          {
+            "q": "Как заказать доставку из Signa Cafe из Унгасан?",
+            "a": "Доставку из Signa Cafe из Унгасан можно оформить через онлайн-меню https://signa.dishi.rest/. Также можно связаться с кафе по телефону +62 896 540 27190."
+          }
+        ],
+        "seoTitle": "Клаб-сэндвич с курицей в Signa Cafe",
+        "category": "Еда",
+        "description": "Клаб-сэндвич с курицей в Signa Cafe: курица гриль, капуста, томат и сливочный соус на мягком тостовом хлебе. Цена 35 000 IDR.",
+        "keywords": [
+          "Signa Cafe",
+          "клаб-сэндвич с курицей",
+          "Нуса Дуа",
+          "Букит",
+          "Унгасан",
+          "завтрак",
+          "бранч",
+          "кофе",
+          "семейное кафе"
+        ],
+        "facts": [
+          [
+            "Дата публикации",
+            "2026-12-03"
+          ],
+          [
+            "Блюдо",
+            "Chicken Club-sandwitch"
+          ],
+          [
+            "Цена",
+            "35 000 IDR"
+          ],
+          [
+            "Кафе",
+            "Signa Cafe"
+          ],
+          [
+            "Слоган",
+            "Eat. Meet. Create."
+          ],
+          [
+            "Открыто с",
+            "2024 года у Signa Cafe как заведения, блюдо находится в разделе новых позиций меню на дату публикации."
+          ]
+        ],
+        "lead": "Клаб-сэндвич с курицей в Signa Cafe - понятный горячий сэндвич на тостовом хлебе: курица гриль, хрустящая капуста, спелый томат и сливочный соус. Он подходит для завтрака, бранча или быстрого заказа с кофе.",
+        "title": "Клаб-сэндвич с курицей в Signa Cafe",
+        "blocks": [
+          {
+            "h": "Горячий сэндвич без лишней сложности",
+            "p": [
+              "Клаб-сэндвич с курицей - из тех блюд, которые не требуют длинного объяснения. Его удобно заказать, когда хочется еды с понятным составом: поджаренный тостовый хлеб, слой курицы гриль, хрустящая капуста, спелый томат и сливочный соус. Вкус строится на знакомом сочетании теплого хлеба, мясной основы, свежего овощного слоя и мягкой сливочности.",
+              "У такого сэндвича важна не эффектная подача, а баланс текстур. Тост дает легкую корочку и держит начинку. Капуста добавляет свежий хруст, томат - сочность и мягкую кислинку. Курица гриль делает блюдо более сытным, а соус связывает слои между собой, чтобы вкус не распадался на отдельные детали.",
+              "В меню блюдо указано как Chicken Club-sandwitch и стоит 35 000 IDR. Для кафе в курортной части Бали это формат недорогого заказа, который можно взять отдельно или добавить к напитку. По ощущениям это не тяжелый обед на несколько блюд, а быстрый вариант для момента, когда нужно поесть между делами, перед поездкой или после утренней прогулки."
+            ]
+          },
+          {
+            "h": "Когда его удобно заказать",
+            "p": [
+              "Сэндвич хорошо вписывается в завтрак, особенно если сладкие блюда не подходят. С 08:00 до 09:00 в Signa Cafe действует акция: бесплатный кофе с любым заказом, поэтому утренний клаб-сэндвич можно сочетать с чашкой кофе без отдельной доплаты за напиток. Акция уместна именно для этого блюда: хлеб, курица и овощи дают основу, а кофе делает заказ завершенным без перегруза.",
+              "Для бранча сэндвич тоже выглядит практично. Он не требует приборов в той же степени, что большая тарелка с гарниром, и подходит тем, кто ест быстро, но не хочет ограничиваться десертом или напитком. Сливочный соус смягчает вкус курицы и тоста, а свежие овощи не дают блюду стать однообразным.",
+              "Формат удобен и для гостей с детьми: состав читается сразу, без сложных специй и редких ингредиентов в описании. В семейное кафе обычно приходят с разными ожиданиями - кому-то нужен полноценный прием пищи, кому-то легкий перекус. Клаб-сэндвич занимает середину между этими вариантами и помогает собрать заказ без долгого выбора."
+            ]
+          },
+          {
+            "h": "Signa Cafe и район вокруг",
+            "p": [
+              "Signa Cafe работает с 2024 года и использует короткий слоган Eat. Meet. Create. Это семейное кафе в Нуса Дуа на полуострове Букит, куда удобно заехать из курортной зоны и из Унгасан. Для гостей, которые живут поблизости или передвигаются по южной части острова, такой сэндвич подходит как простой заказ на месте или как еда с собой.",
+              "Полный адрес кафе: Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Заведение работает ежедневно с 08:00 до 23:00, последний заказ принимают в 22:30. Это расписание покрывает и ранний завтрак, и поздний перекус, так что клаб-сэндвич не привязан к одному времени дня.",
+              "У Signa Cafe рейтинг 4.7 в Google на основе более чем 1426 отзывов. Для нового кафе, открытого в 2024 году, это заметный публичный ориентир. При этом сэндвич остается простым блюдом: его ценность не в редких продуктах, а в предсказуемом сочетании курицы гриль, овощей, соуса и мягкого тоста."
+            ]
+          },
+          {
+            "h": "Как оформить заказ и что учесть",
+            "p": [
+              "Актуальное меню и доставку можно посмотреть по ссылке https://signa.dishi.rest/. Это удобный способ проверить позиции перед заказом, особенно если планируется еда на дом или в отель. Для связи с кафе указан телефон +62 896 540 27190, а за новостями и визуальными обновлениями можно следить в Instagram: @signa.cafe.",
+              "Клаб-сэндвич с курицей стоит выбирать тем, кто хочет быстрый, теплый и понятный заказ без сложной сервировки. Он подойдет к кофе утром, к легкому бранчу днем и к перекусу перед вечерними планами. В составе нет неожиданной логики: хлеб дает основу, курица - сытость, капуста и томат - свежесть, соус - мягкость.",
+              "Это блюдо из раздела новых позиций меню, поэтому для постоянных гостей Signa Cafe оно может стать способом попробовать что-то свежее без риска уйти в непривычный вкус. Для первого знакомства с кафе сэндвич тоже уместен: он показывает повседневную сторону кухни, где важны температура, тостовый хлеб, сочность томата и аккуратно собранная начинка."
+            ]
+          }
+        ],
+        "coverAlt": "Chicken Club-sandwitch в Signa Cafe - клаб-сэндвич с курицей на тостовом хлебе"
+      },
+      "id": {
+        "faq": [
+          {
+            "q": "Apakah Chicken Club-sandwitch tersedia di Signa Cafe Nusa Dua?",
+            "a": "Ya, Chicken Club-sandwitch tersedia di Signa Cafe Nusa Dua sebagai bagian dari TRY NEW ITEMS. Hidangan ini berupa roti toast lembut yang dipanggang dengan isian ayam panggang, kol renyah, tomat matang, dan saus krim."
+          },
+          {
+            "q": "Berapa harga Chicken Club-sandwitch di Signa Cafe?",
+            "a": "Harga Chicken Club-sandwitch di Signa Cafe adalah 35 000 IDR. Untuk melihat menu online dan pilihan delivery, tamu dapat membuka https://signa.dishi.rest/."
+          },
+          {
+            "q": "Apakah Signa Cafe cocok untuk keluarga dari Ungasan atau area Bukit?",
+            "a": "Ya, Signa Cafe adalah kafe keluarga di Nusa Dua, di semenanjung Bukit, dan berjarak berkendara singkat dari Ungasan. Suasananya relevan untuk tamu yang mencari tempat ramah anak dengan pilihan makanan ringan hingga mengenyangkan."
+          },
+          {
+            "q": "Jam berapa Signa Cafe buka?",
+            "a": "Signa Cafe buka setiap hari pukul 08:00-23:00, dengan pesanan terakhir pukul 22:30. Pada pukul 08:00-09:00, tersedia kopi gratis dengan pesanan apa pun."
+          }
+        ],
+        "seoTitle": "Chicken Club-sandwitch di Signa Cafe Nusa Dua",
+        "category": "Food",
+        "description": "Chicken Club-sandwitch 35 000 IDR di Signa Cafe Nusa Dua: ayam panggang, kol, tomat, saus krim, dan roti toast lembut.",
+        "keywords": [
+          "Chicken Club-sandwitch",
+          "Signa Cafe",
+          "Nusa Dua",
+          "Bukit",
+          "Ungasan",
+          "sarapan",
+          "brunch",
+          "kopi",
+          "kafe keluarga",
+          "ramah anak"
+        ],
+        "facts": [
+          [
+            "Nama tempat",
+            "Signa Cafe"
+          ],
+          [
+            "Tagline",
+            "Eat. Meet. Create."
+          ],
+          [
+            "Buka sejak",
+            "2024"
+          ],
+          [
+            "Tanggal publikasi",
+            "2026-12-03"
+          ],
+          [
+            "Alamat",
+            "Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361"
+          ],
+          [
+            "Jam buka",
+            "08:00-23:00 setiap hari, pesanan terakhir 22:30; oven pizza menyala mulai 14:00; pukul 08:00-09:00 tersedia kopi gratis dengan pesanan apa pun."
+          ]
+        ],
+        "lead": "Chicken Club-sandwitch di Signa Cafe membawa format roti isi yang praktis ke meja kafe keluarga di Nusa Dua: ayam panggang, kol renyah, tomat matang, dan saus krim dalam roti toast lembut yang dipanggang.",
+        "title": "Chicken Club-sandwitch: roti panggang isi ayam untuk jeda di Nusa Dua",
+        "blocks": [
+          {
+            "h": "Roti isi yang mudah masuk ke ritme hari",
+            "p": [
+              "Ada makanan yang terasa paling pas ketika hari belum menentukan arahnya: mungkin berangkat ke pantai, mungkin bekerja seharian dari laptop, mungkin menunggu keluarga selesai bersiap. Chicken Club-sandwitch di Signa Cafe berada di wilayah itu. Bentuknya ringkas, tidak banyak basa-basi, dan mudah dibagi bila meja diisi beberapa orang dengan selera berbeda.",
+              "Di Signa Cafe, hidangan ini tercatat dalam bagian TRY NEW ITEMS dengan harga 35 000 IDR. Isinya terdiri dari ayam panggang yang disusun dalam roti toast lembut yang sudah dipanggang, bersama kol renyah, tomat matang, dan saus krim. Kombinasi ini tidak mengejar sensasi berlebihan. Roti memberi dasar yang hangat, ayam membuatnya terasa lebih mengenyangkan, sementara kol dan tomat menjaga gigitan tetap segar.",
+              "Nama Chicken Club-sandwitch memang memakai ejaan menu yang khas. Namun yang penting di piring adalah gagasan sederhana dari sandwich panggang: lapisan roti, protein, sayur, dan saus yang menyatukan semuanya. Untuk tamu yang mencari sarapan agak padat atau brunch tanpa porsi terlalu berat, pilihan ini berada di tengah yang nyaman."
+            ]
+          },
+          {
+            "h": "Rasa yang akrab, susunan yang jelas",
+            "p": [
+              "Ayam panggang menjadi pusat rasa. Karakternya cocok dengan roti toast karena tidak perlu kuah atau bumbu berat untuk terasa utuh. Saus krim memberi kelembapan agar roti dan ayam tidak terasa kering, sedangkan tomat matang membawa sedikit rasa asam segar. Kol renyah menambah tekstur, terutama saat bertemu roti yang permukaannya dipanggang.",
+              "Susunan seperti ini mudah diterima oleh anak-anak maupun orang dewasa, sehingga cocok dengan posisi Signa Cafe sebagai kafe keluarga. Kata ramah anak di sini bukan berarti menu harus dibuat terlalu polos. Roti isi seperti Chicken Club-sandwitch justru bekerja karena elemen di dalamnya mudah dikenali: ayam, sayur, saus, dan roti.",
+              "Untuk pagi hari, roti isi ini bisa berdampingan dengan kopi tanpa terasa janggal. Dari pukul 08:00 sampai 09:00, Signa Cafe menawarkan kopi gratis dengan pesanan apa pun. Penawaran itu relevan bagi tamu yang datang lebih awal dan ingin memulai hari dengan makanan yang tidak terlalu formal, tetapi tetap cukup mengisi sebelum bergerak ke agenda berikutnya."
+            ]
+          },
+          {
+            "h": "Letak yang masuk akal untuk Nusa Dua, Bukit, dan Ungasan",
+            "p": [
+              "Signa Cafe berada di Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361. Lokasinya di Nusa Dua pada semenanjung Bukit, dengan jarak berkendara singkat dari kawasan resor Nusa Dua dan dari Ungasan. Bagi tamu yang bergerak di selatan Bali, kafe ini bisa menjadi titik berhenti antara urusan wisata, pekerjaan, dan waktu keluarga.",
+              "Konteks tempat ikut menentukan mengapa menu seperti Chicken Club-sandwitch terasa berguna. Di area yang banyak diisi perpindahan singkat - dari hotel ke aktivitas, dari rumah ke pertemuan, dari pantai ke makan siang - roti isi panggang menawarkan cara makan yang rapi dan langsung. Tidak semua momen membutuhkan hidangan besar, namun tetap ada kebutuhan untuk sesuatu yang lebih serius daripada camilan manis.",
+              "Signa Cafe buka sejak 2024 dan mengusung tagline Eat. Meet. Create. Kalimat itu sejalan dengan pola penggunaan kafe masa kini: makan, bertemu, lalu mengerjakan sesuatu atau merancang agenda berikutnya. Chicken Club-sandwitch tidak perlu dipaksakan menjadi menu utama untuk semua orang, tetapi ia punya tempat yang jelas ketika tamu ingin makanan gurih yang praktis."
+            ]
+          },
+          {
+            "h": "Catatan praktis sebelum datang atau pesan",
+            "p": [
+              "Signa Cafe buka setiap hari pukul 08:00-23:00, dengan pesanan terakhir pukul 22:30. Informasi ini penting bagi tamu yang merencanakan makan pagi, makan siang santai, atau makan malam larut setelah aktivitas di sekitar Bukit. Untuk menu lain, perlu dicatat bahwa oven pizza menyala mulai pukul 14:00, sehingga pilihan roti isi seperti Chicken Club-sandwitch dapat menjadi opsi lebih awal di hari yang sama.",
+              "Kafe ini memiliki rating Google 4.7 dari lebih dari 1426 ulasan. Angka tersebut memberi gambaran umum tentang jejak kunjungan publik, tanpa perlu menambahkan klaim yang tidak tercantum. Untuk pertanyaan langsung, nomor telepon yang tersedia adalah +62 896 540 27190. Menu online dan delivery dapat diakses melalui https://signa.dishi.rest/, sedangkan akun Instagram resminya adalah @signa.cafe.",
+              "Bagi pencari brunch, keluarga dengan anak, atau tamu yang sekadar ingin roti panggang isi ayam sebelum melanjutkan perjalanan, Chicken Club-sandwitch menawarkan pilihan yang mudah dibaca. Rasa utamanya datang dari ayam panggang, roti toast, sayur segar, dan saus krim; cukup jelas untuk dipesan cepat, cukup mengenyangkan untuk dijadikan jeda makan."
+            ]
+          }
+        ],
+        "coverAlt": "Chicken Club-sandwitch dengan ayam panggang, kol, tomat, dan saus krim di roti toast lembut di Signa Cafe Nusa Dua"
+      },
+      "aliases": [
+        "chicken-club-sandwitch-nusa-dua"
+      ]
+    },
     {
       "slug": "caesar-salad-nusa-dua",
       "date": "2026-11-26",
