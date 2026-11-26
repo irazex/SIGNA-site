@@ -1,5 +1,5 @@
 {
-  "version": "20261126a",
+  "version": "20261126b",
   "note": "Source of truth for /stories. Edited by hand or via /admin -> Stories tab. Rendered server-side by story.php / stories.php - no build step, no JS required, so AI crawlers see full text.",
   "posts": [
     {
@@ -1735,7 +1735,7 @@
       "cover": "assets/menu-01-syrniki-cottage-cheese-pancake.webp",
       "dish": {
         "name": "Syrniki",
-        "price": "93,000 IDR",
+        "price": "80 000 IDR",
         "menuUrl": "https://signa.dishi.rest/"
       },
       "tags": [
@@ -1750,7 +1750,7 @@
       "en": {
         "title": "Syrniki in Nusa Dua: cottage cheese pancakes for breakfast",
         "seoTitle": "Syrniki in Nusa Dua: cottage cheese pancakes",
-        "description": "Syrniki at Signa Cafe in Nusa Dua: soft cottage cheese pancakes with sour cream and salted caramel, a sweet vegetarian breakfast with coffee.",
+        "description": "Syrniki at Signa Cafe in Nusa Dua: cottage cheese pancakes with sour cream and salted caramel, jam or condensed milk, a sweet vegetarian breakfast with coffee.",
         "keywords": [
           "syrniki",
           "cottage cheese pancakes",
@@ -1767,7 +1767,7 @@
         ],
         "category": "Breakfast",
         "coverAlt": "Syrniki, cottage cheese pancakes with sour cream and salted caramel, at Signa Cafe",
-        "lead": "Syrniki are small pancakes made mostly from cottage cheese, a breakfast many people from Russia, Ukraine and Belarus grew up with. Signa Cafe in Nusa Dua serves them with sour cream and salted caramel.",
+        "lead": "Syrniki are small pancakes made mostly from cottage cheese, a breakfast many people from Russia, Ukraine and Belarus grew up with. Signa Cafe in Nusa Dua serves four to a plate, with sour cream plus condensed milk, strawberry jam or salted caramel.",
         "blocks": [
           {
             "h": "A pancake named after cheese",
@@ -1786,7 +1786,7 @@
           {
             "h": "How Signa Cafe serves them",
             "p": [
-              "At Signa Cafe, syrniki come with sour cream and salted caramel, and the plate costs 93 000 IDR. Sour cream is the classic partner for syrniki in Russian and Ukrainian homes, where jam, honey and condensed milk are common too.",
+              "At Signa Cafe, a plate of four syrniki costs 80 000 IDR and comes with sour cream plus your pick of condensed milk, strawberry jam or salted caramel. Sour cream is the classic partner for syrniki in Russian and Ukrainian homes, where jam, honey and condensed milk are common too.",
               "Its cool, slightly sour note matches the tang of the curd, so the plate doesn't feel too sweet after a few bites. Salted caramel gives a deeper sweetness than plain sugar or jam, and its salt works well with dairy. Syrniki are vegetarian and filling without being heavy, closer to a proper breakfast than to a pastry."
             ]
           },
@@ -1794,7 +1794,7 @@
             "h": "Breakfast, brunch and coffee",
             "p": [
               "Signa Cafe opens every day at 08:00, and syrniki are at their best early. From 08:00 to 09:00 the cafe gives free coffee with any order, espresso-based and hot or iced, so a plate of syrniki and a cup of coffee make a complete breakfast for the price of the syrniki alone.",
-              "Black coffee cuts through the caramel and sour cream and keeps each bite tasting fresh. A milk coffee makes the whole meal softer, closer to dessert. Later in the morning, syrniki work as brunch after an early swim or a slow start, and they won't weigh you down if the afternoon plan is the beach or a long drive."
+              "Black coffee cuts through the sour cream and the sweet topping and keeps each bite tasting fresh. A milk coffee makes the whole meal softer, closer to dessert. Later in the morning, syrniki work as brunch after an early swim or a slow start, and they won't weigh you down if the afternoon plan is the beach or a long drive."
             ]
           },
           {
@@ -1821,7 +1821,7 @@
           ],
           [
             "Price",
-            "93 000 IDR"
+            "80 000 IDR"
           ],
           [
             "Best time",
@@ -1835,7 +1835,7 @@
         "faq": [
           {
             "q": "Where can I eat syrniki for breakfast in Nusa Dua?",
-            "a": "At Signa Cafe on Jl. Dharmawangsa in Nusa Dua, which opens daily at 08:00. Syrniki come with sour cream and salted caramel for 93 000 IDR."
+            "a": "At Signa Cafe on Jl. Dharmawangsa in Nusa Dua, which opens daily at 08:00. A plate of four syrniki costs 80 000 IDR and comes with sour cream plus condensed milk, strawberry jam or salted caramel."
           },
           {
             "q": "Is Signa Cafe in Nusa Dua good for brunch with kids?",
@@ -1843,7 +1843,7 @@
           },
           {
             "q": "What should I drink with syrniki?",
-            "a": "Coffee is the usual choice, because its bitterness balances the caramel and sour cream. From 08:00 to 09:00, Signa Cafe gives free coffee with any order."
+            "a": "Coffee is the usual choice, because its bitterness balances the sweet topping and sour cream. From 08:00 to 09:00, Signa Cafe gives free coffee with any order."
           },
           {
             "q": "How far is Signa Cafe from Ungasan?",
@@ -1855,7 +1855,7 @@
         "faq": [
           {
             "q": "Где поесть сырники в Нуса Дуа?",
-            "a": "В Signa Cafe на Jl. Dharmawangsa в Нуса Дуа. Кафе открывается в 08:00, сырники подают со сметаной и солёной карамелью."
+            "a": "В Signa Cafe на Jl. Dharmawangsa в Нуса Дуа. Кафе открывается в 08:00, сырники подают со сметаной и на выбор сгущёнкой, клубничным вареньем или солёной карамелью."
           },
           {
             "q": "Далеко ли до Signa Cafe из Унгасана?",
@@ -1863,7 +1863,7 @@
           },
           {
             "q": "Сколько стоят сырники в Signa Cafe?",
-            "a": "Сырники стоят 93 000 IDR. Их подают со сметаной и солёной карамелью."
+            "a": "Порция из четырёх сырников стоит 80 000 IDR. К ним дают сметану и на выбор сгущёнку, клубничное варенье или солёную карамель."
           },
           {
             "q": "Удобно ли прийти в Signa Cafe с детьми?",
@@ -1872,7 +1872,7 @@
         ],
         "seoTitle": "Сырники в Нуса Дуа - завтрак в Signa Cafe",
         "category": "Завтрак",
-        "description": "Сырники в Signa Cafe в Нуса Дуа - творожный завтрак со сметаной и солёной карамелью, который удобно взять к утреннему кофе или на бранч.",
+        "description": "Сырники в Signa Cafe в Нуса Дуа - творожный завтрак со сметаной и сгущёнкой, клубничным вареньем или солёной карамелью к утреннему кофе или на бранч.",
         "keywords": [
           "сырники",
           "творог",
@@ -1901,7 +1901,7 @@
           ],
           [
             "Цена",
-            "93 000 IDR"
+            "80 000 IDR"
           ],
           [
             "Лучшее время",
@@ -1912,7 +1912,7 @@
             "Вегетарианцам, семьям, детям и тем, кто хочет сладкий молочный завтрак"
           ]
         ],
-        "lead": "Многие, кто вырос в России, Украине или Беларуси, помнят сырники с детства. В Signa Cafe в Нуса Дуа их подают на завтрак со сметаной и солёной карамелью.",
+        "lead": "Многие, кто вырос в России, Украине или Беларуси, помнят сырники с детства. В Signa Cafe в Нуса Дуа их подают на завтрак по четыре штуки, со сметаной и на выбор сгущёнкой, клубничным вареньем или солёной карамелью.",
         "title": "Сырники в Нуса Дуа: творожный завтрак в Signa Cafe",
         "blocks": [
           {
@@ -1932,7 +1932,7 @@
           {
             "h": "Как их подают в Signa Cafe",
             "p": [
-              "В Signa Cafe сырники приносят со сметаной и солёной карамелью. Порция стоит 93 000 IDR. Сметана к сырникам - классика, дома их едят ещё с вареньем, мёдом или сгущёнкой.",
+              "В Signa Cafe приносят четыре сырника со сметаной и на выбор сгущёнкой, клубничным вареньем или солёной карамелью. Порция стоит 80 000 IDR. Сметана к сырникам - классика, дома их едят ещё с вареньем, мёдом или сгущёнкой.",
               "Прохладная сметана с кислинкой оттеняет вкус творога, и после нескольких кусочков блюдо не кажется приторным. У солёной карамели сладость насыщеннее, чем у сахара или варенья, а соль хорошо оттеняет молочный вкус. Мяса в блюде нет, так что сырники подходят вегетарианцам."
             ]
           },
@@ -1940,7 +1940,7 @@
             "h": "Завтрак с кофе",
             "p": [
               "Сырники лучше всего заказывать утром. Signa Cafe открывается каждый день в 08:00, и с 08:00 до 09:00 к любому заказу дают бесплатный кофе на основе эспрессо, горячий или холодный. Получается полноценный завтрак по цене одних сырников. Акция действует только в первый час, так что за бесплатным кофе стоит приходить к открытию.",
-              "Горечь чёрного кофе уравновешивает карамель и сметану. Если взять кофе с молоком, завтрак получится мягче и ближе к десерту."
+              "Горечь чёрного кофе уравновешивает и сметану, и сладкое. Если взять кофе с молоком, завтрак получится мягче и ближе к десерту."
             ]
           },
           {
@@ -1972,7 +1972,7 @@
           },
           {
             "q": "Berapa harga Syrniki di Signa Cafe?",
-            "a": "Harganya 93.000 IDR. Syrniki disajikan dengan krim asam dan karamel asin."
+            "a": "Harganya 80.000 IDR untuk empat Syrniki, disajikan dengan krim asam dan pilihan susu kental manis, selai stroberi, atau karamel asin."
           },
           {
             "q": "Kapan waktu terbaik memesan Syrniki?",
@@ -1981,7 +1981,7 @@
         ],
         "seoTitle": "Syrniki di Nusa Dua - sarapan keju cottage di Signa Cafe",
         "category": "Sarapan",
-        "description": "Syrniki di Signa Cafe Nusa Dua: panekuk keju cottage dengan krim asam dan karamel asin, pas untuk sarapan, brunch, atau teman kopi pagi.",
+        "description": "Syrniki di Signa Cafe Nusa Dua: panekuk keju cottage dengan krim asam dan karamel asin, selai stroberi, atau susu kental manis untuk sarapan dan brunch.",
         "keywords": [
           "Syrniki Nusa Dua",
           "sarapan Nusa Dua",
@@ -1999,7 +1999,7 @@
           ],
           [
             "Harga",
-            "93.000 IDR"
+            "80.000 IDR"
           ],
           [
             "Bahan utama",
@@ -2018,7 +2018,7 @@
             "Signa Cafe, Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361"
           ]
         ],
-        "lead": "Kalau ingin sarapan manis yang bukan sekadar roti atau kue, coba Syrniki di Signa Cafe, Nusa Dua: panekuk kecil dari keju cottage yang disajikan dengan krim asam dan karamel asin.",
+        "lead": "Kalau ingin sarapan manis yang bukan sekadar roti atau kue, coba Syrniki di Signa Cafe, Nusa Dua: empat panekuk kecil dari keju cottage dengan krim asam dan pilihan susu kental manis, selai stroberi, atau karamel asin.",
         "title": "Syrniki di Nusa Dua: panekuk keju cottage untuk sarapan",
         "blocks": [
           {
@@ -2032,14 +2032,14 @@
           {
             "h": "Penyajian di Signa Cafe",
             "p": [
-              "Di Signa Cafe, Syrniki disajikan dengan krim asam dan karamel asin. Harganya 93.000 IDR. Krim asam adalah krim yang difermentasi, teksturnya kental seperti yogurt dan rasanya sedikit asam. Di Rusia dan Ukraina, krim asam memang pasangan klasik Syrniki, selain selai, madu, atau susu kental manis.",
+              "Di Signa Cafe, satu porsi berisi empat Syrniki yang disajikan dengan krim asam dan pilihan susu kental manis, selai stroberi, atau karamel asin. Harganya 80.000 IDR. Krim asam adalah krim yang difermentasi, teksturnya kental seperti yogurt dan rasanya sedikit asam. Di Rusia dan Ukraina, krim asam memang pasangan klasik Syrniki, selain selai, madu, atau susu kental manis.",
               "Rasa segar dan sedikit asam itu cocok dengan keju cottage, sehingga hidangan tidak terasa terlalu manis setelah beberapa suap. Karamel asin memberi rasa manis yang lebih dalam daripada gula biasa atau selai, dan sedikit rasa asinnya justru membuat rasa susu lebih terasa. Menu ini tanpa daging, jadi cocok untuk vegetarian, dan cukup mengenyangkan tanpa terasa berat."
             ]
           },
           {
             "h": "Sarapan, kopi, dan brunch keluarga",
             "p": [
-              "Signa Cafe buka setiap hari mulai pukul 08:00. Dari 08:00 sampai 09:00, setiap pesanan mendapat kopi gratis berbasis espresso, panas atau dingin, jadi sepiring Syrniki dan secangkir kopi sudah menjadi sarapan lengkap. Pahitnya kopi hitam menyeimbangkan karamel dan krim asam, sedangkan kopi susu membuat rasanya lebih lembut, hampir seperti hidangan penutup.",
+              "Signa Cafe buka setiap hari mulai pukul 08:00. Dari 08:00 sampai 09:00, setiap pesanan mendapat kopi gratis berbasis espresso, panas atau dingin, jadi sepiring Syrniki dan secangkir kopi sudah menjadi sarapan lengkap. Pahitnya kopi hitam menyeimbangkan rasa manis dan krim asam, sedangkan kopi susu membuat rasanya lebih lembut, hampir seperti hidangan penutup.",
               "Setelah jam sarapan, Syrniki tetap enak untuk brunch menjelang siang, misalnya setelah berenang pagi. Porsinya mengenyangkan tetapi tidak membuat mengantuk, jadi setelahnya Anda masih bisa ke pantai atau melanjutkan perjalanan. Karena kafe buka sampai 23:00, Syrniki sebenarnya bisa dipesan kapan saja, tetapi paling pas di pagi hari.",
               "Signa Cafe adalah kafe keluarga, dan Syrniki termasuk menu ramah anak: lembut, manis, mudah dipotong, dan gampang dibagi. Orang tua juga tahu persis apa isinya, sehingga tidak perlu menebak-nebak saat anak sedang pilih-pilih makanan."
             ]
@@ -2058,7 +2058,7 @@
         "Origin: East Slavic home cooking, especially Russian, Ukrainian and Belarusian kitchens",
         "Name: Syrniki comes from syr, an older word for fresh cheese or curd",
         "Key ingredient: Cottage cheese",
-        "Price: 93k",
+        "Price: 80 000 IDR",
         "Best time: 08:00-09:00 with coffee, or late morning brunch",
         "Who it suits: Vegetarians, families, kids, and anyone who wants a sweet dairy breakfast"
       ],
@@ -2070,7 +2070,7 @@
       "cover": "assets/pizza-margherita.webp",
       "dish": {
         "name": "Pizza Margherita",
-        "price": "89,000 IDR (14:00-18:00)",
+        "price": "65 000 IDR",
         "menuUrl": "https://signa.dishi.rest/"
       },
       "tags": [
@@ -2119,8 +2119,8 @@
           {
             "h": "The Margherita at Signa Cafe",
             "p": [
-              "Signa Cafe keeps to the classic three toppings for its Margherita: tomato, mozzarella and basil. Pizza is baked only after 14:00, when the pizza oven fires, so this is an afternoon and evening dish. Mornings at the cafe are for breakfast, brunch and coffee.",
-              "Between 14:00 and 18:00 the Margherita costs 89,000 IDR. That makes it an easy choice for a late lunch, a bite after the beach or an early dinner. It is also a good pizza to share while the rest of the table decides on mains."
+              "Signa Cafe keeps to the classic three toppings for its Margherita: tomato, mozzarella and basil. Pizza is served from 14:00 to 23:00, once the pizza oven fires, so this is an afternoon and evening dish. Mornings at the cafe are for breakfast, brunch and coffee.",
+              "The Margherita costs 65 000 IDR, which makes it an easy choice for a late lunch, a bite after the beach or an early dinner. It is also a good pizza to share while the rest of the table decides on mains. There is a Solo Margherita on the menu too, for 35 000 IDR."
             ]
           },
           {
@@ -2158,7 +2158,7 @@
           ],
           [
             "Price",
-            "89,000 IDR (14:00-18:00)"
+            "65 000 IDR"
           ],
           [
             "Best time",
@@ -2176,7 +2176,7 @@
           },
           {
             "q": "What time can I order Pizza Margherita at Signa Cafe?",
-            "a": "From 14:00, when the pizza oven fires. Between 14:00 and 18:00 the Margherita costs 89,000 IDR."
+            "a": "Pizza is served from 14:00 to 23:00, once the pizza oven fires. The Margherita costs 65 000 IDR."
           },
           {
             "q": "Is Signa Cafe easy to reach from Ungasan?",
@@ -2192,7 +2192,7 @@
           },
           {
             "q": "Сколько стоит «Маргарита» в Signa Cafe?",
-            "a": "С 14:00 до 18:00 она стоит 89 000 IDR. Посмотреть меню и заказать доставку можно на https://signa.dishi.rest/."
+            "a": "Она стоит 65 000 IDR, пиццу подают с 14:00 до 23:00. Посмотреть меню и заказать доставку можно на https://signa.dishi.rest/."
           },
           {
             "q": "Можно ли прийти в Signa Cafe в Нуса Дуа с детьми?",
@@ -2205,7 +2205,7 @@
         ],
         "seoTitle": "Пицца «Маргарита» в Нуса Дуа: история и цена",
         "category": "Пицца",
-        "description": "Пицца «Маргарита» в Signa Cafe в Нуса Дуа: томаты, моцарелла и базилик, неаполитанская история и цена 89 000 IDR с 14:00 до 18:00.",
+        "description": "Пицца «Маргарита» в Signa Cafe в Нуса Дуа: томаты, моцарелла и базилик, неаполитанская история и цена 65 000 IDR. Пиццу подают с 14:00 до 23:00.",
         "keywords": [
           "пицца Маргарита Нуса Дуа",
           "Signa Cafe",
@@ -2237,7 +2237,7 @@
           ],
           [
             "Цена",
-            "89 000 IDR с 14:00 до 18:00 (ежедневное предложение на пиццу)"
+            "65 000 IDR"
           ]
         ],
         "lead": "Томаты, моцарелла, базилик и красивая легенда о королеве: так обычно рассказывают про «Маргариту». Разбираемся, что в этой истории правда, что отличает хорошую «Маргариту» и когда заказать её в Signa Cafe в Нуса Дуа.",
@@ -2262,8 +2262,8 @@
           {
             "h": "«Маргарита» в Signa Cafe",
             "p": [
-              "В Signa Cafe «Маргарита» классическая: томаты, моцарелла и базилик. Печь для пиццы разжигают в 14:00, поэтому пиццу здесь подают только во второй половине дня. Утром в кафе приходят на завтрак, бранч и кофе.",
-              "С 14:00 до 18:00 «Маргарита» стоит 89 000 IDR. В это время удобно заехать на поздний обед, перекусить после пляжа или поужинать пораньше. Одну пиццу можно заказать на всех и поставить в центр стола, пока каждый выбирает себе горячее.",
+              "В Signa Cafe «Маргарита» классическая: томаты, моцарелла и базилик. Печь для пиццы разжигают в 14:00, и пиццу здесь подают с этого времени до 23:00. Утром в кафе приходят на завтрак, бранч и кофе.",
+              "«Маргарита» стоит 65 000 IDR, и это удобный вариант для позднего обеда, перекуса после пляжа или раннего ужина. Одну пиццу можно заказать на всех и поставить в центр стола, пока каждый выбирает себе горячее. В меню есть и Solo Margherita за 35 000 IDR.",
               "Signa Cafe - семейное кафе, сюда удобно приходить с детьми. Для ребёнка «Маргарита» обычно самый понятный выбор: томаты, сыр и тесто знакомы почти всем, а острого, морепродуктов и тяжёлых соусов в ней нет. К пицце можно взять кофе, если день рабочий, или холодный напиток, если вы только что с пляжа."
             ]
           },
@@ -2285,7 +2285,7 @@
           },
           {
             "q": "Jam berapa pizza bisa dipesan di Signa Cafe?",
-            "a": "Mulai pukul 14:00. Pada pukul 14:00-18:00, Pizza Margherita seharga 89.000 IDR."
+            "a": "Pukul 14:00-23:00 setiap hari. Pizza Margherita harganya 65.000 IDR."
           },
           {
             "q": "Apa saja isi Pizza Margherita?",
@@ -2298,7 +2298,7 @@
         ],
         "seoTitle": "Pizza Margherita Nusa Dua - Signa Cafe",
         "category": "Pizza",
-        "description": "Pizza Margherita di Signa Cafe Nusa Dua: tomat, mozzarella, dan basil, kisah asalnya dari Naples, serta harga 89.000 IDR pukul 14:00-18:00.",
+        "description": "Pizza Margherita di Signa Cafe Nusa Dua: tomat, mozzarella, dan basil, kisah asalnya dari Naples, serta harga 65.000 IDR, tersedia pukul 14:00-23:00.",
         "keywords": [
           "Pizza Margherita",
           "Pizza Margherita Nusa Dua",
@@ -2343,8 +2343,8 @@
           {
             "h": "Pizza baru tersedia mulai pukul 14:00",
             "p": [
-              "Oven pizza di Signa Cafe dinyalakan pukul 14:00, jadi Pizza Margherita hanya bisa dipesan mulai siang sampai malam. Sebelum jam itu, kafe ini menjadi tempat sarapan, brunch, dan ngopi. Kalau Anda datang khusus untuk pizza, atur waktu kunjungan setelah jam makan siang.",
-              "Margherita di sini tetap setia pada tiga bahan klasik: tomat, mozzarella, dan basil. Pada pukul 14:00-18:00 harganya 89.000 IDR, waktu yang pas untuk makan siang yang agak terlambat, mampir sepulang dari pantai, atau makan malam lebih awal."
+              "Oven pizza di Signa Cafe dinyalakan pukul 14:00, jadi Pizza Margherita hanya bisa dipesan pukul 14:00-23:00, dari siang sampai malam. Sebelum jam itu, kafe ini menjadi tempat sarapan, brunch, dan ngopi. Kalau Anda datang khusus untuk pizza, atur waktu kunjungan setelah jam makan siang.",
+              "Margherita di sini tetap setia pada tiga bahan klasik: tomat, mozzarella, dan basil. Harganya 65.000 IDR, dan ada juga Solo Margherita seharga 35.000 IDR. Pizza ini pas untuk makan siang yang agak terlambat, mampir sepulang dari pantai, atau makan malam lebih awal."
             ]
           },
           {
@@ -2391,7 +2391,7 @@
         "Documented before the legend: A similar tomato, mozzarella and basil pizza was described in 1866",
         "Famous royal date: 1889, Queen Margherita of Savoy story",
         "Key ingredients: Tomato, mozzarella, basil",
-        "Price: 89,000 IDR (14:00-18:00)",
+        "Price: 65 000 IDR",
         "Best time: After 14:00, when the pizza oven fires"
       ],
       "updated": "2026-11-26"
@@ -3096,7 +3096,7 @@
       "cover": "assets/menu-10-norwegian-salmon-soup.webp",
       "dish": {
         "name": "Norwegian salmon soup",
-        "price": "89k",
+        "price": "70 000 IDR",
         "menuId": 10,
         "menuUrl": "https://signa.dishi.rest/"
       },
@@ -3111,7 +3111,7 @@
       "en": {
         "title": "Norwegian salmon soup in Nusa Dua: a creamy bowl for lunch",
         "seoTitle": "Norwegian salmon soup in Nusa Dua | Signa Cafe",
-        "description": "Signa Cafe in Nusa Dua serves Norwegian salmon soup with potato, leek, cream and dill, a warm main for brunch, lunch or an early dinner.",
+        "description": "Signa Cafe in Nusa Dua serves Norwegian salmon soup in a creamy fish broth with potato and carrot, a warm main for brunch, lunch or an early dinner.",
         "keywords": [
           "norwegian salmon soup",
           "salmon soup nusa dua",
@@ -3127,8 +3127,8 @@
           "jimbaran"
         ],
         "category": "Main",
-        "coverAlt": "Norwegian salmon soup with salmon, potato, leek and dill in a creamy broth",
-        "lead": "Norway's coast has a long tradition of creamy fish soups, and Signa Cafe's version is built on salmon, potato, leek, cream and dill. It is a filling, mild main for brunch, lunch or an early dinner.",
+        "coverAlt": "Norwegian salmon soup with salmon, potato and carrot in a creamy broth",
+        "lead": "Norway's coast has a long tradition of creamy fish soups, and Signa Cafe's version is built on salmon, potato and carrot in a creamy fish broth, with croutons. It is a filling, mild main for brunch, lunch or an early dinner.",
         "blocks": [
           {
             "h": "Where the soup comes from",
@@ -3141,16 +3141,16 @@
           {
             "h": "What makes a good salmon soup",
             "p": [
-              "A creamy salmon soup usually starts with leek, softened slowly until it turns sweet. Potato then simmers in the broth until it is tender, and its starch gives the soup some body without making it gluey.",
+              "At home, a creamy salmon soup often starts with leek, softened slowly until it turns sweet. Potato then simmers in the broth until it is tender, and its starch gives the soup some body without making it gluey.",
               "Salmon needs far less time than potato, so it normally goes in near the end. Cooked too long, it dries out and turns chalky; added at the right moment, it stays in soft, moist flakes. Cream is the other test. The soup should feel smooth rather than heavy, and it shouldn't boil hard once the cream is in, or the cream can split.",
-              "Dill is added late as well, because its fresh, slightly grassy smell fades with long cooking. It is the herb that keeps a fish and cream soup from tasting flat."
+              "Home versions often finish with dill, added late because its fresh, slightly grassy smell fades with long cooking. For many cooks it is the herb that keeps a fish and cream soup from tasting flat."
             ]
           },
           {
             "h": "The soup at Signa Cafe",
             "p": [
-              "Signa Cafe's Norwegian salmon soup is made with salmon, potato, leek, cream and dill, and it is served as a main course for 89 000 IDR.",
-              "Each ingredient has a job. The salmon brings richness and a clean fish flavour, the potato makes the bowl filling, the leek adds a mild sweetness, the cream ties it all together and the dill freshens it up. You can make a whole lunch of one bowl.",
+              "Signa Cafe's Norwegian salmon soup has salmon, carrot and potato in a fish broth with cream, comes with croutons and is served as a main course for 70 000 IDR.",
+              "Each ingredient has a job. The salmon brings richness and a clean fish flavour, the potato makes the bowl filling, the carrot adds a mild sweetness, the cream ties it all together and the croutons add some crunch. You can make a whole lunch of one bowl.",
               "The flavour is gentle, with no chilli heat. That makes it a good order for anyone who wants something soft and comforting, or a proper meal before an afternoon drive back to Ungasan."
             ]
           },
@@ -3166,7 +3166,7 @@
             "h": "A family cafe on the Bukit",
             "p": [
               "Signa Cafe is a family cafe on Jl. Dharmawangsa in Nusa Dua, on the Bukit peninsula, a short drive from the resort hotels and from Ungasan. People come for breakfast, brunch and meetings over coffee, and families come with children, since the place is kid-friendly.",
-              "For children, this soup is one of the easier ways to try salmon. The taste is mild, it is easy to eat with a spoon, and potato and cream are familiar to most kids. Whether it works still depends on how your child feels about fish and dill.",
+              "For children, this soup is one of the easier ways to try salmon. The taste is mild, it is easy to eat with a spoon, and potato and cream are familiar to most kids. Whether it works still depends on how your child feels about fish.",
               "The cafe opened in 2024 and has a Google rating of 4.7 from more than 1,400 reviews. The menu and delivery are at https://signa.dishi.rest/, and you can call +62 896 540 27190 or find the cafe on Instagram as @signa.cafe."
             ]
           }
@@ -3178,11 +3178,11 @@
           ],
           [
             "Key ingredients",
-            "Salmon, potato, leek, cream, dill"
+            "Fish broth with cream, salmon, carrot, potato, croutons"
           ],
           [
             "Price",
-            "89 000 IDR"
+            "70 000 IDR"
           ],
           [
             "Best time",
@@ -3200,7 +3200,7 @@
         "faq": [
           {
             "q": "Where can you eat Norwegian salmon soup in Nusa Dua?",
-            "a": "At Signa Cafe on Jl. Dharmawangsa in Nusa Dua. The soup is made with salmon, potato, leek, cream and dill and costs 89 000 IDR."
+            "a": "At Signa Cafe on Jl. Dharmawangsa in Nusa Dua. The soup is made with salmon, carrot and potato in a fish broth with cream, comes with croutons and costs 70 000 IDR."
           },
           {
             "q": "Is the salmon soup a good choice for brunch?",
@@ -3224,7 +3224,7 @@
           },
           {
             "q": "Сколько стоит суп с лососем в Signa Cafe?",
-            "a": "Порция стоит 89 000 IDR. В супе лосось, картофель, лук-порей, сливки и укроп."
+            "a": "Порция стоит 70 000 IDR. Суп варят на рыбном бульоне со сливками, в нём лосось, морковь и картофель, а подают его с гренками."
           },
           {
             "q": "Подходит ли суп для обеда с детьми?",
@@ -3237,7 +3237,7 @@
         ],
         "seoTitle": "Норвежский суп с лососем в Нуса Дуа | Signa Cafe",
         "category": "Супы",
-        "description": "Signa Cafe в Нуса Дуа готовит норвежский суп с лососем, картофелем, луком-пореем, сливками и укропом - на бранч, обед или ранний ужин.",
+        "description": "Signa Cafe в Нуса Дуа готовит норвежский суп с лососем, картофелем и морковью на рыбном бульоне со сливками - на бранч, обед или ранний ужин.",
         "keywords": [
           "норвежский суп с лососем",
           "суп с лососем Нуса Дуа",
@@ -3274,14 +3274,14 @@
           ]
         ],
         "lead": "Норвежский суп с лососем - сливочный, мягкий и сытный. В Signa Cafe его подают как основное блюдо, и одной тарелки вполне хватает, чтобы пообедать.",
-        "title": "Норвежский суп с лососем в Нуса Дуа: на сливках, с картофелем и укропом",
+        "title": "Норвежский суп с лососем в Нуса Дуа: на сливках, с картофелем и морковью",
         "blocks": [
           {
             "h": "Что это за суп",
             "p": [
               "Горячий суп в тропиках кажется не самым очевидным выбором. Однако после утра в море или в сезон дождей тарелка сливочного супа оказывается очень кстати, особенно когда хочется поесть сытно, но без мяса и острых соусов.",
-              "В суп идут лосось, картофель, лук-порей, сливки и укроп. Порция в Signa Cafe стоит 89 000 IDR, и это полноценное горячее, а не закуска перед основным блюдом.",
-              "У каждого продукта здесь своя роль. Лосось отвечает за насыщенный, но чистый рыбный вкус, картофель - за сытность, порей добавляет мягкую сладость. Сливки связывают всё вместе, а укроп добавляет свежести, чтобы суп не казался пресным.",
+              "Суп варят на рыбном бульоне со сливками, в него идут лосось, морковь и картофель, а подают его с гренками. Порция в Signa Cafe стоит 70 000 IDR, и это полноценное горячее, а не закуска перед основным блюдом.",
+              "У каждого продукта здесь своя роль. Лосось отвечает за насыщенный, но чистый рыбный вкус, картофель - за сытность, морковь добавляет мягкую сладость. Сливки связывают всё вместе, а гренки добавляют хруста.",
               "Вкус у супа мягкий, без остроты. Любителям лосося он понравится тем, что рыба здесь главная и ничем резким не перебита."
             ]
           },
@@ -3290,7 +3290,7 @@
             "p": [
               "На атлантическом побережье Норвегии рыбный суп издавна был повседневной едой. Готовили его из того, что давали море и небольшие хозяйства: рыба, корнеплоды, молоко или сливки, зелень. Единого рецепта не было: в каждом городке и в каждой семье суп варили по-своему, из местного улова.",
               "Лосось стал обычной рыбой для такого супа позже. В 1970-е годы в Норвегии начали промышленно разводить атлантического лосося, и его стало можно купить круглый год, а не только в короткий сезон дикой рыбы. Старую рыбную похлёбку на молоке и сливках стали всё чаще варить с лососем, и именно в таком виде суп сегодня знают далеко за пределами Норвегии.",
-              "Сам суп несложный, но требует аккуратности. Обычно порей сначала томят до мягкости, потом в бульоне доводят до готовности картофель. Лосось кладут ближе к концу: он готовится гораздо быстрее картофеля и, если его переварить, становится сухим. Суп со сливками нельзя сильно кипятить, иначе они могут свернуться, а укроп добавляют в самом конце, чтобы он не потерял запах. В скандинавской кухне укроп вообще - одна из главных трав: его кладут и в рыбу, и в картофель, и в соусы."
+              "Сам суп несложный, но требует аккуратности. В домашних рецептах порей обычно сначала томят до мягкости, потом в бульоне доводят до готовности картофель. Лосось кладут ближе к концу: он готовится гораздо быстрее картофеля и, если его переварить, становится сухим. Суп со сливками нельзя сильно кипятить, иначе они могут свернуться, а укроп, если его кладут, добавляют в самом конце, чтобы он не потерял запах. В скандинавской кухне укроп вообще - одна из главных трав: его кладут и в рыбу, и в картофель, и в соусы."
             ]
           },
           {
@@ -3305,20 +3305,20 @@
             "h": "Семейное кафе в Нуса Дуа",
             "p": [
               "Signa Cafe открылось в 2024 году. Кафе находится на Jl. Dharmawangsa в Нуса Дуа, на полуострове Букит, и из отелей курортной зоны или из Унгасана сюда недолго ехать. Это семейное кафе: здесь завтракают, встречаются за кофе, а на бранч часто приходят с детьми.",
-              "Для ребёнка этот суп - один из самых простых способов попробовать лосося. Он не острый, его удобно есть ложкой, а картофель и сливки знакомы почти всем детям. Правда, многое зависит от того, как ваш ребёнок относится к рыбе и укропу.",
+              "Для ребёнка этот суп - один из самых простых способов попробовать лосося. Он не острый, его удобно есть ложкой, а картофель и сливки знакомы почти всем детям. Правда, многое зависит от того, как ваш ребёнок относится к рыбе.",
               "У кафе рейтинг 4,7 в Google по более чем 1400 отзывам. Меню и доставка - на https://signa.dishi.rest/, телефон: +62 896 540 27190, Instagram - @signa.cafe."
             ]
           }
         ],
-        "coverAlt": "Норвежский суп с лососем, картофелем, луком-пореем и укропом в Signa Cafe"
+        "coverAlt": "Норвежский суп с лососем, картофелем и морковью в Signa Cafe"
       },
       "aliases": [
         "norwegian-salmon-soup-kampial-nusa-dua"
       ],
       "sourceFacts": [
         "Origin: Norwegian coastal fish soup tradition, later shaped by 1970s salmon farming",
-        "Key ingredients: Salmon, potato, leek, cream, dill",
-        "Price: 89k",
+        "Key ingredients: Fish broth with cream, salmon, carrot, potato, croutons",
+        "Price: 70 000 IDR",
         "Best time: Brunch, lunch, or early dinner",
         "Who it suits: Guests wanting a gentle main, families, and salmon lovers",
         "Address: Jl. Dharmawangsa, Jl. Raya Kampial, Benoa, Nusa Dua, Bali 80361"
