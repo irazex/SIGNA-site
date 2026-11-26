@@ -17,6 +17,9 @@
   - Старый пост удалён, его адреса `caesar-with-chicken-nusa-dua` и `caesar-with-chicken-kampial-nusa-dua` отдают 301 на `caesar-salad-nusa-dua`.
   - Отложить пост до 03.12 было нельзя: `st_load()` скрывает будущие посты, и до 03.12 старый адрес отдавал бы 404.
   - `dish.menuId = 8` перенесён, поэтому JSON-LD меню ведёт Caesar Salad на новый пост.
+  - Выпуск: [PR #14](https://github.com/irazex/SIGNA-site/pull/14), слияние `307df16a`, 26.11 через `deploy-stories.sh` и `deploy-site.sh`.
+  - Проверки на signa.cafe: `stories.json` совпал с Git по SHA-256; четыре старых адреса (EN, RU, ID и kampial) отдают 301 на `caesar-salad-nusa-dua`; новый пост на трёх языках - 200; `menu.html` совпал с Git и ссылается на новый пост.
+  - Промт: объём 550-800 слов, состав, цена и часы - по одному разу, адрес только в `facts`.
 - [x] **Меню на главной обновлено по Syrve 26.11** (`content.json`, `<noscript>` в `index.html` и `menu.html`, JSON-LD меню). Сверено со свежей выгрузкой Syrve, цена и описание взяты оттуда.
   - Цены: сырники 80k, Big Breakfast 85k, Best Scramble 55k, Avo Benedict 60k, Creamy Beef Bacon Pasta 80k, Big Poke Bowl 75k, Caesar Salad 79k, суп 70k. У омлета, бургера и мильфея цена прежняя, описание исправлено.
   - Замены: Mango smoothie bowl заменён на Mango Smoothie 60k, чтобы во вкладке «Напитки» осталось блюдо.
