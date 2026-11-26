@@ -1,5 +1,5 @@
 {
-  "version": "20260607b",
+  "version": "20261126a",
   "site": {
     "tagline": "Eat. Meet. Create.",
     "since": "2024",
@@ -104,7 +104,6 @@
       "price": "60k",
       "cat": "drinks",
       "img": "assets/menu-09-mango-smoothie.webp",
-      "badge": "Popular",
       "tags": [
         "veg"
       ],
